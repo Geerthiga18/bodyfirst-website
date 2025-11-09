@@ -7,7 +7,7 @@ import Home from './pages/Home';
 
 import WhatWeTreat from './pages/WhatWeTreat';
 import WhatWeTreatDetail from './pages/WhatWeTreatDetail';
-import ConditionPage from './components/ConditionPage';
+
 
 import Services from './pages/Services';
 import ServiceDetailPage from './pages/ServiceDetailPage';
