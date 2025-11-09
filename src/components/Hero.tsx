@@ -5,19 +5,20 @@ interface HeroProps {
   subtitle?: string;
   description?: string;
   ctaPrimary?: string;
-  ctaPrimaryLink?: string;
   ctaSecondary?: string;
   ctaSecondaryLink?: string;
   backgroundVideo?: string;
   backgroundImage?: string;
 }
 
+const BOOKING_URL =
+  "https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login";
+
 const Hero = ({
   title,
   subtitle,
   description,
   ctaPrimary,
-  ctaPrimaryLink = "/contact#book",
   ctaSecondary,
   ctaSecondaryLink = "/contact",
   backgroundVideo,
@@ -49,10 +50,10 @@ const Hero = ({
           )}
         </div>
 
-        {/* Softer gradient overlay: strong on left, clear on right */}
+        {/* Overlay */}
         <div className="absolute inset-0 -z-10 bg-black/70" />
 
-        {/* Content container (constrained, but bg stays full width) */}
+        {/* Content */}
         <div className="relative max-w-6xl mx-auto px-6 md:px-10 lg:px-12 py-10 md:py-14 lg:py-16">
           <div className="max-w-3xl text-left text-teal-50">
             {subtitle && (
@@ -86,13 +87,16 @@ const Hero = ({
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
               {ctaPrimary && (
-                <Link
-                  to={ctaPrimaryLink}
+                <a
+                  href={BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-7 py-2 rounded-lg bg-teal-600 hover:bg-teal-700 text-white font-semibold text-base md:text-lg transition"
                 >
                   {ctaPrimary}
-                </Link>
+                </a>
               )}
+
               {ctaSecondary && (
                 <Link
                   to={ctaSecondaryLink}
