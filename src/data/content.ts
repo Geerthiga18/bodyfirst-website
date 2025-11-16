@@ -159,10 +159,32 @@ export const siteContent = {
     { service: 'Gait Analysis', duration: '45 min', price: '£70' }
   ],
 
-  insurance: {
-    accepted: ['AXA', 'AVIVA', 'BUPA', 'Simply Health', 'Vitality'],
-    note: 'We work with all major private health insurance providers. Many of our services are covered under standard physiotherapy benefits. Please check with your insurer for specific coverage details and pre-authorisation requirements.'
-  },
+insurance: {
+  accepted: [
+    {
+      name: 'AXA',
+      logo: '/images/insurance/axa.jpg',
+    },
+    {
+      name: 'AVIVA',
+      logo: '/images/insurance/aviva.jpg',
+    },
+    {
+      name: 'BUPA',
+      logo: '/images/insurance/bupa.png',
+    },
+    {
+      name: 'Simply Health',
+      logo: '/images/insurance/simply.jpg',
+    },
+    {
+      name: 'Vitality',
+      logo: '/images/insurance/vitality.jpg',
+    },
+  ],
+  note: 'We work with all major private health insurance providers. Many of our services are covered under standard physiotherapy benefits. Please check with your insurer for specific coverage details and pre-authorisation requirements.',
+},
+
 
   team: [
     {
