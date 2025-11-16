@@ -13,7 +13,7 @@ const Home = () => {
   description={siteContent.hero.description}
   ctaPrimary={siteContent.hero.ctaPrimary}
   ctaSecondary={siteContent.hero.ctaSecondary}
-  backgroundImage="/videos/bodyfirst-hero.jpg" 
+  backgroundVideo="/videos/hero.mp4" 
       />
 
       {/* Quick Overview Cards */}
