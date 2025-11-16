@@ -13,7 +13,7 @@ const Home = () => {
   description={siteContent.hero.description}
   ctaPrimary={siteContent.hero.ctaPrimary}
   ctaSecondary={siteContent.hero.ctaSecondary}
-  backgroundImage="/videos/bodyfirst-hero.jpg" 
+  backgroundVideo="/videos/hero.mp4" 
       />
 
       {/* Quick Overview Cards */}
@@ -148,16 +148,21 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center items-center gap-8">
-            {siteContent.insurance.accepted.map((insurer) => (
-              <div
-                key={insurer}
-                className="bg-white px-8 py-6 rounded-lg shadow-md text-xl font-bold text-gray-700 ring-1 ring-teal-100"
-              >
-                {insurer}
-              </div>
-            ))}
-          </div>
+<div className="flex flex-wrap justify-center items-center gap-8">
+  {siteContent.insurance.accepted.map((insurer) => (
+    <div
+      key={insurer.name}
+      className="bg-white px-8 py-6 rounded-lg shadow-md ring-1 ring-teal-100 flex items-center justify-center"
+    >
+      <img
+        src={insurer.logo}
+        alt={insurer.name}
+        className="h-16 w-auto object-contain"
+      />
+    </div>
+  ))}
+</div>
+
 
           <div className="mt-12 text-center">
             <Link to="/prices" className="inline-flex items-center justify-center rounded-lg bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 font-semibold transition">

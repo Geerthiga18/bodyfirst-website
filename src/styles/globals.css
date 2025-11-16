@@ -64,6 +64,7 @@
   .textarea {
     @apply input resize-none;
   }
+  
 }
 
 @layer utilities {

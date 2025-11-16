@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import PriceTable from '../components/PriceTable';
-import { siteContent } from '../data/content';
+import { Link } from "react-router-dom";
+import PriceTable from "../components/PriceTable";
+import { siteContent } from "../data/content";
 
 const PricesInsurance = () => {
   return (
@@ -12,7 +12,8 @@ const PricesInsurance = () => {
             Prices & Insurance
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Transparent pricing with no hidden fees. We accept all major health insurance providers
+            Transparent pricing with no hidden fees. We accept all major health
+            insurance providers
           </p>
         </div>
       </section>
@@ -22,9 +23,12 @@ const PricesInsurance = () => {
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-gray-900">Our Prices</h2>
+              <h2 className="text-3xl font-bold mb-4 text-gray-900">
+                Our Prices
+              </h2>
               <p className="text-lg text-gray-600">
-                Competitive rates for high-quality physiotherapy and wellness services
+                Competitive rates for high-quality physiotherapy and wellness
+                services
               </p>
             </div>
 
@@ -37,7 +41,9 @@ const PricesInsurance = () => {
       <section className="section bg-gray-50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900">Package Deals</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">
+              Package Deals
+            </h2>
             <p className="text-lg text-gray-600">
               Save money with our treatment packages
             </p>
@@ -47,7 +53,9 @@ const PricesInsurance = () => {
             {/* 3-Session */}
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">3-Session Package</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  3-Session Package
+                </h3>
                 <div className="text-4xl font-bold text-teal-600">£195</div>
                 <p className="text-gray-600 mt-2">Save £15</p>
               </div>
@@ -79,7 +87,9 @@ const PricesInsurance = () => {
                 Most Popular
               </div>
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">6-Session Package</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  6-Session Package
+                </h3>
                 <div className="text-4xl font-bold text-teal-600">£375</div>
                 <p className="text-gray-600 mt-2">Save £45</p>
               </div>
@@ -108,7 +118,9 @@ const PricesInsurance = () => {
             {/* 10-Session */}
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">10-Session Package</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  10-Session Package
+                </h3>
                 <div className="text-4xl font-bold text-teal-600">£600</div>
                 <p className="text-gray-600 mt-2">Save £100</p>
               </div>
@@ -141,8 +153,10 @@ const PricesInsurance = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-gray-900">Insurance Coverage</h2>
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold mb-4 text-gray-900">
+                Insurance Coverage
+              </h2>
               <p className="text-lg text-gray-600">
                 We work with all major private health insurance providers
               </p>
@@ -150,13 +164,17 @@ const PricesInsurance = () => {
 
             {/* Insurance Logos */}
             <div className="bg-teal-50 rounded-xl p-8 mb-8">
-              <div className="flex flex-wrap justify-center items-center gap-8">
+              <div className="flex  items-center gap-8">
                 {siteContent.insurance.accepted.map((insurer) => (
                   <div
-                    key={insurer}
-                    className="bg-white px-8 py-6 rounded-lg shadow-md text-2xl font-bold text-gray-700"
+                    key={insurer.name}
+                    className="bg-white px-8 py-6 rounded-lg shadow-md ring-1 ring-teal-100 flex items-center justify-center"
                   >
-                    {insurer}
+                    <img
+                      src={insurer.logo}
+                      alt={insurer.name}
+                      className="h-16 w-auto object-contain"
+                    />
                   </div>
                 ))}
               </div>
@@ -170,7 +188,9 @@ const PricesInsurance = () => {
 
               <div className="space-y-6 text-gray-700">
                 <div>
-                  <h4 className="font-bold text-lg mb-2">Coverage Information</h4>
+                  <h4 className="font-bold text-lg mb-2">
+                    Coverage Information
+                  </h4>
                   <p>{siteContent.insurance.note}</p>
                 </div>
 
@@ -178,32 +198,40 @@ const PricesInsurance = () => {
                   <h4 className="font-bold text-lg mb-2">How It Works</h4>
                   <ol className="space-y-3 list-decimal list-inside">
                     <li>
-                      Check your policy details or contact your insurer to confirm physiotherapy
-                      coverage
+                      Check your policy details or contact your insurer to
+                      confirm physiotherapy coverage
                     </li>
                     <li>
-                      Obtain any necessary pre-authorisation or referral if required by your policy
+                      Obtain any necessary pre-authorisation or referral if
+                      required by your policy
                     </li>
                     <li>
-                      Book your appointment with us and provide your insurance details
+                      Book your appointment with us and provide your insurance
+                      details
                     </li>
                     <li>
-                      We can submit claims directly to many insurers or provide receipts
-                      for reimbursement
+                      We can submit claims directly to many insurers or provide
+                      receipts for reimbursement
                     </li>
                   </ol>
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-lg mb-2">What You&apos;ll Need</h4>
+                  <h4 className="font-bold text-lg mb-2">
+                    What You&apos;ll Need
+                  </h4>
                   <ul className="space-y-2">
                     <li className="flex items-start">
                       <span className="text-teal-600 mr-2">•</span>
-                      <span>Your insurance policy number and membership details</span>
+                      <span>
+                        Your insurance policy number and membership details
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-teal-600 mr-2">•</span>
-                      <span>Pre-authorisation code (if required by your insurer)</span>
+                      <span>
+                        Pre-authorisation code (if required by your insurer)
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-teal-600 mr-2">•</span>
@@ -214,8 +242,9 @@ const PricesInsurance = () => {
 
                 <div className="bg-teal-50 border-l-4 border-teal-600 p-4">
                   <p>
-                    <strong>Note:</strong> If you&apos;re unsure about your coverage, we&apos;re
-                    happy to help. Contact us and we can check with your insurer on your behalf.
+                    <strong>Note:</strong> If you&apos;re unsure about your
+                    coverage, we&apos;re happy to help. Contact us and we can
+                    check with your insurer on your behalf.
                   </p>
                 </div>
               </div>
@@ -235,7 +264,9 @@ const PricesInsurance = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-xl shadow-lg p-6 text-center">
                 <div className="text-4xl mb-4">💳</div>
-                <h3 className="font-bold text-lg mb-2 text-gray-900">Card Payments</h3>
+                <h3 className="font-bold text-lg mb-2 text-gray-900">
+                  Card Payments
+                </h3>
                 <p className="text-gray-600">
                   All major credit and debit cards accepted
                 </p>
@@ -249,7 +280,9 @@ const PricesInsurance = () => {
 
               <div className="bg-white rounded-xl shadow-lg p-6 text-center">
                 <div className="text-4xl mb-4">🏥</div>
-                <h3 className="font-bold text-lg mb-2 text-gray-900">Insurance</h3>
+                <h3 className="font-bold text-lg mb-2 text-gray-900">
+                  Insurance
+                </h3>
                 <p className="text-gray-600">
                   Direct billing available for many insurers
                 </p>
@@ -261,9 +294,9 @@ const PricesInsurance = () => {
                 Cancellation Policy
               </h3>
               <p className="text-gray-700 text-center">
-                We require at least 24 hours&apos; notice for cancellations or rescheduling.
-                Appointments cancelled with less than 24 hours&apos; notice may be subject
-                to the full appointment fee.
+                We require at least 24 hours&apos; notice for cancellations or
+                rescheduling. Appointments cancelled with less than 24
+                hours&apos; notice may be subject to the full appointment fee.
               </p>
             </div>
           </div>
@@ -271,36 +304,37 @@ const PricesInsurance = () => {
       </section>
 
       {/* CTA */}
-    <section className="section bg-gradient-to-r from-teal-600 to-teal-700 text-white">
-  <div className="container text-center">
-    <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-      Ready to Start Your Recovery Journey?
-    </h2>
-    <p className="text-xl mb-8 text-teal-100">
-      Book your appointment today and take the first step towards better health
-    </p>
+      <section className="section bg-gradient-to-r from-teal-600 to-teal-700 text-white">
+        <div className="container text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            Ready to Start Your Recovery Journey?
+          </h2>
+          <p className="text-xl mb-8 text-teal-100">
+            Book your appointment today and take the first step towards better
+            health
+          </p>
 
-    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-      {/* Goes directly to the booking form on Contact page */}
-      <a
-  href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="btn bg-white text-teal-700 hover:bg-gray-100 text-lg px-8"
->
-  Book Now
-</a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* Goes directly to the booking form on Contact page */}
+            <a
+              href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn bg-white text-teal-700 hover:bg-gray-100 text-lg px-8"
+            >
+              Book Now
+            </a>
 
-      {/* Goes to Contact page (top) */}
-      <Link
-        to="/contact"
-        className="btn bg-teal-700 hover:bg-teal-800 text-lg px-8"
-      >
-        Contact Us
-      </Link>
-    </div>
-  </div>
-</section>
+            {/* Goes to Contact page (top) */}
+            <Link
+              to="/contact"
+              className="btn bg-teal-700 hover:bg-teal-800 text-lg px-8"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
