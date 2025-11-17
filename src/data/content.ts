@@ -2,7 +2,7 @@ export const siteContent = {
   company: {
     name: 'BodyFirst',
     tagline: 'Your Health, Our Priority',
-    email: 'info@bodyfirst.clinic',
+    email: 'info@bodyfirst.uk',
     phone: '+442038181238',
     whatsapp: '+442038181238',
     address: {

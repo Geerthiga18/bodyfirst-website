@@ -9,6 +9,7 @@ export interface Service {
   name: string;
   shortDescription: string;
   heroDescription: string;
+  heroImage?: string;
   sections: ServiceSection[];
 }
 
@@ -18,6 +19,7 @@ export const servicesData: Service[] = [
     name: 'Physiotherapy',
     shortDescription: 'Evidence-based treatment to restore movement and function after injury or chronic pain.',
     heroDescription: 'Our physiotherapy services combine manual therapy, exercise prescription, and patient education to help you recover faster and prevent future injuries.',
+    heroImage: "/images/services/physiotherapy-hero.jpg",
     sections: [
       {
         title: 'What is Physiotherapy?',
@@ -72,6 +74,7 @@ export const servicesData: Service[] = [
     name: 'Sports Massage',
     shortDescription: 'Deep tissue massage techniques to enhance performance, aid recovery, and prevent injuries.',
     heroDescription: 'Our sports massage therapy helps athletes and active individuals maintain peak performance, recover faster, and reduce the risk of injury through targeted soft tissue work.',
+    heroImage: "/images/services/physiotherapy-hero.jpg",
     sections: [
       {
         title: 'What is Sports Massage?',
@@ -127,6 +130,7 @@ export const servicesData: Service[] = [
     name: 'Dry Needling',
     shortDescription: 'Targeted needle therapy to release muscle trigger points and reduce pain effectively.',
     heroDescription: 'Dry needling uses fine needles to target myofascial trigger points, providing rapid relief from muscle pain, tension, and restricted movement.',
+    heroImage: "/images/services/physiotherapy-hero.jpg",
     sections: [
       {
         title: 'What is Dry Needling?',
@@ -183,7 +187,8 @@ export const servicesData: Service[] = [
     name: 'Foot Scan and Gait Analysis',
     shortDescription: 'Advanced biomechanical assessment to identify movement issues and optimize foot function.',
     heroDescription: 'Our comprehensive foot scanning and gait analysis technology provides detailed insights into your walking pattern, pressure distribution, and biomechanics to address pain and improve performance.',
-    sections: [
+    heroImage: "/images/services/physiotherapy-hero.jpg",
+     sections: [
       {
         title: 'What is Foot Scan and Gait Analysis?',
         body: 'Using advanced pressure mapping technology and video analysis, we assess how your feet function during standing and walking. This computerized evaluation reveals pressure distribution, foot alignment, and movement patterns that may contribute to pain or injury. The data helps us create targeted treatment plans and orthotic prescriptions.',
@@ -240,6 +245,7 @@ export const servicesData: Service[] = [
     name: 'Ultrasound Therapy',
     shortDescription: 'Therapeutic ultrasound waves to accelerate healing and reduce inflammation in deep tissues.',
     heroDescription: 'Medical-grade ultrasound therapy uses sound waves to promote tissue repair, reduce inflammation, and provide pain relief for various musculoskeletal conditions.',
+    heroImage: "/images/services/physiotherapy-hero.jpg",
     sections: [
       {
         title: 'What is Ultrasound Therapy?',
@@ -296,6 +302,7 @@ export const servicesData: Service[] = [
     name: 'Shockwave Therapy',
     shortDescription: 'High-energy acoustic waves to treat chronic pain and stimulate natural healing processes.',
     heroDescription: 'Extracorporeal shockwave therapy delivers powerful acoustic pulses to trigger the body\'s natural repair mechanisms, providing effective treatment for stubborn tendon and soft tissue conditions.',
+    heroImage: "/images/services/physiotherapy-hero.jpg",
     sections: [
       {
         title: 'What is Shockwave Therapy?',
@@ -352,6 +359,7 @@ export const servicesData: Service[] = [
     name: 'Cupping Therapy',
     shortDescription: 'Traditional therapy using suction cups to improve circulation and release muscle tension.',
     heroDescription: 'Cupping therapy creates localized suction to increase blood flow, release fascial restrictions, and promote healing in muscles and connective tissues.',
+    heroImage: "/images/services/physiotherapy-hero.jpg",
     sections: [
       {
         title: 'What is Cupping Therapy?',
@@ -408,6 +416,7 @@ export const servicesData: Service[] = [
     name: 'Lymphatic Drainage',
     shortDescription: 'Specialized massage technique to reduce swelling and support immune system function.',
     heroDescription: 'Manual lymphatic drainage uses gentle, rhythmic movements to stimulate lymph flow, reduce edema, and support your body\'s natural detoxification processes.',
+    heroImage: "/images/services/physiotherapy-hero.jpg",
     sections: [
       {
         title: 'What is Lymphatic Drainage?',
@@ -465,6 +474,7 @@ export const servicesData: Service[] = [
     name: 'Compression Therapy',
     shortDescription: 'Advanced pneumatic compression to enhance recovery and reduce muscle soreness.',
     heroDescription: 'Intermittent pneumatic compression therapy uses controlled pressure to improve circulation, accelerate recovery, and reduce swelling in the limbs.',
+    heroImage: "/images/services/physiotherapy-hero.jpg",
     sections: [
       {
         title: 'What is Compression Therapy?',
@@ -522,6 +532,7 @@ export const servicesData: Service[] = [
     name: 'Cryotherapy',
     shortDescription: 'Targeted cold therapy to reduce pain, inflammation, and accelerate healing.',
     heroDescription: 'Localized cryotherapy uses controlled cold application to manage pain, reduce inflammation, and support tissue recovery following injury or intense activity.',
+    heroImage: "/images/services/physiotherapy-hero.jpg",
     sections: [
       {
         title: 'What is Cryotherapy?',
