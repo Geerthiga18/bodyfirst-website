@@ -82,20 +82,50 @@ const ConditionPage = () => {
 
           {/* Main Content */}
           <main className="lg:col-span-3">
-            {/* Header */}
-            <div className="mb-8">
-              <div className="flex items-center gap-4 mb-4">
-                <span className="text-6xl">{category.icon}</span>
-                <div>
-                  <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-                    {category.title} Pain
-                  </h1>
+            {/* Header / Hero */}
+            {slug === 'head-jaw-pain' ? (
+              <div className="mb-8 relative overflow-hidden rounded-2xl">
+                {/* Background Image */}
+                <div className="absolute inset-0 -z-10">
+                  <img
+                    src="/images/Condition We Treat/head_jaw.png"
+                    alt="Head & Jaw"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Overlay */}
+                <div className="absolute inset-0 -z-0 bg-black/60" />
+
+                {/* Hero Content */}
+                <div className="relative z-10 px-6 py-10 md:py-14 lg:py-16">
+                  <div className="flex items-center gap-4 mb-4">
+                    <span className="text-6xl text-white">{category.icon}</span>
+                    <div>
+                      <h1 className="text-4xl md:text-5xl font-bold text-white">
+                        {category.title}
+                      </h1>
+                    </div>
+                  </div>
+                  <p className="text-lg md:text-xl text-gray-100 leading-relaxed max-w-3xl">
+                    {category.detailContent.overview}
+                  </p>
                 </div>
               </div>
-              <p className="text-xl text-gray-600 leading-relaxed">
-                {category.shortDescription}
-              </p>
-            </div>
+            ) : (
+              <div className="mb-8">
+                <div className="flex items-center gap-4 mb-4">
+                  <span className="text-6xl">{category.icon}</span>
+                  <div>
+                    <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+                      {category.title} Pain
+                    </h1>
+                  </div>
+                </div>
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  {category.shortDescription}
+                </p>
+              </div>
+            )}
 
             {/* Overview */}
             <section className="mb-12">

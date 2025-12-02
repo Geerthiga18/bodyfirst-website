@@ -16,40 +16,131 @@ const WhatWeTreatDetail = () => {
   return (
     <div className="pt-20 min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-teal-600 to-teal-700 text-white">
-        <div className="container py-10 lg:py-14">
-          <nav className="mb-4" aria-label="Breadcrumb">
-            <Link
-              to="/what-we-treat"
-              className="inline-flex items-center text-teal-100 hover:text-white transition-colors"
-            >
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-              Back to all conditions
-            </Link>
-          </nav>
-
-          <div className="flex items-center gap-3 mb-3">
-            <span className="text-4xl">{category.icon}</span>
-            <h1 className="text-3xl lg:text-4xl font-bold">{category.title}</h1>
+      {slug === "head-jaw-pain" ? (
+        <section className="relative text-white overflow-hidden">
+          {/* Background image */}
+          <div className="absolute inset-0 -z-10">
+            <img
+              src="/images/Condition We Treat/head_jaw.png"
+              alt="Head & Jaw"
+              className="w-full h-full object-cover"
+            />
           </div>
+          {/* Overlay */}
+          <div className="absolute inset-0 -z-0 bg-black/60" />
 
-          <p className="text-lg lg:text-xl text-teal-100 max-w-3xl">
-            {detailContent.overview}
-          </p>
-        </div>
-      </section>
+          <div className="container py-10 lg:py-14 relative z-10">
+            <nav className="mb-4" aria-label="Breadcrumb">
+              <Link
+                to="/what-we-treat"
+                className="inline-flex items-center text-teal-100 hover:text-white transition-colors"
+              >
+                <svg
+                  className="w-5 h-5 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+                Back to all conditions
+              </Link>
+            </nav>
+
+            <div className="mb-3">
+              <h1 className="text-3xl lg:text-4xl font-bold">{category.title}</h1>
+            </div>
+
+            <p className="text-lg lg:text-xl text-gray-100 max-w-3xl">
+              {detailContent.overview}
+            </p>
+          </div>
+        </section>
+      ) : slug === "sports-injuries" ? (
+        <section className="relative text-white overflow-hidden">
+          {/* Background image */}
+          <div className="absolute inset-0 -z-10">
+            <img
+              src="/images/Condition We Treat/sports_injuries.png"
+              alt="Sports Injuries"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          {/* Overlay */}
+          <div className="absolute inset-0 -z-0 bg-black/60" />
+
+          <div className="container py-10 lg:py-14 relative z-10">
+            <nav className="mb-4" aria-label="Breadcrumb">
+              <Link
+                to="/what-we-treat"
+                className="inline-flex items-center text-teal-100 hover:text-white transition-colors"
+              >
+                <svg
+                  className="w-5 h-5 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+                Back to all conditions
+              </Link>
+            </nav>
+
+            <div className="mb-3">
+              <h1 className="text-3xl lg:text-4xl font-bold">{category.title}</h1>
+            </div>
+
+            <p className="text-lg lg:text-xl text-gray-100 max-w-3xl">
+              {detailContent.overview}
+            </p>
+          </div>
+        </section>
+      ) : (
+        <section className="bg-gradient-to-br from-teal-600 to-teal-700 text-white">
+          <div className="container py-10 lg:py-14">
+            <nav className="mb-4" aria-label="Breadcrumb">
+              <Link
+                to="/what-we-treat"
+                className="inline-flex items-center text-teal-100 hover:text-white transition-colors"
+              >
+                <svg
+                  className="w-5 h-5 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+                Back to all conditions
+              </Link>
+            </nav>
+
+            <div className="mb-3">
+              <h1 className="text-3xl lg:text-4xl font-bold">{category.title}</h1>
+            </div>
+
+            <p className="text-lg lg:text-xl text-teal-100 max-w-3xl">
+              {detailContent.overview}
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* Sections */}
       <main className="container py-10 lg:py-14 space-y-8">

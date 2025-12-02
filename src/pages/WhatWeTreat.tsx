@@ -28,6 +28,7 @@ const WhatWeTreat = () => {
               <Card
                 key={category.slug}
                 title={category.title}
+                titleClassName="text-dark-gray"
                 className={
                   category.slug === 'head-jaw-pain' || category.slug === 'neck-pain' || category.slug === 'shoulder-pain' || category.slug === 'back-spine-pain' || category.slug === 'elbow-pain' || category.slug === 'hand-wrist-pain' || category.slug === 'knee-leg-pain' || category.slug === 'hip-groin-pain'  || category.slug === 'foot-ankle-pain' || category.slug === 'sports-injuries' || category.slug === 'post-surgery-rehab'
                     ? 'relative overflow-hidden bg-cover bg-center'
