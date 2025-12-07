@@ -8,15 +8,25 @@ const WhatWeTreat = () => {
   return (
     <div className="pt-20">
       {/* Header */}
-      <section className="bg-gradient-to-br from-teal-50 to-teal-100 py-16 lg:py-24">
-        <div className="container text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Conditions We Treat
-          </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Expert physiotherapy treatment for a wide range of musculoskeletal conditions,
-            sports injuries, and chronic pain.
-          </p>
+      <section className="relative overflow-hidden bg-teal-900 py-16 lg:py-24">
+        <div className="absolute inset-0">
+          <img
+            src="/images/Condition We Treat/whatwetreat.png"
+            alt="People receiving physiotherapy treatment"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-teal-900/80 via-teal-900/70 to-transparent" />
+        </div>
+        <div className="container relative">
+          <div className="max-w-3xl text-white">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+              Conditions We Treat
+            </h1>
+            <p className="text-xl text-teal-50">
+              Expert physiotherapy treatment for a wide range of musculoskeletal conditions,
+              sports injuries, and chronic pain.
+            </p>
+          </div>
         </div>
       </section>
 

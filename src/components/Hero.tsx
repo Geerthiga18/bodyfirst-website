@@ -27,7 +27,7 @@ const Hero = ({
   return (
     <section className="pt-1 pb-10">
       {/* Full-width hero wrapper */}
-      <div className="relative w-full overflow-hidden min-h-[80vh] flex items-center">
+      <div className="relative w-full overflow-hidden min-h-[calc(100vh-5rem)] flex items-center">
         {/* Background media */}
         <div className="absolute inset-0 -z-20">
           {backgroundVideo ? (

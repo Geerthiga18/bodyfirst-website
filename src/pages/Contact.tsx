@@ -28,7 +28,7 @@ const Contact = () => {
         {/* Background Image */}
         <div className="absolute inset-0 -z-20">
           <img
-            src="/images/Contact/contact_hero.jpg"
+            src="/images/Contact/contact_hero.png"
             alt="BodyFirst Contact"
             className="w-full h-full object-cover"
           />
