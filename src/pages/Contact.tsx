@@ -24,12 +24,23 @@ const Contact = () => {
   return (
     <div className="pt-20">
       {/* Header */}
-      <section className="bg-gradient-to-br from-teal-50 to-teal-100 py-16 lg:py-24">
-        <div className="container text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+      <section className="relative py-16 lg:py-24 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 -z-20">
+          <img
+            src="/images/Contact/contact_hero.jpg"
+            alt="BodyFirst Contact"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        {/* Overlay */}
+        <div className="absolute inset-0 -z-10 bg-black/50" />
+        {/* Content */}
+        <div className="container text-center relative z-0">
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             Get in Touch
           </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Book your appointment or contact us for any questions about our services
           </p>
         </div>

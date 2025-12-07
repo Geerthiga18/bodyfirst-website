@@ -27,52 +27,213 @@ const WhatWeTreat = () => {
             {treatmentCategories.map((category) => (
               <Card
                 key={category.slug}
-                icon={category.icon}
                 title={category.title}
+                titleClassName="text-dark-gray"
+                className={
+                  category.slug === 'head-jaw-pain' || category.slug === 'neck-pain' || category.slug === 'shoulder-pain' || category.slug === 'back-spine-pain' || category.slug === 'elbow-pain' || category.slug === 'hand-wrist-pain' || category.slug === 'knee-leg-pain' || category.slug === 'hip-groin-pain'  || category.slug === 'foot-ankle-pain' || category.slug === 'sports-injuries' || category.slug === 'post-surgery-rehab'
+                    ? 'relative overflow-hidden bg-cover bg-center'
+                    : ''
+                }
               >
-                {/* Short description */}
-                <p className="text-gray-600 mb-3 text-sm">
-                  {category.shortDescription}
-                </p>
+                {category.slug === 'head-jaw-pain' && (
+                  <>
+                    {/* Background Image */}
+                    <div className="absolute inset-0 -z-10">
+                      <img
+                        src="/images/Condition We Treat/head_jaw.png"
+                        alt="Head & Jaw"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Overlay for text readability */}
+                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  </>
+                )}
+                {category.slug === 'neck-pain' && (
+                  <>
+                    {/* Background Image */}
+                    <div className="absolute inset-0 -z-10">
+                      <img
+                        src="/images/Condition We Treat/neck.png"
+                        alt="Neck"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Overlay for text readability */}
+                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  </>
+                )}
+                {category.slug === 'shoulder-pain' && (
+                  <>
+                    {/* Background Image */}
+                    <div className="absolute inset-0 -z-10">
+                      <img
+                        src="/images/Condition We Treat/shoulder.png"
+                        alt="Shoulder"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Overlay for text readability */}
+                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  </>
+                )}
+                {category.slug === 'elbow-pain' && (
+                  <>
+                    {/* Background Image */}
+                    <div className="absolute inset-0 -z-10">
+                      <img
+                        src="/images/Condition We Treat/elbow.png"
+                        alt="Elbow"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Overlay for text readability */}
+                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  </>
+                )}  
+                {category.slug === 'back-spine-pain' && (
+                  <>
+                    {/* Background Image */}
+                    <div className="absolute inset-0 -z-10">
+                      <img
+                        src="/images/Condition We Treat/back_spine.png"
+                        alt="Back & Spine"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Overlay for text readability */}
+                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  </>
+                )}  
+                {category.slug === 'hip-groin-pain' && (
+                  <>
+                    {/* Background Image */}
+                    <div className="absolute inset-0 -z-10">
+                      <img
+                        src="/images/Condition We Treat/hip_groin.png"
+                        alt="Hip & Groin"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Overlay for text readability */}
+                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  </>
+                )}
+                {category.slug === 'foot-ankle-pain' && (
+                  <>
+                    {/* Background Image */}
+                    <div className="absolute inset-0 -z-10">
+                      <img
+                        src="/images/Condition We Treat/foot_ankle.png"
+                        alt="Foot & Ankle"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Overlay for text readability */}
+                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  </>
+                )}  
+                {category.slug === 'hand-wrist-pain' && (
+                  <>
+                    {/* Background Image */}
+                    <div className="absolute inset-0 -z-10">
+                      <img
+                        src="/images/Condition We Treat/hand_wrist.png"
+                        alt="Hand Wrist"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Overlay for text readability */}
+                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  </>
+                )}
+                {category.slug === 'knee-pain' && (
+                  <>
+                    {/* Background Image */}
+                    <div className="absolute inset-0 -z-10">
+                      <img
+                        src="/images/Condition We Treat/knee.png"
+                        alt="Knee"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Overlay for text readability */}
+                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  </>
+                )}  
+                {category.slug === 'sports-injuries' && (
+                  <>
+                    {/* Background Image */}
+                    <div className="absolute inset-0 -z-10">
+                      <img
+                        src="/images/Condition We Treat/sports_injuries.png"
+                        alt="Sports Injuries"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Overlay for text readability */}
+                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  </>
+                )}  
+                {category.slug === 'post-surgery-rehab' && (
+                  <>
+                    {/* Background Image */}
+                    <div className="absolute inset-0 -z-10">
+                      <img
+                        src="/images/Condition We Treat/post_surgery.png"
+                        alt="Post Surgery"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Overlay for text readability */}
+                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  </>
+                )}
+                <div className="relative z-10">
+                  {/* Short description */}
+                  <p className="text-gray-600 mb-3 text-sm">
+                    {category.shortDescription}
+                  </p>
 
-                {/* Show some conditions */}
-                <ul className="space-y-1 text-sm">
-                  {category.conditions.slice(0, 6).map((condition, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="text-teal-600 mr-2 mt-[2px]">•</span>
-                      <span className="text-gray-700">
-                        {condition.name}
-                      </span>
-                    </li>
-                  ))}
+                  {/* Show some conditions */}
+                  <ul className="space-y-1 text-sm">
+                    {category.conditions.slice(0, 6).map((condition, index) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-teal-600 mr-2 mt-[2px]">•</span>
+                        <span className="text-gray-700">
+                          {condition.name}
+                        </span>
+                      </li>
+                    ))}
 
-                  {category.conditions.length > 6 && (
-                    <li className="text-xs text-gray-500 italic mt-1">
-                      + {category.conditions.length - 6} more conditions
-                    </li>
-                  )}
-                </ul>
+                    {category.conditions.length > 6 && (
+                      <li className="text-xs text-gray-500 italic mt-1">
+                        + {category.conditions.length - 6} more conditions
+                      </li>
+                    )}
+                  </ul>
 
-                {/* Learn more link → slug page */}
-                <Link
-                  to={`/what-we-treat/${category.slug}`}
-                  className="mt-4 inline-flex items-center text-teal-600 font-semibold hover:text-teal-700 hover:underline"
-                >
-                  Learn more
-                  <svg
-                    className="w-4 h-4 ml-1"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+                  {/* Learn more link → slug page */}
+                  <Link
+                    to={`/what-we-treat/${category.slug}`}
+                    className="mt-4 inline-flex items-center text-teal-600 font-semibold hover:text-teal-700 hover:underline"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </Link>
+                    Learn more
+                    <svg
+                      className="w-4 h-4 ml-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </Link>
+                </div>
               </Card>
             ))}
           </div>
