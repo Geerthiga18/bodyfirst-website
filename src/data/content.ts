@@ -186,36 +186,50 @@ insurance: {
 },
 
 
-  team: [
-    {
-      name: 'Dr. Sarah Johnson',
-      role: 'Lead Physiotherapist',
-      qualifications: 'BSc (Hons) Physiotherapy, MSc Sports Medicine',
-      description: 'With over 10 years of experience, Sarah specialises in sports injuries and musculoskeletal rehabilitation. She has worked with professional athletes and everyday patients alike.',
-      image: '/images/team/sarah.jpg'
-    },
-    {
-      name: 'Michael Chen',
-      role: 'Senior Physiotherapist',
-      qualifications: 'BSc (Hons) Physiotherapy, PG Cert Dry Needling',
-      description: 'Michael brings expertise in manual therapy and dry needling. His approach combines hands-on treatment with evidence-based rehabilitation programmes.',
-      image: '/images/team/michael.jpg'
-    },
-    {
-      name: 'Emma Williams',
-      role: 'Sports Massage Therapist',
-      qualifications: 'ITEC Level 5, Sports & Remedial Massage',
-      description: 'Emma specialises in sports massage and soft tissue therapy. She works with athletes of all levels to optimise performance and recovery.',
-      image: '/images/team/emma.jpg'
-    },
-    {
-      name: 'Dr. James Taylor',
-      role: 'Physiotherapist',
-      qualifications: 'BSc (Hons) Physiotherapy, MSc Musculoskeletal Physiotherapy',
-      description: 'James has extensive experience in treating chronic pain conditions and post-operative rehabilitation. His patient-centred approach ensures optimal outcomes.',
-      image: '/images/team/james.jpg'
-    }
-  ],
+ team: [
+  {
+    name: "Praveena Thiruvasager",
+    role: "Senior MSK Physiotherapist • Sports Exercise Specialist • Shock Wave Therapist",
+    qualifications: "MSc Advanced Physiotherapy",
+    description:
+      "Senior physiotherapist with extensive experience in sports and musculoskeletal rehabilitation. Focuses on evidence-based care, complex rehab, and advanced modalities including shockwave therapy.",
+    image: "/images/Aboutus/praveena.png",
+  },
+  {
+    name: "Ivaylo Todorov",
+    role: "Senior Physiotherapist",
+    qualifications: "CSP • Chartered Senior Physiotherapist • Chiropractic Training",
+    description:
+      "Highly experienced physiotherapist with a strong NHS background. Interests include neuro rehabilitation, respiratory care, and spine-related management using a comprehensive patient-centred approach.",
+    image: "/images/Aboutus/IvayloTodorov.jpeg",
+  },
+  {
+    name: "Rachael Watkeys",
+    role: "Myotherapist • Sports Massage Therapist",
+    qualifications:
+      "BAppSci (Human Movement) • AdDip (Myotherapy) • PGCE • ITEC",
+    description:
+      "Experienced myotherapist with a strong foundation in human movement and soft tissue therapy. Specialises in myofascial release, trigger point techniques, dry needling, and sports-focused recovery.",
+    image: "/images/Aboutus/Rachael.jpeg",
+  },
+   {
+  name: "Alisha Abdala",
+  role: "Sports Massage Therapist",
+  qualifications: "BSc (Hons) Sport Health and Exercise",
+  description:
+    "Ex British gymnast and qualified sports massage therapist with a special interest in the thoracic and lumbar spine. Also certified in cupping therapy, lymphatic drainage, and sports injury rehabilitation. Focuses on releasing tension and correcting movement imbalances caused by repetitive activity or injury.",
+  image: "/images/Aboutus/neww.jpeg",
+},
+{
+  name: "Mihai Apostol",
+  role: "Sports Massage Therapist",
+  qualifications: "BSc (Hons) Osteopathic Medicine (to complete 2026)",
+  description:
+    "Experienced sports massage therapist with over a decade of work in improving human movement. Currently studying osteopathy at the British School of Osteopathic Medicine, with a strong interest in biomechanics, posture, and restoring optimal movement patterns. Supports patients with postural strain, asymmetrical patterns, and sedentary lifestyle-related issues.",
+  image: "/images/Aboutus/newone.jpeg",
+},
+
+],
 
   testimonials: [
     {

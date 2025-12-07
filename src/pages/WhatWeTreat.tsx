@@ -38,7 +38,7 @@ const WhatWeTreat = () => {
               <Card
                 key={category.slug}
                 title={category.title}
-                titleClassName="text-dark-gray"
+                titleClassName="text-dark-red"
                 className={
                   category.slug === 'head-jaw-pain' || category.slug === 'neck-pain' || category.slug === 'shoulder-pain' || category.slug === 'back-spine-pain' || category.slug === 'elbow-pain' || category.slug === 'hand-wrist-pain' || category.slug === 'knee-leg-pain' || category.slug === 'hip-groin-pain'  || category.slug === 'foot-ankle-pain' || category.slug === 'sports-injuries' || category.slug === 'post-surgery-rehab'
                     ? 'relative overflow-hidden bg-cover bg-center'
@@ -54,23 +54,25 @@ const WhatWeTreat = () => {
                         alt="Head & Jaw"
                         className="w-full h-full object-cover"
                       />
+                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
                     {/* Overlay for text readability */}
-                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                   
                   </>
                 )}
                 {category.slug === 'neck-pain' && (
                   <>
                     {/* Background Image */}
-                    <div className="absolute inset-0 -z-10">
+                    <div className="absolute">
                       <img
                         src="/images/Condition We Treat/neck.png"
                         alt="Neck"
                         className="w-full h-full object-cover"
                       />
+                      <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
                     {/* Overlay for text readability */}
-                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                    
                   </>
                 )}
                 {category.slug === 'shoulder-pain' && (
@@ -81,10 +83,12 @@ const WhatWeTreat = () => {
                         src="/images/Condition We Treat/shoulder.png"
                         alt="Shoulder"
                         className="w-full h-full object-cover"
+                        
                       />
+                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
                     {/* Overlay for text readability */}
-                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                   
                   </>
                 )}
                 {category.slug === 'elbow-pain' && (
@@ -96,9 +100,10 @@ const WhatWeTreat = () => {
                         alt="Elbow"
                         className="w-full h-full object-cover"
                       />
+                      <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
                     {/* Overlay for text readability */}
-                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                    
                   </>
                 )}  
                 {category.slug === 'back-spine-pain' && (
@@ -110,9 +115,10 @@ const WhatWeTreat = () => {
                         alt="Back & Spine"
                         className="w-full h-full object-cover"
                       />
+                        <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
                     {/* Overlay for text readability */}
-                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  
                   </>
                 )}  
                 {category.slug === 'hip-groin-pain' && (
@@ -124,9 +130,10 @@ const WhatWeTreat = () => {
                         alt="Hip & Groin"
                         className="w-full h-full object-cover"
                       />
+                      <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
                     {/* Overlay for text readability */}
-                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                    
                   </>
                 )}
                 {category.slug === 'foot-ankle-pain' && (
@@ -138,9 +145,10 @@ const WhatWeTreat = () => {
                         alt="Foot & Ankle"
                         className="w-full h-full object-cover"
                       />
+                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
                     {/* Overlay for text readability */}
-                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                   
                   </>
                 )}  
                 {category.slug === 'hand-wrist-pain' && (
@@ -152,9 +160,10 @@ const WhatWeTreat = () => {
                         alt="Hand Wrist"
                         className="w-full h-full object-cover"
                       />
+                      <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
                     {/* Overlay for text readability */}
-                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                    
                   </>
                 )}
                 {category.slug === 'knee-pain' && (
@@ -166,9 +175,10 @@ const WhatWeTreat = () => {
                         alt="Knee"
                         className="w-full h-full object-cover"
                       />
+                        <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
                     {/* Overlay for text readability */}
-                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  
                   </>
                 )}  
                 {category.slug === 'sports-injuries' && (
@@ -180,9 +190,9 @@ const WhatWeTreat = () => {
                         alt="Sports Injuries"
                         className="w-full h-full object-cover"
                       />
+                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
-                    {/* Overlay for text readability */}
-                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                   
                   </>
                 )}  
                 {category.slug === 'post-surgery-rehab' && (
@@ -194,9 +204,10 @@ const WhatWeTreat = () => {
                         alt="Post Surgery"
                         className="w-full h-full object-cover"
                       />
+                        <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
                     {/* Overlay for text readability */}
-                    <div className="absolute inset-0 -z-0 bg-white/80" />
+                  
                   </>
                 )}
                 <div className="relative z-10">
@@ -210,7 +221,7 @@ const WhatWeTreat = () => {
                     {category.conditions.slice(0, 6).map((condition, index) => (
                       <li key={index} className="flex items-start">
                         <span className="text-teal-600 mr-2 mt-[2px]">•</span>
-                        <span className="text-gray-700">
+                        <span className="text-gray-900">
                           {condition.name}
                         </span>
                       </li>
