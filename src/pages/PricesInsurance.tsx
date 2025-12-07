@@ -3,18 +3,40 @@ import PriceTable from "../components/PriceTable";
 import { siteContent } from "../data/content";
 
 const PricesInsurance = () => {
+  // Change this path to your actual hero image
+  const pricesHeroImage = "/images/insurance/hero.png";
+
   return (
     <div className="pt-20">
-      {/* Header */}
-      <section className="bg-gradient-to-br from-teal-50 to-teal-100 py-16 lg:py-24">
-        <div className="container text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Prices & Insurance
-          </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Transparent pricing with no hidden fees. We accept all major health
-            insurance providers
-          </p>
+      {/* Header (Hero image like WhatWeTreat) */}
+      <section className="relative overflow-hidden bg-teal-900 py-16 lg:py-24">
+        {/* Background */}
+        <div className="absolute inset-0">
+          <img
+            src={pricesHeroImage}
+            alt="Prices and insurance at BodyFirst"
+            className="w-full h-full object-cover"
+            loading="lazy"
+            onError={(e) => {
+              // If image path is wrong, hide the image (fallback color remains)
+              (e.currentTarget as HTMLImageElement).style.display = "none";
+            }}
+          />
+          {/* Overlay gradient for readability (same vibe as WhatWeTreat) */}
+          <div className="absolute inset-0 bg-gradient-to-r from-teal-900/80 via-teal-900/70 to-transparent" />
+        </div>
+
+        {/* Content */}
+        <div className="container relative text-center">
+          <div className="max-w-3xl mx-auto text-white">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+              Prices & Insurance
+            </h1>
+            <p className="text-xl text-teal-50">
+              Transparent pricing with no hidden fees. We accept all major health
+              insurance providers
+            </p>
+          </div>
         </div>
       </section>
 
@@ -164,7 +186,7 @@ const PricesInsurance = () => {
 
             {/* Insurance Logos */}
             <div className="bg-teal-50 rounded-xl p-8 mb-8">
-              <div className="flex  items-center gap-8">
+              <div className="flex items-center gap-8">
                 {siteContent.insurance.accepted.map((insurer) => (
                   <div
                     key={insurer.name}
@@ -315,7 +337,6 @@ const PricesInsurance = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {/* Goes directly to the booking form on Contact page */}
             <a
               href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
               target="_blank"
@@ -325,7 +346,6 @@ const PricesInsurance = () => {
               Book Now
             </a>
 
-            {/* Goes to Contact page (top) */}
             <Link
               to="/contact"
               className="btn bg-teal-700 hover:bg-teal-800 text-lg px-8"
