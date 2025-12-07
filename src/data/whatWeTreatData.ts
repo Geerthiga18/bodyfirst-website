@@ -667,7 +667,7 @@ export const treatmentCategories: TreatmentCategory[] = [
     title: "Knee",
     shortDescription: "Specialized treatment for ACL injuries, meniscus tears, patellofemoral pain, and knee arthritis.",
     icon: "🦿",
-    heroImage: "/images/Condition We Treat/knee.jfif",
+    heroImage: "/images/Condition We Treat/knee.webp",
     heroAlt: "Knee",
     conditions: [
       { name: "ACL/MCL injuries" },

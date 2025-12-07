@@ -171,7 +171,7 @@ const WhatWeTreat = () => {
                     {/* Background Image */}
                     <div className="absolute inset-0 -z-10">
                       <img
-                        src="/images/Condition We Treat/knee.png"
+                        src="/images/Condition We Treat/knee.webp"
                         alt="Knee"
                         className="w-full h-full object-cover"
                       />
