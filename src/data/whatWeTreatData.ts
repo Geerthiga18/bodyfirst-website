@@ -19,6 +19,8 @@ export interface TreatmentCategory {
   shortDescription: string;
   icon: string; // emoji or could be replaced with icon component
   conditions: Condition[];
+  heroImage?: string;
+  heroAlt?: string;
   detailContent: {
     overview: string;
     sections: ContentSection[];
@@ -32,6 +34,8 @@ export const treatmentCategories: TreatmentCategory[] = [
     title: "Head & Jaw",
     shortDescription: "Specialized treatment for headaches, migraines, TMJ disorders, and facial pain.",
     icon: "🧠",
+     heroImage: "/images/Condition We Treat/head_jaw.jpg",
+    heroAlt: "Head & Jaw",
     conditions: [
       { name: "Tension headaches" },
       { name: "Migraines" },
@@ -119,6 +123,8 @@ export const treatmentCategories: TreatmentCategory[] = [
     title: "Neck",
     shortDescription: "Expert care for neck pain, stiffness, whiplash, and cervical spine conditions.",
     icon: "🦴",
+    heroImage: "/images/Condition We Treat/neck.png",
+    heroAlt: "Neck",
     conditions: [
       { name: "Chronic neck pain" },
       { name: "Whiplash injuries" },
@@ -207,6 +213,8 @@ export const treatmentCategories: TreatmentCategory[] = [
     title: "Shoulder",
     shortDescription: "Comprehensive treatment for rotator cuff injuries, frozen shoulder, and shoulder instability.",
     icon: "💪",
+    heroImage: "/images/Condition We Treat/shoulder.png",
+    heroAlt: "Shoulder",
     conditions: [
       { name: "Rotator cuff tears" },
       { name: "Frozen shoulder" },
@@ -295,6 +303,8 @@ export const treatmentCategories: TreatmentCategory[] = [
     title: "Back & Spine",
     shortDescription: "Effective treatment for lower back pain, sciatica, disc injuries, and spinal conditions.",
     icon: "🏥",
+    heroImage: "/images/Condition We Treat/back_spine.jpg",
+    heroAlt: "Back & Spine",
     conditions: [
       { name: "Lower back pain" },
       { name: "Sciatica" },
@@ -384,6 +394,8 @@ export const treatmentCategories: TreatmentCategory[] = [
     title: "Elbow",
     shortDescription: "Specialized care for tennis elbow, golfer's elbow, and other elbow conditions.",
     icon: "🎾",
+    heroImage: "/images/Condition We Treat/elbow.png",
+    heroAlt: "Elbow",
     conditions: [
       { name: "Tennis elbow (lateral epicondylitis)" },
       { name: "Golfer's elbow (medial epicondylitis)" },
@@ -473,6 +485,8 @@ export const treatmentCategories: TreatmentCategory[] = [
     title: "Hand & Wrist",
     shortDescription: "Expert treatment for carpal tunnel, wrist sprains, arthritis, and hand conditions.",
     icon: "✋",
+    heroImage: "/images/Condition We Treat/hand_wrist.png",
+    heroAlt: "Hand & Wrist",
     conditions: [
       { name: "Carpal tunnel syndrome" },
       { name: "Wrist sprains" },
@@ -562,6 +576,8 @@ export const treatmentCategories: TreatmentCategory[] = [
     title: "Hip & Groin",
     shortDescription: "Comprehensive care for hip pain, groin strains, bursitis, and hip arthritis.",
     icon: "🦵",
+     heroImage: "/images/Condition We Treat/hip.webp",
+    heroAlt: "Hip & Groin",
     conditions: [
       { name: "Hip arthritis" },
       { name: "Hip bursitis" },
@@ -651,6 +667,8 @@ export const treatmentCategories: TreatmentCategory[] = [
     title: "Knee",
     shortDescription: "Specialized treatment for ACL injuries, meniscus tears, patellofemoral pain, and knee arthritis.",
     icon: "🦿",
+    heroImage: "/images/Condition We Treat/knee.jfif",
+    heroAlt: "Knee",
     conditions: [
       { name: "ACL/MCL injuries" },
       { name: "Meniscus tears" },
@@ -740,6 +758,8 @@ export const treatmentCategories: TreatmentCategory[] = [
     title: "Foot & Ankle",
     shortDescription: "Expert care for ankle sprains, plantar fasciitis, Achilles tendinopathy, and foot pain.",
     icon: "👣",
+    heroImage: "/images/Condition We Treat/foot_ankle.jpg",
+    heroAlt: "Foot & Ankle",
     conditions: [
       { name: "Ankle sprains" },
       { name: "Plantar fasciitis" },
@@ -829,6 +849,8 @@ export const treatmentCategories: TreatmentCategory[] = [
     title: "Sports Injuries",
     shortDescription: "Specialized rehabilitation for athletic injuries and return-to-sport programs.",
     icon: "⚽",
+    heroImage: "/images/Condition We Treat/sports_injuries.jpg",
+    heroAlt: "Sports Injuries",
     conditions: [
       { name: "Muscle strains and tears" },
       { name: "Ligament sprains" },
@@ -918,6 +940,8 @@ export const treatmentCategories: TreatmentCategory[] = [
     title: "Post-Surgery Rehab",
     shortDescription: "Comprehensive rehabilitation following orthopedic surgery and joint replacement.",
     icon: "🏥",
+    heroImage: "/images/Condition We Treat/post_surgery.webp",
+    heroAlt: "Post Surgery",
     conditions: [
       { name: "ACL reconstruction rehab" },
       { name: "Hip replacement recovery" },

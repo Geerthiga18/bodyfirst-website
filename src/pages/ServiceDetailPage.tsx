@@ -1,3 +1,5 @@
+// src/pages/ServiceDetailPage.tsx
+
 import { useParams, Link, Navigate } from "react-router-dom";
 import { findServiceBySlug } from "../data/servicesData";
 
@@ -11,52 +13,60 @@ const ServiceDetailPage = () => {
 
   return (
     <div className="pt-20 min-h-screen bg-gray-50">
-{/* Hero Section */}
-<section className="relative text-white">
-  {/* Pure image background */}
-  {service.heroImage && (
-    <div className="absolute inset-0 z-0">
-      <img
-        src={service.heroImage}
-        alt={service.name}
-        className="w-full h-full object-cover"
-      />
-    </div>
-  )}
+      {/* Hero (same pattern as WhatWeTreatDetail) */}
+      <section className="relative text-white overflow-hidden min-h-[380px] sm:min-h-[420px] lg:min-h-[420px]">
+        {/* Background */}
+        {service.heroImage ? (
+          <>
+            <div className="absolute inset-0 z-0">
+              <img
+                src={service.heroImage}
+                alt={service.heroAlt ?? service.name}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* Overlay for readability */}
+            <div className="absolute inset-0 z-[1] bg-black/60" />
+          </>
+        ) : (
+          <div className="absolute inset-0 z-0 bg-gradient-to-br from-teal-600 to-teal-700" />
+        )}
 
-  {/* Content on top */}
-  <div className="relative z-10 container py-12 lg:py-16">
-    <nav className="mb-6" aria-label="Breadcrumb">
-      <Link
-        to="/services"
-        className="inline-flex items-center text-white/80 hover:text-white transition-colors px-2 py-1 rounded bg-black/10 hover:bg-black/20"
-      >
-        <svg
-          className="w-5 h-5 mr-2"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M15 19l-7-7 7-7"
-          />
-        </svg>
-        Back to all services
-      </Link>
-    </nav>
-  
-    <h1 className="text-4xl lg:text-5xl font-bold mb-4 drop-shadow-md">
-      {service.name}
-    </h1>
-    <p className="text-lg lg:text-xl max-w-3xl text-white drop-shadow-md">
-      {service.heroDescription}
-    </p>
-  </div>
-</section>
+        {/* Content */}
+        <div className="relative z-10 container py-12 lg:py-16">
+          <nav className="mb-6" aria-label="Breadcrumb">
+            <Link
+              to="/services"
+              className="inline-flex items-center text-teal-100 hover:text-white transition-colors"
+            >
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+              Back to all services
+            </Link>
+          </nav>
 
+          <h1 className="text-4xl lg:text-5xl font-bold mb-4">
+            {service.name}
+          </h1>
+
+          {service.heroDescription && (
+            <p className="text-lg lg:text-xl max-w-3xl text-gray-100">
+              {service.heroDescription}
+            </p>
+          )}
+        </div>
+      </section>
 
       {/* Main Content */}
       <article className="container py-12 lg:py-16">
@@ -144,6 +154,6 @@ const ServiceDetailPage = () => {
       </article>
     </div>
   );
-};  
+};
 
 export default ServiceDetailPage;
