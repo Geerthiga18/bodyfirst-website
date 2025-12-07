@@ -27,8 +27,8 @@ const About = () => {
 
         {/* Content */}
         <div className="container relative text-center">
-          <div className="max-w-3xl mx-auto text-white">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+          <div className="max-w-3xl mx-auto text-white ml-10">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 ">
               About BodyFirst
             </h1>
             <p className="text-xl text-teal-50">
