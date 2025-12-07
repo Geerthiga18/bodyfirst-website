@@ -63,7 +63,7 @@ const WhatWeTreat = () => {
                 {category.slug === 'neck-pain' && (
                   <>
                     {/* Background Image */}
-                    <div className="absolute">
+                    <div className="absolute inset-0 -z-10">
                       <img
                         src="/images/Condition We Treat/neck.png"
                         alt="Neck"
