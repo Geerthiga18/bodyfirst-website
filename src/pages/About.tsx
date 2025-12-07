@@ -73,21 +73,29 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {siteContent.team.map((member, index) => (
               <div
                 key={index}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className="aspect-square bg-gradient-to-br from-teal-50 to-teal-100 flex items-center justify-center">
-                  {/* Placeholder for team photo */}
-                  <div className="text-6xl">👤</div>
-                </div>
+                <div className="aspect-square bg-gradient-to-br from-teal-50 to-teal-100">
+  <img
+    src={member.image}
+    alt={member.name}
+    className="w-full h-full object-cover object-top"
+    loading="lazy"
+    onError={(e) => {
+      (e.currentTarget as HTMLImageElement).src = "/images/team/fallback.png";
+    }}
+  />
+</div>
+
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-teal-700 font-medium mb-2">{member.role}</p>
+                  <p className="text-teal-700 font-medium mb-2 line-clamp-2">{member.role}</p>
                   <p className="text-sm text-gray-600 mb-3">
                     {member.qualifications}
                   </p>
