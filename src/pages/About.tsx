@@ -39,7 +39,7 @@ const About = () => {
       </section>
 
       {/* Mission */}
-      <section className="section bg-white">
+      <section id="team" className="section bg-white">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
