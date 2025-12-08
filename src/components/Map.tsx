@@ -15,7 +15,7 @@ const Map = () => {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="BodyFirst Location Map"
+          title="Body First UK Location Map"
         />
       </div>
 

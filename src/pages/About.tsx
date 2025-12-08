@@ -13,7 +13,7 @@ const About = () => {
         <div className="absolute inset-0">
           <img
             src={aboutHeroImage}
-            alt="About BodyFirst"
+            alt="About Body First UK"
             className="w-full h-full object-cover"
             onError={(e) => {
               // Optional: fallback if image path is wrong
@@ -29,7 +29,7 @@ const About = () => {
         <div className="container relative text-center">
           <div className="max-w-3xl mx-auto text-white ml-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 ">
-              About BodyFirst
+              About Body First UK
             </h1>
             <p className="text-xl text-teal-50">
               Your trusted partner in health, recovery, and wellness

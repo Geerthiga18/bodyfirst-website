@@ -1,6 +1,6 @@
 export const siteContent = {
   company: {
-    name: 'BodyFirst',
+    name: 'Body First UK',
     tagline: 'Your Health, Our Priority',
     email: 'info@bodyfirst.uk',
     phone: '+442038181238',
@@ -26,7 +26,7 @@ export const siteContent = {
   hero: {
     title: 'Expert Physiotherapy & Wellness Care',
     subtitle: 'Professional treatment for your health and recovery in the heart of London',
-    description: 'At BodyFirst, we combine expert physiotherapy with cutting-edge wellness treatments to help you move better, feel stronger, and live pain-free.',
+    description: 'At Body First UK, we combine expert physiotherapy with cutting-edge wellness treatments to help you move better, feel stronger, and live pain-free.',
     ctaPrimary: 'Book Now',
     ctaSecondary: 'Contact Us'
   },
@@ -235,7 +235,7 @@ insurance: {
     {
       name: 'David M.',
       rating: 5,
-      text: 'After months of back pain, the team at BodyFirst finally helped me find relief. Their professional approach and expertise made all the difference.',
+      text: 'After months of back pain, the team at Body First UK finally helped me find relief. Their professional approach and expertise made all the difference.',
       service: 'Physiotherapy'
     },
     {
@@ -259,7 +259,7 @@ insurance: {
   ],
 
   about: {
-    mission: 'At BodyFirst, we believe that everyone deserves to move freely and live without pain. Our mission is to provide exceptional physiotherapy and wellness services that empower our patients to achieve their health and fitness goals.',
+    mission: 'At Body First UK, we believe that everyone deserves to move freely and live without pain. Our mission is to provide exceptional physiotherapy and wellness services that empower our patients to achieve their health and fitness goals.',
     philosophy: 'We take a holistic, evidence-based approach to treatment, combining the latest research with hands-on expertise. Every patient receives a comprehensive assessment and a personalised treatment plan tailored to their specific needs and goals.',
     values: [
       'Excellence in clinical practice',

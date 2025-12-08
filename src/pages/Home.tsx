@@ -176,7 +176,7 @@ const Home = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title text-gray-900">Why Choose BodyFirst?</h2>
+            <h2 className="section-title text-gray-900">Why Choose Body First UK?</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
