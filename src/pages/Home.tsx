@@ -134,6 +134,17 @@ const Home = () => {
                 <div className="text-sm text-gray-600">Based on 200+ reviews</div>
               </div>
             </div>
+
+            <div className="mt-6">
+              <a
+                href="https://www.google.com/maps/place/BODY+FIRST+UK+-+Physio+%26+Wellbeing+Clinic/@51.4256928,-0.3568561,17z/data=!4m8!3m7!1s0x48760b5ea482eda5:0xb1dababe47d75f95!8m2!3d51.4256928!4d-0.3568561!9m1!1b1!16s%2Fg%2F11dylwm6fj?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-lg bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 text-lg font-semibold transition"
+              >
+                Watch All Google Reviews
+              </a>
+            </div>
           </div>
         </div>
       </section>
