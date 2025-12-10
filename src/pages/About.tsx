@@ -5,9 +5,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 import {
   fadeUp,
-  fadeIn,
   scaleUp,
-  staggerContainer
+  staggerContainer,
 } from "../animations/motionVariants";
 
 const About = () => {
@@ -42,7 +41,7 @@ const About = () => {
           initial="hidden"
           animate="visible"
         >
-          <div className="max-w-3xl mx-auto text-white ml-10">
+          <div className="max-w-3xl mx-auto text-white">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
               About Body First UK
             </h1>
@@ -55,7 +54,7 @@ const About = () => {
 
       {/* MISSION */}
       <motion.section
-        id="team"
+        id="mission"
         className="section bg-white"
         variants={staggerContainer}
         initial="hidden"
@@ -73,10 +72,7 @@ const About = () => {
               </p>
             </div>
 
-            <motion.div
-              variants={scaleUp}
-              className="bg-teal-50 rounded-xl p-8"
-            >
+            <motion.div variants={scaleUp} className="bg-teal-50 rounded-xl p-8">
               <h3 className="text-2xl font-bold mb-4 text-center text-gray-900">
                 Our Philosophy
               </h3>
@@ -131,9 +127,7 @@ const About = () => {
       >
         <div className="container">
           <motion.div variants={fadeUp} className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900">
-              Meet Our Team
-            </h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">Meet Our Team</h2>
             <p className="text-lg text-gray-600">
               Experienced, qualified professionals dedicated to your recovery
             </p>
@@ -165,12 +159,8 @@ const About = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-teal-700 font-medium mb-2">
-                    {member.role}
-                  </p>
-                  <p className="text-sm text-gray-600 mb-3">
-                    {member.qualifications}
-                  </p>
+                  <p className="text-teal-700 font-medium mb-2">{member.role}</p>
+                  <p className="text-sm text-gray-600 mb-3">{member.qualifications}</p>
                   <p className="text-gray-700 text-sm">{member.description}</p>
                 </div>
               </motion.div>
