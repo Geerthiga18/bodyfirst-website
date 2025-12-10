@@ -1,6 +1,7 @@
 // src/pages/WhatWeTreatDetail.tsx
 
 import { useParams, Link, Navigate } from "react-router-dom";
+import { ScrollBackground } from "../components/ScrollBackground";
 import treatmentCategories from "../data/whatWeTreatData";
 
 const WhatWeTreatDetail = () => {
@@ -14,7 +15,8 @@ const WhatWeTreatDetail = () => {
   const { detailContent } = category;
 
   return (
-    <div className="pt-20 min-h-screen bg-gray-50">
+    <div className="pt-20 min-h-screen bg-gray-50 relative">
+      <ScrollBackground />
      {/* Hero (single dynamic hero for ALL slugs) */}
       <section className="relative text-white overflow-hidden min-h-[380px] sm:min-h-[420px] lg:min-h-[420px]">
         {/* Background */}

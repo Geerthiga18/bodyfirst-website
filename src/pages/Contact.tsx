@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import ContactForm from '../components/ContactForm';
 import Map from '../components/Map';
+import { ScrollBackground } from '../components/ScrollBackground';
 import { siteContent } from '../data/content';
 
 const Contact = () => {
@@ -22,7 +23,8 @@ const Contact = () => {
   }, [location]);
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 relative">
+      <ScrollBackground />
       {/* Header */}
       <section className="relative py-16 lg:py-24 overflow-hidden">
         {/* Background Image */}

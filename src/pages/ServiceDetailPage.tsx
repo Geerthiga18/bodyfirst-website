@@ -1,6 +1,7 @@
 // src/pages/ServiceDetailPage.tsx
 
 import { useParams, Link, Navigate } from "react-router-dom";
+import { ScrollBackground } from "../components/ScrollBackground";
 import { findServiceBySlug } from "../data/servicesData";
 
 const ServiceDetailPage = () => {
@@ -12,7 +13,8 @@ const ServiceDetailPage = () => {
   }
 
   return (
-    <div className="pt-20 min-h-screen bg-gray-50">
+    <div className="pt-20 min-h-screen bg-gray-50 relative">
+      <ScrollBackground />
       {/* Hero (same pattern as WhatWeTreatDetail) */}
       <section className="relative text-white overflow-hidden min-h-[380px] sm:min-h-[420px] lg:min-h-[420px]">
         {/* Background */}

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ScrollBackground } from "../components/ScrollBackground";
 import { siteContent } from "../data/content";
 
 const About = () => {
@@ -6,7 +7,8 @@ const About = () => {
   const aboutHeroImage = "/images/Aboutus/hero.png";
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 relative">
+      <ScrollBackground />
       {/* Header (Hero image like WhatWeTreat) */}
       <section className="relative overflow-hidden bg-teal-900 py-16 lg:py-24">
         {/* Background image layer */}

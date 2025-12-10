@@ -2,11 +2,13 @@
 
 import { Link } from 'react-router-dom';
 import Card from '../components/Card';
+import { ScrollBackground } from '../components/ScrollBackground';
 import treatmentCategories from '../data/whatWeTreatData';
 
 const WhatWeTreat = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-20 relative">
+      <ScrollBackground />
       {/* Header */}
       <section className="relative overflow-hidden bg-teal-900 py-16 lg:py-24">
         <div className="absolute inset-0">
