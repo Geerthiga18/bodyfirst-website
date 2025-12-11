@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Card from '../components/Card';
 import { ScrollBackground } from '../components/ScrollBackground';
 import AnimatedH2 from '../components/AnimatedH2';
+import AnimatedCard from '../components/AnimatedCard';
 
 import { siteContent } from '../data/content';
 
@@ -199,10 +200,7 @@ const Home = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {siteContent.team.map((member, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-              >
+              <AnimatedCard key={index} className="overflow-hidden">
                 <div className="aspect-square bg-gradient-to-br from-teal-50 to-teal-100">
                   <img
                     src={member.image}
@@ -228,7 +226,7 @@ const Home = () => {
                   </p>
                   <p className="text-gray-700 text-sm">{member.description}</p>
                 </div>
-              </div>
+              </AnimatedCard>
             ))}
           </div>
 

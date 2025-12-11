@@ -3,6 +3,7 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { ScrollBackground } from "../components/ScrollBackground";
 import AnimatedH2 from "../components/AnimatedH2";
+import AnimatedListItem from "../components/AnimatedListItem";
 import { findServiceBySlug } from "../data/servicesData";
 
 const ServiceDetailPage = () => {
@@ -91,12 +92,12 @@ const ServiceDetailPage = () => {
                 {section.bullets && section.bullets.length > 0 && (
                   <ul className="space-y-2 mt-4">
                     {section.bullets.map((bullet, i) => (
-                      <li key={i} className="flex items-start">
+                      <AnimatedListItem key={i} as="li">
                         <span className="w-5 h-5 mt-1 mr-3 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
                           <span className="w-2 h-2 rounded-full bg-teal-600" />
                         </span>
                         <span className="text-gray-700">{bullet}</span>
-                      </li>
+                      </AnimatedListItem>
                     ))}
                   </ul>
                 )}

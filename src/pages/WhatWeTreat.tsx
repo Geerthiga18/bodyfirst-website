@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Card from '../components/Card';
 import { ScrollBackground } from '../components/ScrollBackground';
 import AnimatedH2 from '../components/AnimatedH2';
+import AnimatedListItem from '../components/AnimatedListItem';
 import treatmentCategories from '../data/whatWeTreatData';
 
 const WhatWeTreat = () => {
@@ -222,12 +223,12 @@ const WhatWeTreat = () => {
                   {/* Show some conditions */}
                   <ul className="space-y-1 text-sm">
                     {category.conditions.slice(0, 6).map((condition, index) => (
-                      <li key={index} className="flex items-start">
+                      <AnimatedListItem key={index} as="li">
                         <span className="text-teal-600 mr-2 mt-[2px]">•</span>
                         <span className="text-gray-900">
                           {condition.name}
                         </span>
-                      </li>
+                      </AnimatedListItem>
                     ))}
 
                     {category.conditions.length > 6 && (
@@ -274,7 +275,7 @@ const WhatWeTreat = () => {
 
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-xl shadow-md">
-                <div className="flex items-start">
+                <AnimatedListItem>
                   <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
                     1
                   </div>
@@ -287,11 +288,11 @@ const WhatWeTreat = () => {
                       and movement patterns to identify the root cause of your problem.
                     </p>
                   </div>
-                </div>
+                </AnimatedListItem>
               </div>
 
               <div className="bg-white p-6 rounded-xl shadow-md">
-                <div className="flex items-start">
+                <AnimatedListItem>
                   <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
                     2
                   </div>
@@ -304,11 +305,11 @@ const WhatWeTreat = () => {
                       hands-on therapy, exercise rehabilitation, and education.
                     </p>
                   </div>
-                </div>
+                </AnimatedListItem>
               </div>
 
               <div className="bg-white p-6 rounded-xl shadow-md">
-                <div className="flex items-start">
+                <AnimatedListItem>
                   <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
                     3
                   </div>
@@ -321,11 +322,11 @@ const WhatWeTreat = () => {
                       and advanced modalities to accelerate your recovery.
                     </p>
                   </div>
-                </div>
+                </AnimatedListItem>
               </div>
 
               <div className="bg-white p-6 rounded-xl shadow-md">
-                <div className="flex items-start">
+                <AnimatedListItem>
                   <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
                     4
                   </div>
@@ -338,7 +339,7 @@ const WhatWeTreat = () => {
                       independently and prevent future injuries.
                     </p>
                   </div>
-                </div>
+                </AnimatedListItem>
               </div>
             </div>
 

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import AnimatedCard from './AnimatedCard';
 import type { FormEvent, ChangeEvent } from 'react';
 
 const ContactForm = () => {
@@ -23,7 +24,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-8">
+    <AnimatedCard className="p-8">
       <h3 className="text-2xl font-bold text-gray-900 mb-6">Ask an Expert</h3>
 
       {submitted && (
@@ -62,7 +63,7 @@ const ContactForm = () => {
 
         <p className="text-sm text-gray-600 text-center">We'll respond within 24 hours during business days</p>
       </form>
-    </div>
+    </AnimatedCard>
   );
 };
 

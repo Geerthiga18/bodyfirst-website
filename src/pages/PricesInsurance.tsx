@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import PriceTable from "../components/PriceTable";
+import AnimatedCard from "../components/AnimatedCard";
 import { ScrollBackground } from "../components/ScrollBackground";
 import AnimatedH2 from "../components/AnimatedH2";
+import AnimatedListItem from "../components/AnimatedListItem";
 import { siteContent } from "../data/content";
 
 const PricesInsurance = () => {
@@ -76,7 +78,7 @@ const PricesInsurance = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* 3-Session */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <AnimatedCard className="p-8 hover:shadow-xl transition-shadow">
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   3-Session Package
@@ -85,18 +87,18 @@ const PricesInsurance = () => {
                 <p className="text-gray-600 mt-2">Save £15</p>
               </div>
               <ul className="space-y-3 mb-6">
-                <li className="flex items-start">
+                <AnimatedListItem as="li">
                   <span className="text-teal-600 mr-2">✓</span>
                   <span className="text-gray-700">3x 60-minute sessions</span>
-                </li>
-                <li className="flex items-start">
+                </AnimatedListItem>
+                <AnimatedListItem as="li">
                   <span className="text-teal-600 mr-2">✓</span>
                   <span className="text-gray-700">Valid for 3 months</span>
-                </li>
-                <li className="flex items-start">
+                </AnimatedListItem>
+                <AnimatedListItem as="li">
                   <span className="text-teal-600 mr-2">✓</span>
                   <span className="text-gray-700">Flexible scheduling</span>
-                </li>
+                </AnimatedListItem>
               </ul>
               <Link
                 to="/contact#book"
@@ -104,10 +106,10 @@ const PricesInsurance = () => {
               >
                 Book Package
               </Link>
-            </div>
+            </AnimatedCard>
 
             {/* 6-Session (Most Popular) */}
-            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-teal-600 hover:shadow-xl transition-shadow relative">
+            <AnimatedCard className="p-8 border-2 border-teal-600 relative">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-teal-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
                 Most Popular
               </div>
@@ -119,18 +121,18 @@ const PricesInsurance = () => {
                 <p className="text-gray-600 mt-2">Save £45</p>
               </div>
               <ul className="space-y-3 mb-6">
-                <li className="flex items-start">
+                <AnimatedListItem as="li">
                   <span className="text-teal-600 mr-2">✓</span>
                   <span className="text-gray-700">6x 60-minute sessions</span>
-                </li>
-                <li className="flex items-start">
+                </AnimatedListItem>
+                <AnimatedListItem as="li">
                   <span className="text-teal-600 mr-2">✓</span>
                   <span className="text-gray-700">Valid for 6 months</span>
-                </li>
-                <li className="flex items-start">
+                </AnimatedListItem>
+                <AnimatedListItem as="li">
                   <span className="text-teal-600 mr-2">✓</span>
                   <span className="text-gray-700">Priority booking</span>
-                </li>
+                </AnimatedListItem>
               </ul>
               <Link
                 to="/contact#book"
@@ -138,10 +140,10 @@ const PricesInsurance = () => {
               >
                 Book Package
               </Link>
-            </div>
+            </AnimatedCard>
 
             {/* 10-Session */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <AnimatedCard className="p-8 hover:shadow-xl transition-shadow">
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   10-Session Package
@@ -150,18 +152,18 @@ const PricesInsurance = () => {
                 <p className="text-gray-600 mt-2">Save £100</p>
               </div>
               <ul className="space-y-3 mb-6">
-                <li className="flex items-start">
+                <AnimatedListItem as="li">
                   <span className="text-teal-600 mr-2">✓</span>
                   <span className="text-gray-700">10x 60-minute sessions</span>
-                </li>
-                <li className="flex items-start">
+                </AnimatedListItem>
+                <AnimatedListItem as="li">
                   <span className="text-teal-600 mr-2">✓</span>
                   <span className="text-gray-700">Valid for 12 months</span>
-                </li>
-                <li className="flex items-start">
+                </AnimatedListItem>
+                <AnimatedListItem as="li">
                   <span className="text-teal-600 mr-2">✓</span>
                   <span className="text-gray-700">Maximum savings</span>
-                </li>
+                </AnimatedListItem>
               </ul>
               <Link
                 to="/contact#book"
@@ -169,7 +171,7 @@ const PricesInsurance = () => {
               >
                 Book Package
               </Link>
-            </div>
+            </AnimatedCard>
           </div>
         </div>
       </section>
@@ -206,7 +208,7 @@ const PricesInsurance = () => {
             </div>
 
             {/* Insurance Info */}
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <AnimatedCard className="p-8">
               <h3 className="text-2xl font-bold mb-4 text-gray-900">
                 Using Your Insurance
               </h3>
@@ -246,22 +248,22 @@ const PricesInsurance = () => {
                     What You&apos;ll Need
                   </h4>
                   <ul className="space-y-2">
-                    <li className="flex items-start">
+                    <AnimatedListItem as="li">
                       <span className="text-teal-600 mr-2">•</span>
                       <span>
                         Your insurance policy number and membership details
                       </span>
-                    </li>
-                    <li className="flex items-start">
+                    </AnimatedListItem>
+                    <AnimatedListItem as="li">
                       <span className="text-teal-600 mr-2">•</span>
                       <span>
                         Pre-authorisation code (if required by your insurer)
                       </span>
-                    </li>
-                    <li className="flex items-start">
+                    </AnimatedListItem>
+                    <AnimatedListItem as="li">
                       <span className="text-teal-600 mr-2">•</span>
                       <span>Photo ID for verification</span>
-                    </li>
+                    </AnimatedListItem>
                   </ul>
                 </div>
 
@@ -273,7 +275,7 @@ const PricesInsurance = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </AnimatedCard>
           </div>
         </div>
       </section>
@@ -287,7 +289,7 @@ const PricesInsurance = () => {
             </AnimatedH2>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-xl shadow-lg p-6 text-center">
+              <AnimatedCard className="p-6 text-center">
                 <div className="text-4xl mb-4">💳</div>
                 <h3 className="font-bold text-lg mb-2 text-gray-900">
                   Card Payments
@@ -295,15 +297,15 @@ const PricesInsurance = () => {
                 <p className="text-gray-600">
                   All major credit and debit cards accepted
                 </p>
-              </div>
+              </AnimatedCard>
 
-              <div className="bg-white rounded-xl shadow-lg p-6 text-center">
+              <AnimatedCard className="p-6 text-center">
                 <div className="text-4xl mb-4">💷</div>
                 <h3 className="font-bold text-lg mb-2 text-gray-900">Cash</h3>
                 <p className="text-gray-600">Cash payments welcome</p>
-              </div>
+              </AnimatedCard>
 
-              <div className="bg-white rounded-xl shadow-lg p-6 text-center">
+              <AnimatedCard className="p-6 text-center">
                 <div className="text-4xl mb-4">🏥</div>
                 <h3 className="font-bold text-lg mb-2 text-gray-900">
                   Insurance
@@ -311,10 +313,10 @@ const PricesInsurance = () => {
                 <p className="text-gray-600">
                   Direct billing available for many insurers
                 </p>
-              </div>
+              </AnimatedCard>
             </div>
 
-            <div className="mt-12 bg-white rounded-xl shadow-lg p-8">
+            <AnimatedCard className="mt-12 p-8">
               <h3 className="text-xl font-bold mb-4 text-center text-gray-900">
                 Cancellation Policy
               </h3>
@@ -323,7 +325,7 @@ const PricesInsurance = () => {
                 rescheduling. Appointments cancelled with less than 24
                 hours&apos; notice may be subject to the full appointment fee.
               </p>
-            </div>
+            </AnimatedCard>
           </div>
         </div>
       </section>

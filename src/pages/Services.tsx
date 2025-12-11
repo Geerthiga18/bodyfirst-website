@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import Card from '../components/Card';
+import AnimatedCard from '../components/AnimatedCard';
 import { ScrollBackground } from '../components/ScrollBackground';
 import AnimatedH2 from '../components/AnimatedH2';
+import AnimatedListItem from '../components/AnimatedListItem';
 import { servicesData } from '../data/servicesData';
 
 const Services = () => {
@@ -36,11 +38,8 @@ const Services = () => {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-8">
             {servicesData.map((service) => (
-              <div
-                key={service.slug}
-                className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow"
-              >
-                <div className="flex items-start">
+              <AnimatedCard key={service.slug} className="p-8 hover:shadow-xl transition-shadow">
+                <AnimatedListItem>
                   {/* Optional icon placeholder */}
                   <div className="text-5xl mr-6">
                     <span>💠</span>
@@ -85,8 +84,8 @@ const Services = () => {
                       </svg>
                     </Link>
                   </div>
-                </div>
-              </div>
+                </AnimatedListItem>
+              </AnimatedCard>
             ))}
           </div>
         </div>
@@ -167,13 +166,13 @@ const Services = () => {
                 { title: 'Enhanced Performance', text: 'Optimise movement and athletic ability.' },
                 { title: 'Better Quality of Life', text: 'Return to activities you love.' },
               ].map((item) => (
-                <div key={item.title} className="flex items-start space-x-3">
+                <AnimatedListItem key={item.title} className="space-x-3">
                   <span className="text-2xl text-teal-600">✓</span>
                   <div>
                     <h3 className="font-bold text-lg mb-1">{item.title}</h3>
                     <p className="text-gray-600">{item.text}</p>
                   </div>
-                </div>
+                </AnimatedListItem>
               ))}
             </div>
           </div>

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { ScrollBackground } from "../components/ScrollBackground";
 import AnimatedH2 from "../components/AnimatedH2";
+import AnimatedCard from "../components/AnimatedCard";
+import AnimatedListItem from "../components/AnimatedListItem";
 import { siteContent } from "../data/content";
 
 const About = () => {
@@ -80,13 +82,10 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {siteContent.about.values.map((value, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow"
-              >
+              <AnimatedCard key={index} className="p-6 text-center hover:shadow-xl transition-shadow">
                 <div className="text-4xl mb-3 text-teal-600">✓</div>
                 <p className="font-semibold text-gray-900">{value}</p>
-              </div>
+              </AnimatedCard>
             ))}
           </div>
         </div>
@@ -106,10 +105,7 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {siteContent.team.map((member, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-              >
+              <AnimatedCard key={index} className="overflow-hidden">
                 <div className="aspect-square bg-gradient-to-br from-teal-50 to-teal-100">
                   <img
                     src={member.image}
@@ -135,7 +131,7 @@ const About = () => {
                   </p>
                   <p className="text-gray-700 text-sm">{member.description}</p>
                 </div>
-              </div>
+              </AnimatedCard>
             ))}
           </div>
         </div>
@@ -156,53 +152,50 @@ const About = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {siteContent.accreditations.map((acc, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl shadow-lg p-8 text-center"
-              >
+              <AnimatedCard key={index} className="p-8 text-center">
                 <div className="text-5xl mb-4 text-teal-600">🏅</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   {acc.name}
                 </h3>
                 <p className="text-gray-600">{acc.fullName}</p>
-              </div>
+              </AnimatedCard>
             ))}
           </div>
 
-          <div className="mt-12 max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
+          <AnimatedCard className="mt-12 max-w-3xl mx-auto p-8">
             <h3 className="text-xl font-bold mb-4 text-center text-gray-900">
               What This Means for You
             </h3>
             <ul className="space-y-3 text-gray-700">
-              <li className="flex items-start">
+              <AnimatedListItem as="li">
                 <span className="text-teal-600 mr-2">✓</span>
                 <span>
                   All therapists have completed extensive university-level
                   training
                 </span>
-              </li>
-              <li className="flex items-start">
+              </AnimatedListItem>
+              <AnimatedListItem as="li">
                 <span className="text-teal-600 mr-2">✓</span>
                 <span>
                   Regulated by professional bodies ensuring highest standards of
                   care
                 </span>
-              </li>
-              <li className="flex items-start">
+              </AnimatedListItem>
+              <AnimatedListItem as="li">
                 <span className="text-teal-600 mr-2">✓</span>
                 <span>
                   Continuous professional development to stay current with best
                   practices
                 </span>
-              </li>
-              <li className="flex items-start">
+              </AnimatedListItem>
+              <AnimatedListItem as="li">
                 <span className="text-teal-600 mr-2">✓</span>
                 <span>
                   Fully insured for your protection and peace of mind
                 </span>
-              </li>
+              </AnimatedListItem>
             </ul>
-          </div>
+          </AnimatedCard>
         </div>
       </section>
 
@@ -215,7 +208,7 @@ const About = () => {
             </AnimatedH2>
 
             <div className="space-y-6">
-              <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg">
+              <AnimatedListItem className="space-x-4 p-6 bg-gray-50 rounded-lg">
                 <div className="text-3xl">🎓</div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -227,9 +220,9 @@ const About = () => {
                     management.
                   </p>
                 </div>
-              </div>
+              </AnimatedListItem>
 
-              <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg">
+              <AnimatedListItem className="space-x-4 p-6 bg-gray-50 rounded-lg">
                 <div className="text-3xl">🤝</div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -240,9 +233,9 @@ const About = () => {
                     and tailor treatment to your specific goals and lifestyle.
                   </p>
                 </div>
-              </div>
+              </AnimatedListItem>
 
-              <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg">
+              <AnimatedListItem className="space-x-4 p-6 bg-gray-50 rounded-lg">
                 <div className="text-3xl">📊</div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -253,9 +246,9 @@ const About = () => {
                     you receive the most effective treatment available.
                   </p>
                 </div>
-              </div>
+              </AnimatedListItem>
 
-              <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg">
+              <AnimatedListItem className="space-x-4 p-6 bg-gray-50 rounded-lg">
                 <div className="text-3xl">⏱️</div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -266,7 +259,7 @@ const About = () => {
                     thorough assessment and treatment without rushing.
                   </p>
                 </div>
-              </div>
+              </AnimatedListItem>
             </div>
           </div>
         </div>
