@@ -7,7 +7,7 @@ import {
   fadeUp,
   scaleUp,
   staggerContainer,
-} from "../animations/motionVariants";
+} from "../Animations/motionVariants";
 
 const About = () => {
   const aboutHeroImage = "/images/Aboutus/hero.png";
