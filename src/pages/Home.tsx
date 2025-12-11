@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Card from '../components/Card';
 import { ScrollBackground } from '../components/ScrollBackground';
+import AnimatedH2 from '../components/AnimatedH2';
 
 import { siteContent } from '../data/content';
 
@@ -74,7 +75,7 @@ const Home = () => {
       <section className="section bg-teal-50">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title text-gray-900">Our Services</h2>
+            <AnimatedH2 className="section-title text-gray-900">Our Services</AnimatedH2>
             <p className="section-subtitle text-teal-800">
               Comprehensive physiotherapy and wellness treatments tailored to your needs
             </p>
@@ -106,7 +107,7 @@ const Home = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title text-gray-900">What Our Patients Say</h2>
+            <AnimatedH2 className="section-title text-gray-900">What Our Patients Say</AnimatedH2>
             <p className="section-subtitle text-teal-800">
               Trusted by hundreds of patients across London
             </p>
@@ -156,7 +157,7 @@ const Home = () => {
       <section className="section bg-gradient-to-br from-teal-50 to-white">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="section-title text-gray-900">We Accept All Major Insurance Providers</h2>
+            <AnimatedH2 className="section-title text-gray-900">We Accept All Major Insurance Providers</AnimatedH2>
             <p className="section-subtitle text-teal-800">
               Use your health insurance or work benefits to cover treatment costs
             </p>
@@ -190,7 +191,7 @@ const Home = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title text-gray-900">Meet Our Team</h2>
+            <AnimatedH2 className="section-title text-gray-900">Meet Our Team</AnimatedH2>
             <p className="section-subtitle text-teal-800">
               Experienced, qualified professionals dedicated to your recovery
             </p>
@@ -246,7 +247,7 @@ const Home = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title text-gray-900">Why Choose Body First UK?</h2>
+            <AnimatedH2 className="section-title text-gray-900">Why Choose Body First UK?</AnimatedH2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -304,9 +305,9 @@ const Home = () => {
       {/* CTA Section */}
      <section className="section bg-gradient-to-r from-teal-600 to-teal-700 text-white">
   <div className="container text-center">
-    <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+    <AnimatedH2 className="text-3xl lg:text-4xl font-bold mb-6">
       Ready to Start Your Recovery Journey?
-    </h2>
+    </AnimatedH2>
     <p className="text-xl mb-8 text-teal-100">
       Book your appointment today and take the first step towards better health
     </p>

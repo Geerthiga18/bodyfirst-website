@@ -3,6 +3,7 @@
 import { Link } from 'react-router-dom';
 import Card from '../components/Card';
 import { ScrollBackground } from '../components/ScrollBackground';
+import AnimatedH2 from '../components/AnimatedH2';
 import treatmentCategories from '../data/whatWeTreatData';
 
 const WhatWeTreat = () => {
@@ -267,9 +268,9 @@ const WhatWeTreat = () => {
       <section className="section bg-gray-50">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            <AnimatedH2 className="text-3xl font-bold text-center mb-12 text-gray-900">
               Our Treatment Approach
-            </h2>
+            </AnimatedH2>
 
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-xl shadow-md">
@@ -349,9 +350,9 @@ const WhatWeTreat = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            <AnimatedH2 className="text-3xl font-bold text-center mb-12 text-gray-900">
               Common Questions
-            </h2>
+            </AnimatedH2>
 
             <div className="space-y-6">
               <div className="border-l-4 border-teal-600 pl-6 py-4">
@@ -401,9 +402,9 @@ const WhatWeTreat = () => {
       {/* CTA */}
       <section className="section bg-gradient-to-r from-teal-600 to-teal-700 text-white">
         <div className="container text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+          <AnimatedH2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Start Your Recovery Journey?
-          </h2>
+          </AnimatedH2>
           <p className="text-xl mb-8 text-teal-100">
             Book your appointment today and take the first step towards better health.
           </p>

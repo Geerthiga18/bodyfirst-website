@@ -2,6 +2,7 @@
 
 import { useParams, Link, Navigate } from "react-router-dom";
 import { ScrollBackground } from "../components/ScrollBackground";
+import AnimatedH2 from "../components/AnimatedH2";
 import treatmentCategories from "../data/whatWeTreatData";
 
 const WhatWeTreatDetail = () => {
@@ -79,9 +80,9 @@ const WhatWeTreatDetail = () => {
             key={index}
             className="bg-white rounded-xl shadow-sm p-6 lg:p-8 border border-gray-100"
           >
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-teal-500/70">
+            <AnimatedH2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-teal-500/70">
               {section.heading}
-            </h2>
+            </AnimatedH2>
             <p className="text-gray-700 mb-4">{section.content}</p>
 
             {section.bullets && section.bullets.length > 0 && (
@@ -102,9 +103,9 @@ const WhatWeTreatDetail = () => {
         {/* FAQs */}
         {detailContent.faqs && detailContent.faqs.length > 0 && (
           <section className="bg-white rounded-xl shadow-sm p-6 lg:p-8 border border-gray-100">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-teal-500/70">
+            <AnimatedH2 className="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-teal-500/70">
               Frequently Asked Questions
-            </h2>
+            </AnimatedH2>
             <div className="space-y-4">
               {detailContent.faqs.map((faq, i) => (
                 <div key={i} className="border-l-4 border-teal-500 pl-4">
@@ -121,9 +122,9 @@ const WhatWeTreatDetail = () => {
         {/* CTA */}
         <section className="bg-gradient-to-r from-teal-600 to-teal-700 rounded-2xl shadow-lg p-8 lg:p-10 text-white mt-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl lg:text-3xl font-bold mb-3">
+            <AnimatedH2 className="text-2xl lg:text-3xl font-bold mb-3">
               Concerned about your {category.title}?
-            </h2>
+            </AnimatedH2>
             <p className="text-teal-100 mb-5">
               Book an assessment or contact our team to discuss your symptoms
               and the best treatment options for you.

@@ -2,6 +2,7 @@
 
 import { useParams, Link, Navigate } from "react-router-dom";
 import { ScrollBackground } from "../components/ScrollBackground";
+import AnimatedH2 from "../components/AnimatedH2";
 import { findServiceBySlug } from "../data/servicesData";
 
 const ServiceDetailPage = () => {
@@ -78,9 +79,9 @@ const ServiceDetailPage = () => {
               key={index}
               className="bg-white rounded-xl shadow-sm p-6 lg:p-8 border border-gray-100"
             >
-              <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 pb-3 border-b-2 border-teal-500">
+              <AnimatedH2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 pb-3 border-b-2 border-teal-500">
                 {section.title}
-              </h2>
+              </AnimatedH2>
 
               <div className="max-w-none">
                 <p className="text-gray-700 leading-relaxed mb-4">
@@ -106,9 +107,9 @@ const ServiceDetailPage = () => {
 
         {/* CTA */}
         <div className="mt-12 bg-gradient-to-r from-teal-600 to-teal-700 rounded-2xl shadow-xl p-8 lg:p-10 text-white text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          <AnimatedH2 className="text-3xl lg:text-4xl font-bold mb-4">
             Ready to Book Your {service.name} Session?
-          </h2>
+          </AnimatedH2>
           <p className="text-lg text-teal-100 mb-6 max-w-2xl mx-auto">
             Take the first step towards recovery. Secure your appointment online
             or get in touch with our team.

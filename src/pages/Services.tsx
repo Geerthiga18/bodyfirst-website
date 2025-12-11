@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Card from '../components/Card';
 import { ScrollBackground } from '../components/ScrollBackground';
+import AnimatedH2 from '../components/AnimatedH2';
 import { servicesData } from '../data/servicesData';
 
 const Services = () => {
@@ -95,9 +96,9 @@ const Services = () => {
       <section className="section bg-gray-50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900">
+            <AnimatedH2 className="text-3xl font-bold mb-4 text-gray-900">
               What to Expect
-            </h2>
+            </AnimatedH2>
             <p className="text-lg text-gray-600">
               Every treatment session is designed to maximise your recovery
             </p>
@@ -153,9 +154,9 @@ const Services = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            <AnimatedH2 className="text-3xl font-bold text-center mb-12 text-gray-900">
               Benefits of Our Treatments
-            </h2>
+            </AnimatedH2>
 
             <div className="grid md:grid-cols-2 gap-6">
               {[
@@ -182,9 +183,9 @@ const Services = () => {
       {/* CTA */}
       <section className="section bg-gradient-to-r from-teal-600 to-teal-700 text-white">
         <div className="container text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+          <AnimatedH2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Start Your Recovery Journey?
-          </h2>
+          </AnimatedH2>
           <p className="text-xl mb-8 text-teal-100">
             Book your appointment today and take the first step towards better health
           </p>
