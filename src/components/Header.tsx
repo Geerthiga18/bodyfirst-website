@@ -21,6 +21,7 @@ const Header = () => {
   const navigation = [
     { name: 'What We Treat', path: '/what-we-treat' },
     { name: 'Services', path: '/services' },
+    { name: 'Why Us', path: '/why-us' },
     { name: 'About Us', path: '/about' },
     { name: 'Prices & Insurance', path: '/prices' },
     { name: 'Contact', path: '/contact' },
@@ -153,6 +154,18 @@ const Header = () => {
               }`}
             >
               About Us
+            </Link>
+
+            {/* Why Us */}
+            <Link
+              to="/why-us"
+              className={`text-sm font-medium transition-colors ${
+                isActive('/why-us')
+                  ? 'text-teal-600'
+                  : 'text-gray-700 hover:text-teal-600'
+              }`}
+            >
+              Why Us
             </Link>
 
             {/* Prices */}

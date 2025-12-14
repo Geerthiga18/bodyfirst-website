@@ -31,7 +31,9 @@ const RootLayout = () => {
               <NavLink to="/">Home</NavLink>
               <NavLink to="/services">Services</NavLink>
               <NavLink to="/about">About</NavLink>
+              <NavLink to="/whyus">Why Us</NavLink>
               <NavLink to="/contact">Contact</NavLink>
+              
               <Link
                 to="/book"
                 className="ml-2 sm:ml-4 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -72,6 +74,11 @@ const RootLayout = () => {
                 <li>
                   <Link to="/about" className="hover:text-white transition-colors">
                     About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/whyus" className="hover:text-white transition-colors">
+                    Why Us
                   </Link>
                 </li>
                 <li>
