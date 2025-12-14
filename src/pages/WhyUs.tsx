@@ -1,5 +1,6 @@
 import { ScrollBackground } from '../components/ScrollBackground';
 import AnimatedH2 from '../components/AnimatedH2';
+import SectionBackground from '../components/SectionBackground';
 
 const WhyUs = () => {
   return (
@@ -36,54 +37,58 @@ const WhyUs = () => {
             <AnimatedH2 className="section-title text-gray-900">Why Choose Body First UK?</AnimatedH2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
-            <div className="text-center">
-              <div className="text-5xl mb-4">🏆</div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Expert Team</h3>
-              <p className="text-gray-600">
-                HCPC and CSP registered physiotherapists with years of clinical experience.
-              </p>
-            </div>
+          <div className="mt-6">
+            <SectionBackground className="p-6 rounded-xl" opacity={0.07}>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="text-center bg-white p-6 rounded-lg shadow-md">
+                  <div className="text-5xl mb-4">🏆</div>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Expert Team</h3>
+                  <p className="text-gray-600">
+                    HCPC and CSP registered physiotherapists with years of clinical experience.
+                  </p>
+                </div>
 
-            <div className="text-center">
-              <div className="text-5xl mb-4">🎯</div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Personalised Care</h3>
-              <p className="text-gray-600">
-                Tailored treatment plans designed specifically for your needs and goals.
-              </p>
-            </div>
+                <div className="text-center bg-white p-6 rounded-lg shadow-md">
+                  <div className="text-5xl mb-4">🎯</div>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Personalised Care</h3>
+                  <p className="text-gray-600">
+                    Tailored treatment plans designed specifically for your needs and goals.
+                  </p>
+                </div>
 
-            <div className="text-center">
-              <div className="text-5xl mb-4">⚡</div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Advanced Techniques</h3>
-              <p className="text-gray-600">
-                Evidence-based treatments and modern equipment to accelerate recovery.
-              </p>
-            </div>
+                <div className="text-center bg-white p-6 rounded-lg shadow-md">
+                  <div className="text-5xl mb-4">⚡</div>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Advanced Techniques</h3>
+                  <p className="text-gray-600">
+                    Evidence-based treatments and modern equipment to accelerate recovery.
+                  </p>
+                </div>
 
-            <div className="text-center">
-              <div className="text-5xl mb-4">📍</div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Central Location</h3>
-              <p className="text-gray-600">
-                Convenient London location with excellent transport links.
-              </p>
-            </div>
+                <div className="text-center bg-white p-6 rounded-lg shadow-md">
+                  <div className="text-5xl mb-4">📍</div>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Central Location</h3>
+                  <p className="text-gray-600">
+                    Convenient London location with excellent transport links.
+                  </p>
+                </div>
 
-            <div className="text-center">
-              <div className="text-5xl mb-4">🕐</div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Flexible Hours</h3>
-              <p className="text-gray-600">
-                Extended opening hours including evenings and Sundays for your convenience.
-              </p>
-            </div>
+                <div className="text-center bg-white p-6 rounded-lg shadow-md">
+                  <div className="text-5xl mb-4">🕐</div>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Flexible Hours</h3>
+                  <p className="text-gray-600">
+                    Extended opening hours including evenings and Sundays for your convenience.
+                  </p>
+                </div>
 
-            <div className="text-center">
-              <div className="text-5xl mb-4">💷</div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Transparent Pricing</h3>
-              <p className="text-gray-600">
-                Clear pricing with insurance accepted; no hidden fees.
-              </p>
-            </div>
+                <div className="text-center bg-white p-6 rounded-lg shadow-md">
+                  <div className="text-5xl mb-4">💷</div>
+                  <h3 className="text-xl font-bold mb-3 text-gray-900">Transparent Pricing</h3>
+                  <p className="text-gray-600">
+                    Clear pricing with insurance accepted; no hidden fees.
+                  </p>
+                </div>
+              </div>
+            </SectionBackground>
           </div>
         </div>
       </section>
