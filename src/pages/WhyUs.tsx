@@ -1,6 +1,8 @@
 import { ScrollBackground } from '../components/ScrollBackground';
 import AnimatedH2 from '../components/AnimatedH2';
 import SectionBackground from '../components/SectionBackground';
+import AnimatedCard from '../components/AnimatedCard';
+import AnimatedListItem from '../components/AnimatedListItem';
 
 const WhyUs = () => {
   return (
@@ -40,53 +42,53 @@ const WhyUs = () => {
           <div className="mt-6">
             <SectionBackground className="p-6 rounded-xl" opacity={0.07}>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="text-center bg-white p-6 rounded-lg shadow-md">
-                  <div className="text-5xl mb-4">🏆</div>
+                <AnimatedCard className="p-6 text-center">
+                  <div className="text-6xl mb-4">🏆</div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Expert Team</h3>
                   <p className="text-gray-600">
                     HCPC and CSP registered physiotherapists with years of clinical experience.
                   </p>
-                </div>
+                </AnimatedCard>
 
-                <div className="text-center bg-white p-6 rounded-lg shadow-md">
-                  <div className="text-5xl mb-4">🎯</div>
+                <AnimatedCard className="p-6 text-center">
+                  <div className="text-6xl mb-4">🎯</div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Personalised Care</h3>
                   <p className="text-gray-600">
                     Tailored treatment plans designed specifically for your needs and goals.
                   </p>
-                </div>
+                </AnimatedCard>
 
-                <div className="text-center bg-white p-6 rounded-lg shadow-md">
-                  <div className="text-5xl mb-4">⚡</div>
+                <AnimatedCard className="p-6 text-center">
+                  <div className="text-6xl mb-4">⚡</div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Advanced Techniques</h3>
                   <p className="text-gray-600">
                     Evidence-based treatments and modern equipment to accelerate recovery.
                   </p>
-                </div>
+                </AnimatedCard>
 
-                <div className="text-center bg-white p-6 rounded-lg shadow-md">
-                  <div className="text-5xl mb-4">📍</div>
+                <AnimatedCard className="p-6 text-center">
+                  <div className="text-6xl mb-4">📍</div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Central Location</h3>
                   <p className="text-gray-600">
                     Convenient London location with excellent transport links.
                   </p>
-                </div>
+                </AnimatedCard>
 
-                <div className="text-center bg-white p-6 rounded-lg shadow-md">
-                  <div className="text-5xl mb-4">🕐</div>
+                <AnimatedCard className="p-6 text-center">
+                  <div className="text-6xl mb-4">🕐</div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Flexible Hours</h3>
                   <p className="text-gray-600">
                     Extended opening hours including evenings and Sundays for your convenience.
                   </p>
-                </div>
+                </AnimatedCard>
 
-                <div className="text-center bg-white p-6 rounded-lg shadow-md">
-                  <div className="text-5xl mb-4">💷</div>
+                <AnimatedCard className="p-6 text-center">
+                  <div className="text-6xl mb-4">💷</div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Transparent Pricing</h3>
                   <p className="text-gray-600">
                     Clear pricing with insurance accepted; no hidden fees.
                   </p>
-                </div>
+                </AnimatedCard>
               </div>
             </SectionBackground>
           </div>
@@ -98,26 +100,26 @@ const WhyUs = () => {
           <div className="lg:flex lg:items-center lg:justify-between gap-10">
             {/* Left Content Block */}
             <div className="lg:w-1/2 mb-8 lg:mb-0">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+           <AnimatedH2 className="section-title text-gray-900">
                 Our Commitment to Excellence
-              </h2>
+              </AnimatedH2>
               <p className="text-lg text-gray-700 mb-6">
                 We believe that the best outcomes come from a combination of skill, experience, and the latest scientific research. At Body First UK, we don't rely on guesswork; we rely on **evidence**.
               </p>
               
               <ul className="space-y-4 text-gray-700">
-                <li className="flex items-start">
+                <AnimatedListItem as="li">
                   <span className="flex-shrink-0 mr-3 text-teal-500 text-xl">✓</span>
-                  <span>**Higher Success Rates:** Our focus on root-cause analysis and personalised programming leads to more effective and lasting recoveries.</span>
-                </li>
-                <li className="flex items-start">
+                  <span className="text-gray-800">Higher Success Rates: Our focus on root-cause analysis and personalised programming leads to more effective and lasting recoveries.</span>
+                </AnimatedListItem>
+                <AnimatedListItem as="li">
                   <span className="flex-shrink-0 mr-3 text-teal-500 text-xl">✓</span>
-                  <span>**Proactive Prevention:** We equip you with the knowledge and exercises needed to prevent your injury from recurring, saving you time and money.</span>
-                </li>
-                <li className="flex items-start">
+                  <span className="text-gray-800">Proactive Prevention: We equip you with the knowledge and exercises needed to prevent your injury from recurring, saving you time and money.</span>
+                </AnimatedListItem>
+                <AnimatedListItem as="li">
                   <span className="flex-shrink-0 mr-3 text-teal-500 text-xl">✓</span>
-                  <span>**Integrative Approach:** We look at your whole body, not just the painful area, ensuring maximum long-term function and well-being.</span>
-                </li>
+                  <span className="text-gray-800">Integrative Approach: We look at your whole body, not just the painful area, ensuring maximum long-term function and well-being.</span>
+                </AnimatedListItem>
               </ul>
             </div>
 
@@ -153,25 +155,25 @@ const WhyUs = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             
             {/* Metric 1 */}
-            <div className="p-8 border border-teal-200 rounded-xl bg-teal-50 shadow-lg transition duration-300 hover:shadow-xl hover:bg-teal-100">
+            <AnimatedCard className="p-8 border border-teal-200 rounded-xl bg-teal-50 shadow-lg transition duration-300 hover:bg-teal-100" hover={false}>
               <p className="text-5xl font-extrabold text-teal-600">92%</p>
               <h3 className="text-xl font-bold mt-3 text-gray-800">Of Patients Achieve Goals</h3>
               <p className="text-gray-600 text-sm mt-1">Reported achieving their primary rehabilitation goals within their personalised plan.</p>
-            </div>
+            </AnimatedCard>
             
             {/* Metric 2 */}
-            <div className="p-8 border border-teal-200 rounded-xl bg-teal-50 shadow-lg transition duration-300 hover:shadow-xl hover:bg-teal-100">
+            <AnimatedCard className="p-8 border border-teal-200 rounded-xl bg-teal-50 shadow-lg transition duration-300 hover:bg-teal-100" hover={false}>
               <p className="text-5xl font-extrabold text-teal-600">4.9/5</p>
               <h3 className="text-xl font-bold mt-3 text-gray-800">Average Patient Rating</h3>
               <p className="text-gray-600 text-sm mt-1">Consistent high scores across professionalism, care quality, and clinical results.</p>
-            </div>
+            </AnimatedCard>
             
             {/* Metric 3 */}
-            <div className="p-8 border border-teal-200 rounded-xl bg-teal-50 shadow-lg transition duration-300 hover:shadow-xl hover:bg-teal-100">
+            <AnimatedCard className="p-8 border border-teal-200 rounded-xl bg-teal-50 shadow-lg transition duration-300 hover:bg-teal-100" hover={false}>
               <p className="text-5xl font-extrabold text-teal-600">75%</p>
               <h3 className="text-xl font-bold mt-3 text-gray-800">Referral Rate</h3>
               <p className="text-gray-600 text-sm mt-1">A majority of our new patients come through direct recommendations from satisfied clients.</p>
-            </div>
+            </AnimatedCard>
 
           </div>
 
