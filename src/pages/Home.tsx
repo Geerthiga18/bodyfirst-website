@@ -109,14 +109,12 @@ const Home = () => {
         <div className="container">
           <div className="section-header">
             <AnimatedH2 className="section-title text-gray-900">What Our Patients Say</AnimatedH2>
-            <p className="section-subtitle text-teal-800">
-              Trusted by hundreds of patients across London
-            </p>
+            <p className="section-subtitle text-teal-800">Trusted by hundreds of patients across London</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {siteContent.testimonials.map((testimonial, index) => (
-              <Card key={index} hover={false}>
+              <AnimatedCard key={index} className="p-6" hover={false}>
                 <div className="flex mb-3">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <span key={i} className="text-amber-400">★</span>
@@ -127,22 +125,22 @@ const Home = () => {
                   <p className="font-semibold text-gray-900">{testimonial.name}</p>
                   <p className="text-sm text-gray-600">{testimonial.service}</p>
                 </div>
-              </Card>
+              </AnimatedCard>
             ))}
           </div>
 
           <div className="mt-12 text-center">
-            <div className="inline-flex items-center space-x-3 bg-teal-50 ring-1 ring-teal-100 px-6 py-4 rounded-lg">
+            <AnimatedCard className="inline-flex items-center space-x-3 px-6 py-4 rounded-lg mx-auto max-w-md" hover={false}>
               <div className="text-4xl">⭐</div>
               <div className="text-left">
                 <div className="text-2xl font-bold text-gray-900">4.9/5</div>
                 <div className="text-sm text-gray-600">Based on 200+ reviews</div>
               </div>
-            </div>
+            </AnimatedCard>
 
             <div className="mt-6">
               <a
-                href="https://www.google.com/search?q=body+first+uk&oq=bo&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg7MggIARBFGCcYOzIGCAIQRRg7MgYIAxBFGDsyBggEEEUYOTIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPdIBCDkyMTVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x48760b5ea482eda5:0xb1dababe47d75f95,1,,,,"
+                href="https://www.google.com/search?q=body+first+uk"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-lg bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 text-lg font-semibold transition"
@@ -159,26 +157,16 @@ const Home = () => {
         <div className="container">
           <div className="text-center mb-12">
             <AnimatedH2 className="section-title text-gray-900">We Accept All Major Insurance Providers</AnimatedH2>
-            <p className="section-subtitle text-teal-800">
-              Use your health insurance or work benefits to cover treatment costs
-            </p>
+            <p className="section-subtitle text-teal-800">Use your health insurance or work benefits to cover treatment costs</p>
           </div>
 
-<div className="flex flex-wrap justify-center items-center gap-8">
-  {siteContent.insurance.accepted.map((insurer) => (
-    <div
-      key={insurer.name}
-      className="bg-white px-8 py-6 rounded-lg shadow-md ring-1 ring-teal-100 flex items-center justify-center"
-    >
-      <img
-        src={insurer.logo}
-        alt={insurer.name}
-        className="h-16 w-auto object-contain"
-      />
-    </div>
-  ))}
-</div>
-
+          <div className="flex flex-wrap justify-center items-center gap-8">
+            {siteContent.insurance.accepted.map((insurer) => (
+              <AnimatedCard key={insurer.name} className="px-8 py-6 flex items-center justify-center" hover={false}>
+                <img src={insurer.logo} alt={insurer.name} className="h-16 w-auto object-contain" />
+              </AnimatedCard>
+            ))}
+          </div>
 
           <div className="mt-12 text-center">
             <Link to="/prices" className="inline-flex items-center justify-center rounded-lg bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 font-semibold transition">
@@ -249,53 +237,53 @@ const Home = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center">
+            <AnimatedCard className="p-6 text-center" hover={false}>
               <div className="text-5xl mb-4">🏆</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Expert Team</h3>
               <p className="text-gray-600">
                 HCPC and CSP registered physiotherapists with years of experience
               </p>
-            </div>
+            </AnimatedCard>
 
-            <div className="text-center">
+            <AnimatedCard className="p-6 text-center" hover={false}>
               <div className="text-5xl mb-4">🎯</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Personalised Care</h3>
               <p className="text-gray-600">
                 Tailored treatment plans designed specifically for your needs
               </p>
-            </div>
+            </AnimatedCard>
 
-            <div className="text-center">
+            <AnimatedCard className="p-6 text-center" hover={false}>
               <div className="text-5xl mb-4">⚡</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Advanced Techniques</h3>
               <p className="text-gray-600">
                 Latest evidence-based treatments and cutting-edge equipment
               </p>
-            </div>
+            </AnimatedCard>
 
-            <div className="text-center">
+            <AnimatedCard className="p-6 text-center" hover={false}>
               <div className="text-5xl mb-4">📍</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Central Location</h3>
               <p className="text-gray-600">
                 Convenient London location with excellent transport links
               </p>
-            </div>
+            </AnimatedCard>
 
-            <div className="text-center">
+            <AnimatedCard className="p-6 text-center" hover={false}>
               <div className="text-5xl mb-4">🕐</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Flexible Hours</h3>
               <p className="text-gray-600">
                 Extended opening hours including evenings and Sundays
               </p>
-            </div>
+            </AnimatedCard>
 
-            <div className="text-center">
+            <AnimatedCard className="p-6 text-center" hover={false}>
               <div className="text-5xl mb-4">💷</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Transparent Pricing</h3>
               <p className="text-gray-600">
                 No hidden fees. Clear pricing with insurance accepted
               </p>
-            </div>
+            </AnimatedCard>
           </div>
         </div>
       </section>

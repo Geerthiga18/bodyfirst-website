@@ -11,7 +11,8 @@ interface AnimatedCardProps {
 const AnimatedCard = ({ children, className = '', hover = true }: AnimatedCardProps) => {
   return (
     <motion.div
-      className={`bg-white rounded-xl shadow-lg ${className}`}
+      className={`rounded-xl shadow-lg ${className}`}
+      style={{ backgroundColor: '#ffffff', position: 'relative', zIndex: 50 }}
       variants={fadeUp}
       initial="hidden"
       whileInView="visible"

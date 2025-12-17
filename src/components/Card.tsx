@@ -1,4 +1,6 @@
 import type { ReactNode } from 'react';
+import { motion } from 'framer-motion';
+import { fadeUp } from '../Animations/motionVariants';
 
 interface CardProps {
   title?: string;
@@ -18,7 +20,16 @@ const Card = ({
   titleClassName,
 }: CardProps) => {
   return (
-    <div className={`card p-6 ${hover ? 'hover:scale-105 transform transition-transform' : ''} ${className}`}>
+    <motion.div
+      className={`rounded-xl shadow-lg p-6 ${hover ? 'transform transition-transform' : ''} ${className}`}
+      style={{ backgroundColor: '#ffffff', position: 'relative', zIndex: 50 }}
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.25 }}
+      whileHover={hover ? { scale: 1.03, y: -4 } : undefined}
+      transition={{ type: 'spring', stiffness: 200 }}
+    >
       {(icon || title) && (
         <div className="mb-4">
           {icon && <div className="text-4xl mb-3">{icon}</div>}
@@ -30,7 +41,7 @@ const Card = ({
         </div>
       )}
       {children}
-    </div>
+    </motion.div>
   );
 };
 

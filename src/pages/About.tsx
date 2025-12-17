@@ -56,14 +56,14 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-teal-50 rounded-xl p-8">
+            <AnimatedCard className="p-8">
               <h3 className="text-2xl font-bold mb-4 text-center text-gray-900">
                 Our Philosophy
               </h3>
               <p className="text-gray-700 leading-relaxed text-center">
                 {siteContent.about.philosophy}
               </p>
-            </div>
+            </AnimatedCard>
           </div>
         </div>
       </section>
@@ -208,7 +208,7 @@ const About = () => {
             </AnimatedH2>
 
             <div className="space-y-6">
-              <AnimatedListItem className="space-x-4 p-6 bg-gray-50 rounded-lg">
+              <AnimatedCard className="flex space-x-4 p-6">
                 <div className="text-3xl">🎓</div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -220,9 +220,9 @@ const About = () => {
                     management.
                   </p>
                 </div>
-              </AnimatedListItem>
+              </AnimatedCard>
 
-              <AnimatedListItem className="space-x-4 p-6 bg-gray-50 rounded-lg">
+              <AnimatedCard className="flex space-x-4 p-6">
                 <div className="text-3xl">🤝</div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -233,9 +233,9 @@ const About = () => {
                     and tailor treatment to your specific goals and lifestyle.
                   </p>
                 </div>
-              </AnimatedListItem>
+              </AnimatedCard>
 
-              <AnimatedListItem className="space-x-4 p-6 bg-gray-50 rounded-lg">
+              <AnimatedCard className="flex space-x-4 p-6">
                 <div className="text-3xl">📊</div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -246,9 +246,9 @@ const About = () => {
                     you receive the most effective treatment available.
                   </p>
                 </div>
-              </AnimatedListItem>
+              </AnimatedCard>
 
-              <AnimatedListItem className="space-x-4 p-6 bg-gray-50 rounded-lg">
+              <AnimatedCard className="flex space-x-4 p-6">
                 <div className="text-3xl">⏱️</div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -259,7 +259,7 @@ const About = () => {
                     thorough assessment and treatment without rushing.
                   </p>
                 </div>
-              </AnimatedListItem>
+              </AnimatedCard>
             </div>
           </div>
         </div>

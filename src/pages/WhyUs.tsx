@@ -123,20 +123,20 @@ const WhyUs = () => {
               </ul>
             </div>
 
-            {/* Right Did You Know Block (Styled like a blockquote/callout) */}
+            {/* Right Did You Know Block (styled as white card for consistency) */}
             <div className="lg:w-1/2">
-              <div className="bg-teal-600 text-white p-8 rounded-xl shadow-lg relative overflow-hidden">
-                <div className="absolute inset-0 bg-pattern opacity-10" />
-                <h3 className="text-2xl font-extrabold mb-3 relative z-10">
+              <AnimatedCard className="p-8 relative overflow-hidden">
+                <div className="absolute inset-0 bg-pattern opacity-6" />
+                <h3 className="text-2xl font-extrabold mb-3 relative z-10 text-gray-900">
                   Did You Know?
                 </h3>
-                <p className="text-xl italic relative z-10 border-l-4 border-white pl-4">
+                <p className="text-xl italic relative z-10 border-l-4 border-teal-500 pl-4 text-gray-700">
                   "Research consistently shows that physiotherapy incorporating **active patient participation** (e.g., specific exercises and education) yields significantly better long-term outcomes than passive treatment alone."
                 </p>
-                <p className="text-sm mt-4 relative z-10 opacity-80">
+                <p className="text-sm mt-4 relative z-10 opacity-80 text-gray-600">
                   — Our clinical approach is built on this evidence, ensuring you're an active partner in your recovery.
                 </p>
-              </div>
+              </AnimatedCard>
             </div>
           </div>
         </div>
@@ -155,21 +155,21 @@ const WhyUs = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             
             {/* Metric 1 */}
-            <AnimatedCard className="p-8 border border-teal-200 rounded-xl bg-teal-50 shadow-lg transition duration-300 hover:bg-teal-100" hover={false}>
+            <AnimatedCard className="p-8 border border-teal-200 rounded-xl shadow-lg transition duration-300" hover={false}>
               <p className="text-5xl font-extrabold text-teal-600">92%</p>
               <h3 className="text-xl font-bold mt-3 text-gray-800">Of Patients Achieve Goals</h3>
               <p className="text-gray-600 text-sm mt-1">Reported achieving their primary rehabilitation goals within their personalised plan.</p>
             </AnimatedCard>
             
             {/* Metric 2 */}
-            <AnimatedCard className="p-8 border border-teal-200 rounded-xl bg-teal-50 shadow-lg transition duration-300 hover:bg-teal-100" hover={false}>
+            <AnimatedCard className="p-8 border border-teal-200 rounded-xl shadow-lg transition duration-300" hover={false}>
               <p className="text-5xl font-extrabold text-teal-600">4.9/5</p>
               <h3 className="text-xl font-bold mt-3 text-gray-800">Average Patient Rating</h3>
               <p className="text-gray-600 text-sm mt-1">Consistent high scores across professionalism, care quality, and clinical results.</p>
             </AnimatedCard>
             
             {/* Metric 3 */}
-            <AnimatedCard className="p-8 border border-teal-200 rounded-xl bg-teal-50 shadow-lg transition duration-300 hover:bg-teal-100" hover={false}>
+            <AnimatedCard className="p-8 border border-teal-200 rounded-xl shadow-lg transition duration-300" hover={false}>
               <p className="text-5xl font-extrabold text-teal-600">75%</p>
               <h3 className="text-xl font-bold mt-3 text-gray-800">Referral Rate</h3>
               <p className="text-gray-600 text-sm mt-1">A majority of our new patients come through direct recommendations from satisfied clients.</p>
