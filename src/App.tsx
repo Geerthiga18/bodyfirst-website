@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import AntigravityCanvas from './components/AntigravityCanvas';
 
 import Home from './pages/Home';
 
@@ -16,7 +17,7 @@ import About from './pages/About';
 import PricesInsurance from './pages/PricesInsurance';
 import Contact from './pages/Contact';
 import WhyUs from './pages/WhyUs';
-import BookPage from './components/BookPage'; 
+import BookPage from './components/BookPage';
 
 import './styles/globals.css';
 
@@ -24,6 +25,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
+        <AntigravityCanvas />
         <Header />
 
         <main className="flex-grow">
