@@ -3,11 +3,17 @@
 import { Link } from 'react-router-dom';
 import Card from '../components/Card';
 import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
+import SEO from '../components/SEO';
 import treatmentCategories from '../data/whatWeTreatData';
+import { seoConfig } from '../data/seoConfig';
 
 const WhatWeTreat = () => {
   return (
     <div className="pt-20">
+      <SEO
+        title={seoConfig.whatWeTreat.title}
+        description={seoConfig.whatWeTreat.description}
+      />
       {/* Header */}
       <section className="relative overflow-hidden bg-teal-900 py-16 lg:py-24">
         <div className="absolute inset-0">

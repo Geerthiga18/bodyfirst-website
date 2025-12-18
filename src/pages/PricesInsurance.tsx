@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import PriceTable from "../components/PriceTable";
 import InsuranceMarquee from "../components/InsuranceMarquee";
 import HeadingScrollAnimation from "../components/HeadingScrollAnimation";
+import SEO from "../components/SEO";
 import { siteContent } from "../data/content";
+import { seoConfig } from "../data/seoConfig";
 
 const PricesInsurance = () => {
   // Change this path to your actual hero image
@@ -10,6 +12,10 @@ const PricesInsurance = () => {
 
   return (
     <div className="pt-20">
+      <SEO
+        title={seoConfig.prices.title}
+        description={seoConfig.prices.description}
+      />
       {/* Header (Hero image like WhatWeTreat) */}
       <section className="relative overflow-hidden bg-teal-900 py-16 lg:py-24">
         {/* Background */}

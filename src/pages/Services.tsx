@@ -1,11 +1,17 @@
 import { Link } from 'react-router-dom';
 import Card from '../components/Card';
 import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
+import SEO from '../components/SEO';
 import { servicesData } from '../data/servicesData';
+import { seoConfig } from '../data/seoConfig';
 
 const Services = () => {
   return (
     <div className="pt-20">
+      <SEO
+        title={seoConfig.services.title}
+        description={seoConfig.services.description}
+      />
       {/* Header */}
       <section className="relative overflow-hidden bg-teal-900 py-16 lg:py-24">
         <div className="absolute inset-0">

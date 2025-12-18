@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
+import { seoConfig } from '../data/seoConfig';
 
 const WhyUs = () => {
   return (
     <div className="pt-20">
+      <SEO
+        title={seoConfig.whyUs.title}
+        description={seoConfig.whyUs.description}
+      />
       {/* Simple hero (matches About / Prices pages) */}
       <section className="relative overflow-hidden bg-teal-900 py-16 lg:py-24">
         <div className="absolute inset-0">

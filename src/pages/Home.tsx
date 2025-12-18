@@ -3,11 +3,13 @@ import Hero from '../components/Hero';
 import Card from '../components/Card';
 import InsuranceMarquee from '../components/InsuranceMarquee';
 import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
+import SEO from '../components/SEO';
 import { siteContent } from '../data/content';
 
 const Home = () => {
   return (
     <div className="pt-20">
+      <SEO />
       {/* Hero Section (your existing Hero; will look teal if Option A is applied) */}
       <Hero
         title={siteContent.hero.title}

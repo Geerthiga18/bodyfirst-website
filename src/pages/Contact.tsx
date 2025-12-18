@@ -3,7 +3,9 @@ import { useLocation } from 'react-router-dom';
 import ContactForm from '../components/ContactForm';
 import Map from '../components/Map';
 import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
+import SEO from '../components/SEO';
 import { siteContent } from '../data/content';
+import { seoConfig } from '../data/seoConfig';
 
 const Contact = () => {
   const location = useLocation();
@@ -24,6 +26,10 @@ const Contact = () => {
 
   return (
     <div className="pt-20">
+      <SEO
+        title={seoConfig.contact.title}
+        description={seoConfig.contact.description}
+      />
       {/* Header */}
       <section className="relative py-16 lg:py-24 overflow-hidden">
         {/* Background Image */}

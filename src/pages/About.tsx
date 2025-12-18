@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import HeadingScrollAnimation from "../components/HeadingScrollAnimation";
+import SEO from "../components/SEO";
 import { siteContent } from "../data/content";
+import { seoConfig } from "../data/seoConfig";
 
 const About = () => {
   // You can change this path to your actual About hero image
@@ -8,6 +10,10 @@ const About = () => {
 
   return (
     <div className="pt-20">
+      <SEO
+        title={seoConfig.about.title}
+        description={seoConfig.about.description}
+      />
       {/* Header (Hero image like WhatWeTreat) */}
       <section className="relative overflow-hidden bg-teal-900 py-16 lg:py-24">
         {/* Background image layer */}
