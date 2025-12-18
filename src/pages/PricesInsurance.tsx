@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import PriceTable from "../components/PriceTable";
 import InsuranceMarquee from "../components/InsuranceMarquee";
+import HeadingScrollAnimation from "../components/HeadingScrollAnimation";
 import { siteContent } from "../data/content";
 
 const PricesInsurance = () => {
@@ -29,15 +30,15 @@ const PricesInsurance = () => {
 
         {/* Content */}
         <div className="container relative">
-         <div className="max-w-3xl text-white text-left">
-      <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-        Prices & Insurance
-      </h1>
-      <p className="text-xl text-teal-50">
-        Transparent pricing with no hidden fees. We accept all major health
-        insurance providers
-      </p>
-    </div>
+          <div className="max-w-3xl text-white text-left">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+              Prices & Insurance
+            </h1>
+            <p className="text-xl text-teal-50">
+              Transparent pricing with no hidden fees. We accept all major health
+              insurance providers
+            </p>
+          </div>
         </div>
       </section>
 
@@ -46,9 +47,9 @@ const PricesInsurance = () => {
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-gray-900">
+              <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-4 text-gray-900" variant="fade-up">
                 Our Prices
-              </h2>
+              </HeadingScrollAnimation>
               <p className="text-lg text-gray-600">
                 Competitive rates for high-quality physiotherapy and wellness
                 services
@@ -65,9 +66,9 @@ const PricesInsurance = () => {
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-10">
-              <h2 className="text-3xl font-bold mb-4 text-gray-900">
+              <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-4 text-gray-900" variant="slide-in-left">
                 Insurance Coverage
-              </h2>
+              </HeadingScrollAnimation>
               <p className="text-lg text-gray-600">
                 We work with all major private health insurance providers
               </p>
@@ -158,9 +159,9 @@ const PricesInsurance = () => {
       <section className="section bg-gray-50">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            <HeadingScrollAnimation as="h2" className="text-3xl font-bold text-center mb-12 text-gray-900" variant="blur-up">
               Payment Options
-            </h2>
+            </HeadingScrollAnimation>
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-xl shadow-lg p-6 text-center">
@@ -207,9 +208,9 @@ const PricesInsurance = () => {
       {/* CTA */}
       <section className="section bg-gradient-to-r from-teal-600 to-teal-700 text-white">
         <div className="container text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+          <HeadingScrollAnimation as="h2" className="text-3xl lg:text-4xl font-bold mb-6" variant="scale">
             Ready to Start Your Recovery Journey?
-          </h2>
+          </HeadingScrollAnimation>
           <p className="text-xl mb-8 text-teal-100">
             Book your appointment today and take the first step towards better
             health

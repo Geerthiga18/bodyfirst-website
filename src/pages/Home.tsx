@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Card from '../components/Card';
 import InsuranceMarquee from '../components/InsuranceMarquee';
+import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
 import { siteContent } from '../data/content';
 
 const Home = () => {
@@ -9,12 +10,12 @@ const Home = () => {
     <div className="pt-20">
       {/* Hero Section (your existing Hero; will look teal if Option A is applied) */}
       <Hero
-         title={siteContent.hero.title}
-  subtitle={siteContent.company.tagline}
-  description={siteContent.hero.description}
-  ctaPrimary={siteContent.hero.ctaPrimary}
-  ctaSecondary={siteContent.hero.ctaSecondary}
-  backgroundVideo="/videos/hero.mp4" 
+        title={siteContent.hero.title}
+        subtitle={siteContent.company.tagline}
+        description={siteContent.hero.description}
+        ctaPrimary={siteContent.hero.ctaPrimary}
+        ctaSecondary={siteContent.hero.ctaSecondary}
+        backgroundVideo="/videos/hero.mp4"
       />
 
       {/* Quick Overview Cards */}
@@ -77,7 +78,9 @@ const Home = () => {
       <section className="section bg-teal-50">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title text-gray-900">Our Services</h2>
+            <HeadingScrollAnimation as="h2" className="section-title text-gray-900" variant="fade-up">
+              Our Services
+            </HeadingScrollAnimation>
             <p className="section-subtitle text-teal-800">
               Comprehensive physiotherapy and wellness treatments tailored to your needs
             </p>
@@ -109,7 +112,9 @@ const Home = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title text-gray-900">What Our Patients Say</h2>
+            <HeadingScrollAnimation as="h2" className="section-title text-gray-900" variant="slide-in-left">
+              What Our Patients Say
+            </HeadingScrollAnimation>
             <p className="section-subtitle text-teal-800">
               Trusted by hundreds of patients across London
             </p>
@@ -159,7 +164,9 @@ const Home = () => {
       <section className="section bg-gradient-to-br from-teal-50 to-white">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="section-title text-gray-900">We Accept All Major Insurance Providers</h2>
+            <HeadingScrollAnimation as="h2" className="section-title text-gray-900" variant="scale">
+              We Accept All Major Insurance Providers
+            </HeadingScrollAnimation>
             <p className="section-subtitle text-teal-800">
               Use your health insurance or work benefits to cover treatment costs
             </p>
@@ -182,7 +189,9 @@ const Home = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title text-gray-900">Meet Our Team</h2>
+            <HeadingScrollAnimation as="h2" className="section-title text-gray-900" variant="blur-up">
+              Meet Our Team
+            </HeadingScrollAnimation>
             <p className="section-subtitle text-teal-800">
               Experienced, qualified professionals dedicated to your recovery
             </p>
@@ -238,7 +247,9 @@ const Home = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title text-gray-900">Why Choose Body First UK?</h2>
+            <HeadingScrollAnimation as="h2" className="section-title text-gray-900" variant="slide-in-right">
+              Why Choose Body First UK?
+            </HeadingScrollAnimation>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -294,38 +305,38 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-     <section className="section bg-gradient-to-r from-teal-600 to-teal-700 text-white">
-  <div className="container text-center">
-    <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-      Ready to Start Your Recovery Journey?
-    </h2>
-    <p className="text-xl mb-8 text-teal-100">
-      Book your appointment today and take the first step towards better health
-    </p>
+      <section className="section bg-gradient-to-r from-teal-600 to-teal-700 text-white">
+        <div className="container text-center">
+          <HeadingScrollAnimation as="h2" className="text-3xl lg:text-4xl font-bold mb-6" variant="fade-up">
+            Ready to Start Your Recovery Journey?
+          </HeadingScrollAnimation>
+          <p className="text-xl mb-8 text-teal-100">
+            Book your appointment today and take the first step towards better health
+          </p>
 
-    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-      {/* Goes directly to the booking form on Contact page */}
-     <a
-  href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="btn bg-white text-teal-700 hover:bg-gray-100 text-lg px-8"
->
-  Book Now
-</a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* Goes directly to the booking form on Contact page */}
+            <a
+              href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn bg-white text-teal-700 hover:bg-gray-100 text-lg px-8"
+            >
+              Book Now
+            </a>
 
 
-      {/* Goes to Contact page (top) */}
-      <Link
-        to="/contact"
-        className="btn bg-teal-700 hover:bg-teal-800 text-lg px-8"
-      >
-        Contact Us
-      </Link>
-    </div>
-  </div>
-</section>
-    </div>
+            {/* Goes to Contact page (top) */}
+            <Link
+              to="/contact"
+              className="btn bg-teal-700 hover:bg-teal-800 text-lg px-8"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      </section >
+    </div >
   );
 };
 

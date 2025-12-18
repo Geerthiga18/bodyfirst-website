@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import HeadingScrollAnimation from "../components/HeadingScrollAnimation";
 import { siteContent } from "../data/content";
 
 const About = () => {
@@ -43,9 +44,9 @@ const About = () => {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">
+              <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-6 text-gray-900" variant="fade-up">
                 What We Do
-              </h2>
+              </HeadingScrollAnimation>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {siteContent.about.mission}
               </p>
@@ -67,9 +68,9 @@ const About = () => {
       <section className="section bg-gray-50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900">
+            <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-4 text-gray-900" variant="slide-in-left">
               Our Values
-            </h2>
+            </HeadingScrollAnimation>
             <p className="text-lg text-gray-600">
               The principles that guide everything we do
             </p>
@@ -93,9 +94,9 @@ const About = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900">
+            <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-4 text-gray-900" variant="scale">
               Meet Our Team
-            </h2>
+            </HeadingScrollAnimation>
             <p className="text-lg text-gray-600">
               Experienced, qualified professionals dedicated to your recovery
             </p>
@@ -142,9 +143,9 @@ const About = () => {
       <section className="section bg-teal-50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900">
+            <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-4 text-gray-900" variant="blur-up">
               Professional Standards
-            </h2>
+            </HeadingScrollAnimation>
             <p className="text-lg text-gray-600">
               All our physiotherapists are fully qualified and registered with
               professional bodies
@@ -207,9 +208,9 @@ const About = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            <HeadingScrollAnimation as="h2" className="text-3xl font-bold text-center mb-12 text-gray-900" variant="slide-in-right">
               Why Patients Choose Us
-            </h2>
+            </HeadingScrollAnimation>
 
             <div className="space-y-6">
               <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg">
@@ -272,9 +273,9 @@ const About = () => {
       {/* CTA */}
       <section className="section bg-gradient-to-r from-teal-600 to-teal-700 text-white">
         <div className="container text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+          <HeadingScrollAnimation as="h2" className="text-3xl lg:text-4xl font-bold mb-6" variant="fade-up">
             Ready to Start Your Recovery Journey?
-          </h2>
+          </HeadingScrollAnimation>
           <p className="text-xl mb-8 text-teal-100">
             Book your appointment today and take the first step towards better
             health

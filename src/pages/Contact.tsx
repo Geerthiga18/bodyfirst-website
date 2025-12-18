@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import ContactForm from '../components/ContactForm';
 import Map from '../components/Map';
+import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
 import { siteContent } from '../data/content';
 
 const Contact = () => {
@@ -103,9 +104,9 @@ const Contact = () => {
 
           {/* Opening Hours */}
           <div className="max-w-2xl mx-auto bg-gray-50 rounded-xl p-8">
-            <h2 className="text-2xl font-bold text-center mb-6 text-gray-900">
+            <HeadingScrollAnimation as="h2" className="text-2xl font-bold text-center mb-6 text-gray-900" variant="fade-up">
               Opening Hours
-            </h2>
+            </HeadingScrollAnimation>
             <div className="space-y-3 text-center">
               <div className="flex justify-between items-center max-w-md mx-auto">
                 <span className="font-semibold text-gray-900">Monday – Friday</span>
@@ -145,9 +146,9 @@ const Contact = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
+            <HeadingScrollAnimation as="h2" className="text-3xl font-bold text-center mb-12 text-gray-900" variant="slide-in-left">
               Frequently Asked Questions
-            </h2>
+            </HeadingScrollAnimation>
 
             <div className="space-y-6">
               <div className="border-l-4 border-teal-600 pl-6 py-4">
@@ -218,9 +219,9 @@ const Contact = () => {
       {/* CTA */}
       <section className="section bg-gradient-to-r from-teal-600 to-teal-700 text-white">
         <div className="container text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-6" variant="scale">
             Ready to Take the First Step?
-          </h2>
+          </HeadingScrollAnimation>
           <p className="text-xl mb-8 text-teal-100 max-w-2xl mx-auto">
             Don&apos;t let pain hold you back. Book your appointment today and start your
             journey to better health
@@ -233,7 +234,7 @@ const Contact = () => {
               Call Now
             </a>
             <a
-             href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
+              href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
               target="_blank"
               rel="noopener noreferrer"
               className="btn bg-teal-700 hover:bg-teal-800 text-lg px-8"
