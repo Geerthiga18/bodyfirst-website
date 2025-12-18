@@ -14,7 +14,7 @@ const SEO = ({
     title = 'Hampton Hill Physiotherapy | Pain Relief & Injury Care',
     description = 'Trusted physiotherapy clinic in Hampton Hill. Specialising in pain relief, sports injuries & rehabilitation. HCPC registered therapists. Insurance accepted. Call 0203 818 1238.',
     canonical,
-    ogImage = 'https://bodyfirst.uk/images/social-share-1200x630.jpg',
+    ogImage = 'https://bodyfirst.uk/images/social-share-1200x630.png',
     ogType = 'website',
     noindex = false,
 }: SEOProps) => {
