@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { siteContent } from '../data/content';
 
 const WhyUs = () => {
   return (
