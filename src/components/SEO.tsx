@@ -11,10 +11,10 @@ interface SEOProps {
 }
 
 const SEO = ({
-    title = 'Expert Physiotherapy London | Body First UK Clinic',
-    description = 'Expert physiotherapy & wellness in Hampton, London. Sports massage, dry needling, shockwave therapy. HCPC registered. Insurance accepted. Book online today.',
+    title = 'Hampton Hill Physiotherapy | Pain Relief & Injury Care',
+    description = 'Trusted physiotherapy clinic in Hampton Hill. Specialising in pain relief, sports injuries & rehabilitation. HCPC registered therapists. Insurance accepted. Call 0203 818 1238.',
     canonical,
-    ogImage = 'https://bodyfirst.uk/images/og-share.jpg',
+    ogImage = 'https://bodyfirst.uk/images/social-share-1200x630.jpg',
     ogType = 'website',
     noindex = false,
 }: SEOProps) => {
@@ -64,6 +64,9 @@ const SEO = ({
         updateMetaTag('og:title', title, true);
         updateMetaTag('og:description', description, true);
         updateMetaTag('og:image', ogImage, true);
+        updateMetaTag('og:image:width', '1200', true);
+        updateMetaTag('og:image:height', '630', true);
+        updateMetaTag('og:image:alt', 'Body First UK - Your Local Physio in Hampton Hill for Pain Relief & Rehabilitation', true);
         updateMetaTag('og:locale', 'en_GB', true);
         updateMetaTag('og:site_name', 'Body First UK', true);
 
@@ -73,6 +76,7 @@ const SEO = ({
         updateMetaTag('twitter:title', title);
         updateMetaTag('twitter:description', description);
         updateMetaTag('twitter:image', ogImage);
+        updateMetaTag('twitter:image:alt', 'Body First UK - Your Local Physio in Hampton Hill for Pain Relief & Rehabilitation');
         updateMetaTag('twitter:site', '@bodyfirstuk');
 
         // Theme Color
@@ -90,13 +94,13 @@ const SEO = ({
 
             const schemaData = {
                 "@context": "https://schema.org",
-                "@type": "Physiotherapy",
+                "@type": "MedicalBusiness",
                 "name": "Body First UK",
                 "alternateName": "BODY FIRST UK - Physio & Wellbeing Clinic",
                 "url": baseUrl,
                 "logo": `${baseUrl}/images/logo.png`,
                 "image": ogImage,
-                "description": "Expert physiotherapy and wellness clinic in Hampton, London, offering comprehensive treatment for musculoskeletal conditions, sports injuries, and chronic pain.",
+                "description": "Expert physiotherapy and wellness clinic in Hampton Hill, London, offering comprehensive treatment for musculoskeletal conditions, sports injuries, chronic pain, and rehabilitation.",
                 "telephone": "+442038181238",
                 "email": "info@bodyfirst.uk",
                 "address": {
@@ -111,6 +115,10 @@ const SEO = ({
                     "@type": "GeoCoordinates",
                     "latitude": "51.4256928",
                     "longitude": "-0.3568561"
+                },
+                "areaServed": {
+                    "@type": "City",
+                    "name": "Hampton Hill"
                 },
                 "openingHoursSpecification": [
                     {
@@ -147,25 +155,25 @@ const SEO = ({
                         {
                             "@type": "Offer",
                             "itemOffered": {
-                                "@type": "Service",
+                                "@type": "MedicalTherapy",
                                 "name": "Physiotherapy",
-                                "description": "Expert assessment and treatment for musculoskeletal conditions"
+                                "description": "Expert assessment and treatment for musculoskeletal conditions, pain relief, and injury rehabilitation"
                             }
                         },
                         {
                             "@type": "Offer",
                             "itemOffered": {
-                                "@type": "Service",
+                                "@type": "MedicalTherapy",
                                 "name": "Sports Massage",
-                                "description": "Deep tissue massage for recovery and flexibility"
+                                "description": "Deep tissue massage for recovery, flexibility, and performance enhancement"
                             }
                         },
                         {
                             "@type": "Offer",
                             "itemOffered": {
-                                "@type": "Service",
+                                "@type": "MedicalTherapy",
                                 "name": "Shockwave Therapy",
-                                "description": "Non-invasive treatment for chronic injuries"
+                                "description": "Non-invasive treatment for chronic injuries and pain management"
                             }
                         }
                     ]
