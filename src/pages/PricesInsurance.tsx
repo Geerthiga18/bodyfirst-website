@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PriceTable from "../components/PriceTable";
+import InsuranceMarquee from "../components/InsuranceMarquee";
 import { siteContent } from "../data/content";
 
 const PricesInsurance = () => {
@@ -186,19 +187,9 @@ const PricesInsurance = () => {
 
             {/* Insurance Logos */}
             <div className="bg-teal-50 rounded-xl p-8 mb-8">
-              <div className="flex items-center gap-8">
-                {siteContent.insurance.accepted.map((insurer) => (
-                  <div
-                    key={insurer.name}
-                    className="bg-white px-8 py-6 rounded-lg shadow-md ring-1 ring-teal-100 flex items-center justify-center"
-                  >
-                    <img
-                      src={insurer.logo}
-                      alt={insurer.name}
-                      className="h-16 w-auto object-contain"
-                    />
-                  </div>
-                ))}
+              <div>
+                {/* marquee component shows logos in continuous loop */}
+                <InsuranceMarquee items={siteContent.insurance.accepted} duration={20} />
               </div>
             </div>
 

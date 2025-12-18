@@ -67,6 +67,34 @@
   
 }
 
+/* Marquee / infinite horizontal scroll for partner logos */
+.marquee {
+  position: relative;
+  overflow: hidden;
+}
+.marquee-track {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  will-change: transform;
+  animation: marquee-linear 20s linear infinite;
+}
+.marquee-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-linear {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Card from '../components/Card';
+import InsuranceMarquee from '../components/InsuranceMarquee';
 import { siteContent } from '../data/content';
 
 const Home = () => {
@@ -159,20 +160,9 @@ const Home = () => {
             </p>
           </div>
 
-<div className="flex flex-wrap justify-center items-center gap-8">
-  {siteContent.insurance.accepted.map((insurer) => (
-    <div
-      key={insurer.name}
-      className="bg-white px-8 py-6 rounded-lg shadow-md ring-1 ring-teal-100 flex items-center justify-center"
-    >
-      <img
-        src={insurer.logo}
-        alt={insurer.name}
-        className="h-16 w-auto object-contain"
-      />
-    </div>
-  ))}
-</div>
+          <div>
+            <InsuranceMarquee items={siteContent.insurance.accepted} duration={22} />
+          </div>
 
 
           <div className="mt-12 text-center">
