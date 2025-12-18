@@ -124,7 +124,7 @@ const About = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-teal-700 font-medium mb-2 line-clamp-2">
+                  <p className="text-teal-700 font-medium mb-2">
                     {member.role}
                   </p>
                   <p className="text-sm text-gray-600 mb-3">

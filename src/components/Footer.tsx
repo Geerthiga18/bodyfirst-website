@@ -2,6 +2,29 @@ import { Link } from 'react-router-dom';
 import { siteContent } from '../data/content';
 
 const Footer = () => {
+  const formatPhone = (raw: string) => {
+    const digits = raw.replace(/\D/g, '');
+    if (!digits) return raw;
+    // UK number formatting +44 20 3818 1238 for 4420xxxxxxxx
+    if (digits.startsWith('44')) {
+      const rest = digits.slice(2);
+      if (rest.length === 10) {
+        return `+44 ${rest.slice(0, 2)} ${rest.slice(2, 6)} ${rest.slice(6)}`;
+      }
+      // fallback: group rest in 3s after country code
+      return `+44 ${rest.replace(/(\d{3})(?=\d)/g, '$1 ').trim()}`;
+    }
+    // US style +1 (xxx) xxx-xxxx
+    if (digits.length === 11 && digits.startsWith('1')) {
+      return `+1 ${digits.slice(1, 4)} ${digits.slice(4, 7)} ${digits.slice(7)}`;
+    }
+    // Generic: show plus + and group by 3
+    return `+${digits.replace(/(\d{3})(?=\d)/g, '$1 ').trim()}`;
+  };
+
+  const rawPhone = siteContent.company.phone || '';
+  const phoneDigits = rawPhone.replace(/\D/g, '');
+  const formattedPhone = formatPhone(rawPhone);
   return (
     <footer className="bg-gray-900 text-white">
       {/* CTA Banner */}
@@ -55,13 +78,26 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href={`tel:${siteContent.company.phone}`} className="hover:text-white transition-colors">
-                  {siteContent.company.phone}
+                <a
+                  href={`https://wa.me/${phoneDigits}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors flex items-center space-x-2"
+                  aria-label="WhatsApp"
+                >
+                  <svg className="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.52 3.478A11.884 11.884 0 0012.03.002C5.49.002.48 5.01.48 11.55c0 2.03.53 4.01 1.54 5.77L.04 23.5l6.4-1.68a11.5 11.5 0 005.59 1.35h.01c6.54 0 11.56-5.01 11.56-11.54 0-3.09-1.2-5.99-3.14-8.06zM12.03 21.02c-1.8 0-3.54-.48-5.07-1.39l-.36-.22-3.8 1 1-3.7-.23-.38A8.35 8.35 0 013.67 11.55c0-4.6 3.73-8.33 8.36-8.33 2.24 0 4.35.87 5.93 2.45 1.58 1.58 2.45 3.7 2.45 5.93 0 4.63-3.73 8.32-8.38 8.32z" />
+                    <path d="M17.57 14.17c-.29-.15-1.71-.84-1.98-.94-.27-.11-.47-.15-.67.15s-.77.94-.94 1.13c-.17.19-.34.21-.63.07-.29-.15-1.23-.45-2.34-1.45-.87-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.67-1.6-.92-2.19-.24-.57-.49-.49-.67-.5l-.57-.01c-.19 0-.5.07-.77.36s-1.01.99-1.01 2.42 1.04 2.8 1.18 3 .42.5.71.8.99 1.28 1.9 2.05c1.31 1.06 2.37 1.37 2.79 1.52.42.15.67.13.92-.08.24-.21 1-1.17 1.14-1.49.14-.31.14-.58.10-.64-.05-.06-.18-.10-.38-.24z" />
+                  </svg>
+                  <span>{formattedPhone}</span>
                 </a>
               </li>
               <li>
-                <a href={`mailto:${siteContent.company.email}`} className="hover:text-white transition-colors">
-                  {siteContent.company.email}
+                <a href={`mailto:${siteContent.company.email}`} className="hover:text-white transition-colors flex items-center space-x-2" aria-label="Email">
+                  <svg className="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                  </svg>
+                  <span>{siteContent.company.email}</span>
                 </a>
               </li>
             </ul>
@@ -91,6 +127,7 @@ const Footer = () => {
             <div className="mt-6">
               <h4 className="font-semibold mb-3">Follow Us</h4>
               <div className="flex space-x-4">
+                
                 <a
                   href={siteContent.company.social.facebook}
                   target="_blank"

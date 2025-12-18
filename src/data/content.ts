@@ -189,7 +189,7 @@ insurance: {
  team: [
   {
     name: "Praveena Thiruvasager",
-    role: "Senior MSK Physiotherapist • Sports Exercise Specialist • Shock Wave Therapist",
+    role: "BSc in Physiotherapy • MSc in Advanced Physiotherapy • MPhil in Shockwave Therapy and Sports Medicine and Exercise Sciences • MCSP • HCPC registered",
     qualifications: "MSc Advanced Physiotherapy",
     description:
       "Senior physiotherapist with extensive experience in sports and musculoskeletal rehabilitation. Focuses on evidence-based care, complex rehab, and advanced modalities including shockwave therapy.",
