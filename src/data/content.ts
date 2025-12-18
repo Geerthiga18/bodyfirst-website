@@ -149,12 +149,13 @@ export const siteContent = {
   ],
 
   prices: [
-    { service: 'Initial Appointment', duration: '60 min', price: '£75' },
+    { service: 'Initial Appointment', duration: '45 min', price: '£75' },
     { service: '30 min Physiotherapy', duration: '30 min', price: '£65' },
-    { service: '60 min Physiotherapy', duration: '60 min', price: '£70' },
-    { service: '30 min Sports Massage', duration: '30 min', price: '£65' },
+    { service: '30 min Sports Massage', duration: '30 min', price: '£50' },
+    { service: '45 min Sports Massage', duration: '45 min', price: '£60' },
     { service: '60 min Sports Massage', duration: '60 min', price: '£70' },
-    { service: 'Lymphatic Drainage', duration: '60 min', price: '£80' },
+    { service: 'Lymphatic Drainage', duration: '30 min', price: '£7s0' },
+    { service: 'Lymphatic Drainage', duration: '45 min', price: '£80' },
     { service: 'Shockwave Therapy', duration: '1 session', price: '£80' },
     { service: 'Gait Analysis', duration: '45 min', price: '£70' }
   ],
@@ -180,6 +181,10 @@ insurance: {
     {
       name: 'Vitality',
       logo: '/images/insurance/vitality.jpg',
+    },
+    {
+      name: 'WPA',
+      logo: '/images/insurance/wpa.jpg',
     },
   ],
   note: 'We work with all major private health insurance providers. Many of our services are covered under standard physiotherapy benefits. Please check with your insurer for specific coverage details and pre-authorisation requirements.',

@@ -60,118 +60,6 @@ const PricesInsurance = () => {
         </div>
       </section>
 
-      {/* Package Deals */}
-      <section className="section bg-gray-50">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900">
-              Package Deals
-            </h2>
-            <p className="text-lg text-gray-600">
-              Save money with our treatment packages
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* 3-Session */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  3-Session Package
-                </h3>
-                <div className="text-4xl font-bold text-teal-600">£195</div>
-                <p className="text-gray-600 mt-2">Save £15</p>
-              </div>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-start">
-                  <span className="text-teal-600 mr-2">✓</span>
-                  <span className="text-gray-700">3x 60-minute sessions</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 mr-2">✓</span>
-                  <span className="text-gray-700">Valid for 3 months</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 mr-2">✓</span>
-                  <span className="text-gray-700">Flexible scheduling</span>
-                </li>
-              </ul>
-              <Link
-                to="/contact#book"
-                className="btn bg-teal-600 hover:bg-teal-700 text-white w-full text-center"
-              >
-                Book Package
-              </Link>
-            </div>
-
-            {/* 6-Session (Most Popular) */}
-            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-teal-600 hover:shadow-xl transition-shadow relative">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-teal-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                Most Popular
-              </div>
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  6-Session Package
-                </h3>
-                <div className="text-4xl font-bold text-teal-600">£375</div>
-                <p className="text-gray-600 mt-2">Save £45</p>
-              </div>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-start">
-                  <span className="text-teal-600 mr-2">✓</span>
-                  <span className="text-gray-700">6x 60-minute sessions</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 mr-2">✓</span>
-                  <span className="text-gray-700">Valid for 6 months</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 mr-2">✓</span>
-                  <span className="text-gray-700">Priority booking</span>
-                </li>
-              </ul>
-              <Link
-                to="/contact#book"
-                className="btn bg-teal-600 hover:bg-teal-700 text-white w-full text-center"
-              >
-                Book Package
-              </Link>
-            </div>
-
-            {/* 10-Session */}
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  10-Session Package
-                </h3>
-                <div className="text-4xl font-bold text-teal-600">£600</div>
-                <p className="text-gray-600 mt-2">Save £100</p>
-              </div>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-start">
-                  <span className="text-teal-600 mr-2">✓</span>
-                  <span className="text-gray-700">10x 60-minute sessions</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 mr-2">✓</span>
-                  <span className="text-gray-700">Valid for 12 months</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-teal-600 mr-2">✓</span>
-                  <span className="text-gray-700">Maximum savings</span>
-                </li>
-              </ul>
-              <Link
-                to="/contact#book"
-                className="btn bg-teal-600 hover:bg-teal-700 text-white w-full text-center"
-              >
-                Book Package
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Insurance */}
       <section className="section bg-white">
         <div className="container">
@@ -288,7 +176,7 @@ const PricesInsurance = () => {
               <div className="bg-white rounded-xl shadow-lg p-6 text-center">
                 <div className="text-4xl mb-4">💷</div>
                 <h3 className="font-bold text-lg mb-2 text-gray-900">Cash</h3>
-                <p className="text-gray-600">Cash payments welcome</p>
+                <p className="text-gray-600">We do accept Cash payments</p>
               </div>
 
               <div className="bg-white rounded-xl shadow-lg p-6 text-center">
