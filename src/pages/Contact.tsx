@@ -56,7 +56,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Methods */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {/* Phone */}
@@ -132,16 +132,16 @@ const Contact = () => {
       </section>
 
       {/* Contact Form & Map */}
-      <section id="book" className="section bg-gray-50">
+      <section id="book" className="section">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div>
+            <div className="bg-white rounded-xl shadow-lg p-6">
               <ContactForm />
             </div>
 
             {/* Map & Address */}
-            <div>
+            <div className="bg-white rounded-xl shadow-lg p-1 h-full">
               <Map />
             </div>
           </div>
@@ -149,7 +149,7 @@ const Contact = () => {
       </section>
 
       {/* FAQ */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <HeadingScrollAnimation as="h2" className="text-3xl font-bold text-center mb-12 text-gray-900" variant="slide-in-left">
@@ -157,7 +157,7 @@ const Contact = () => {
             </HeadingScrollAnimation>
 
             <div className="space-y-6">
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
+              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   How do I book an appointment?
                 </h3>
@@ -168,7 +168,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
+              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   Do you offer same-day appointments?
                 </h3>
@@ -178,7 +178,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
+              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   Where can I park?
                 </h3>
@@ -188,7 +188,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
+              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   Is the clinic wheelchair accessible?
                 </h3>
@@ -197,7 +197,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
+              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   What should I bring to my first appointment?
                 </h3>
@@ -208,7 +208,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
+              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   Can I reschedule my appointment?
                 </h3>

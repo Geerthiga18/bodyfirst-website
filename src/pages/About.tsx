@@ -46,7 +46,7 @@ const About = () => {
       </section>
 
       {/* Mission */}
-      <section id="team" className="section bg-white">
+      <section id="team" className="section">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -71,7 +71,7 @@ const About = () => {
       </section>
 
       {/* Values */}
-      <section className="section bg-gray-50">
+      <section className="section">
         <div className="container">
           <div className="text-center mb-12">
             <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-4 text-gray-900" variant="slide-in-left">
@@ -97,7 +97,7 @@ const About = () => {
       </section>
 
       {/* Team */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="text-center mb-12">
             <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-4 text-gray-900" variant="scale">
@@ -146,7 +146,7 @@ const About = () => {
       </section>
 
       {/* Accreditations */}
-      <section className="section bg-teal-50">
+      <section className="section">
         <div className="container">
           <div className="text-center mb-12">
             <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-4 text-gray-900" variant="blur-up">
@@ -211,7 +211,7 @@ const About = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <HeadingScrollAnimation as="h2" className="text-3xl font-bold text-center mb-12 text-gray-900" variant="slide-in-right">

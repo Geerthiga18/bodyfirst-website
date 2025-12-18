@@ -21,7 +21,7 @@ const Home = () => {
       />
 
       {/* Quick Overview Cards */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link to="/what-we-treat" className="group h-full">
@@ -77,7 +77,7 @@ const Home = () => {
       </section>
 
       {/* Featured Services */}
-      <section className="section bg-teal-50">
+      <section className="section">
         <div className="container">
           <div className="section-header">
             <HeadingScrollAnimation as="h2" className="section-title text-gray-900" variant="fade-up">
@@ -111,7 +111,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="section-header">
             <HeadingScrollAnimation as="h2" className="section-title text-gray-900" variant="slide-in-left">
@@ -188,7 +188,7 @@ const Home = () => {
       </section>
 
       {/* Team Section */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="section-header">
             <HeadingScrollAnimation as="h2" className="section-title text-gray-900" variant="blur-up">

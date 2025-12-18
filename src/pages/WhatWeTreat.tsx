@@ -38,7 +38,7 @@ const WhatWeTreat = () => {
       </section>
 
       {/* Conditions Grid from treatmentCategories */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {treatmentCategories.map((category) => (
@@ -269,7 +269,7 @@ const WhatWeTreat = () => {
       </section>
 
       {/* Treatment Approach */}
-      <section className="section bg-gray-50">
+      <section className="section">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <HeadingScrollAnimation as="h2" className="text-3xl font-bold text-center mb-12 text-gray-900" variant="fade-up">
@@ -351,7 +351,7 @@ const WhatWeTreat = () => {
       </section>
 
       {/* Common Questions */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <HeadingScrollAnimation as="h2" className="text-3xl font-bold text-center mb-12 text-gray-900" variant="slide-in-left">
@@ -359,7 +359,7 @@ const WhatWeTreat = () => {
             </HeadingScrollAnimation>
 
             <div className="space-y-6">
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
+              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   How quickly will I see results?
                 </h3>
@@ -369,7 +369,7 @@ const WhatWeTreat = () => {
                 </p>
               </div>
 
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
+              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   Do I need a referral from my GP?
                 </h3>
@@ -379,7 +379,7 @@ const WhatWeTreat = () => {
                 </p>
               </div>
 
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
+              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   What should I wear?
                 </h3>
@@ -389,7 +389,7 @@ const WhatWeTreat = () => {
                 </p>
               </div>
 
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
+              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   Will treatment be painful?
                 </h3>

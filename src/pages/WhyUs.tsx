@@ -36,7 +36,7 @@ const WhyUs = () => {
         </div>
       </section>
 
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
@@ -89,7 +89,7 @@ const WhyUs = () => {
             </div>
           </div>
 
-          <div className="mt-12">
+          <div className="mt-12 bg-white rounded-xl shadow-lg p-8">
             <h2 className="text-2xl font-semibold text-gray-900 mb-3">Our Commitment to You</h2>
             <p className="text-gray-700">
               We focus on measurable outcomes, open communication and creating treatment plans that fit your life. Our team will explain options, expected recovery timelines and how to self-manage between sessions.

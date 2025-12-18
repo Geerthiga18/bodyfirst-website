@@ -49,7 +49,7 @@ const PricesInsurance = () => {
       </section>
 
       {/* Price Table */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
@@ -62,13 +62,15 @@ const PricesInsurance = () => {
               </p>
             </div>
 
-            <PriceTable />
+            <div className="bg-white rounded-xl shadow-lg p-6 overflow-hidden">
+              <PriceTable />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Insurance */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-10">
@@ -162,7 +164,7 @@ const PricesInsurance = () => {
       </section>
 
       {/* Payment Options */}
-      <section className="section bg-gray-50">
+      <section className="section">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <HeadingScrollAnimation as="h2" className="text-3xl font-bold text-center mb-12 text-gray-900" variant="blur-up">

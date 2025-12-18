@@ -24,7 +24,7 @@ import './styles/globals.css';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col relative" style={{ zIndex: 1 }}>
         <AntigravityCanvas />
         <Header />
 

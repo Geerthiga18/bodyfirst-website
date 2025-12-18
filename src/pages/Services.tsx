@@ -36,7 +36,7 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-8">
             {servicesData.map((service) => (
@@ -97,7 +97,7 @@ const Services = () => {
       </section>
 
       {/* Service Features */}
-      <section className="section bg-gray-50">
+      <section className="section">
         <div className="container">
           <div className="text-center mb-12">
             <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-4 text-gray-900" variant="fade-up">
@@ -155,9 +155,9 @@ const Services = () => {
       </section>
 
       {/* Benefits */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8">
             <HeadingScrollAnimation as="h2" className="text-3xl font-bold text-center mb-12 text-gray-900" variant="slide-in-left">
               Benefits of Our Treatments
             </HeadingScrollAnimation>
