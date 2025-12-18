@@ -42,7 +42,7 @@ const Hero = ({
           ) : backgroundImage ? (
             <img
               src={backgroundImage}
-              alt="BodyFirst clinic"
+              alt="Body First UK clinic"
               className="w-full h-full object-cover"
             />
           ) : (

@@ -1,4 +1,5 @@
-import { useRef, useEffect, useState, ReactNode } from 'react';
+import { useRef, useEffect, useState } from 'react';
+import type { JSX, ReactNode } from 'react';
 
 interface HeadingScrollAnimationProps {
   as?: keyof JSX.IntrinsicElements;

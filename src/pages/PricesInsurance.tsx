@@ -14,7 +14,7 @@ const PricesInsurance = () => {
         <div className="absolute inset-0">
           <img
             src={pricesHeroImage}
-            alt="Prices and insurance at BodyFirst"
+            alt="Prices and insurance at Body First UK"
             className="w-full h-full object-cover"
             loading="lazy"
             onError={(e) => {

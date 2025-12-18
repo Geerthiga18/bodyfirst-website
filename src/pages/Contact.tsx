@@ -29,7 +29,7 @@ const Contact = () => {
         <div className="absolute inset-0 -z-20">
           <img
             src="/images/Contact/contact_hero.png"
-            alt="BodyFirst Contact"
+            alt="Body First UK Contact"
             className="w-full h-full object-cover"
           />
         </div>

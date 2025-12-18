@@ -1,6 +1,6 @@
 export const siteContent = {
   company: {
-    name: 'BodyFirst',
+    name: 'Body First UK',
     tagline: 'Your Health, Our Priority',
     email: 'info@bodyfirst.uk',
     phone: '+442038181238',
@@ -26,7 +26,7 @@ export const siteContent = {
   hero: {
     title: 'Expert Physiotherapy & Wellness Care',
     subtitle: 'Professional treatment for your health and recovery in the heart of London',
-    description: 'At BodyFirst, we combine expert physiotherapy with cutting-edge wellness treatments to help you move better, feel stronger, and live pain-free.',
+    description: 'At Body First UK, we combine expert physiotherapy with cutting-edge wellness treatments to help you move better, feel stronger, and live pain-free.',
     ctaPrimary: 'Book Now',
     ctaSecondary: 'Contact Us'
   },
@@ -233,33 +233,66 @@ insurance: {
 
   testimonials: [
     {
-      name: 'David M.',
+      name: 'David G.',
       rating: 5,
-      text: 'After months of back pain, the team at BodyFirst finally helped me find relief. Their professional approach and expertise made all the difference.',
-      service: 'Physiotherapy'
+      text: 'I had eight sessions with Bodyfirst because of a fractured wrist. I had only been out of the cast for a few days before I started my treatment.Praveena helped with getting the swelling down and gain much more motion. My wrist and hand now moves a lot better.Praveena is not only an excellent physio she is a lovely person too. She was always happy to answer my concerns and give me advice for exercises I could do at home to speed up my recovery.Highly recommend Bodyfirst.',
+      service: 'Fracture & Post-Op Rehab'
     },
     {
-      name: 'Lisa K.',
+      name: 'Tracy D.',
       rating: 5,
-      text: 'Excellent sports massage service! The therapist really knew what they were doing and I felt so much better afterwards. Highly recommend!',
-      service: 'Sports Massage'
+      text: 'Highly recommend. Praveena has supported me with a long standing back issue and rehabilitation after breaking my wrist. Her knowledge, treatment and exercise programme in both cases have been fantastic.My recovery has been more comprehensive and faster than I have experienced with anyone else. I have a full range of motion just weeks after coming out of plaster.The best hands on physio I have ever had and a lovely lady to boot. So lucky to have this fantastic local business on the doorstep.',
+      service: 'Chronic Back & Joint Pain'
     },
     {
-      name: 'Robert S.',
+      name: 'Bethan Probert',
       rating: 5,
-      text: 'I was sceptical about dry needling but it really worked for my shoulder pain. The staff explained everything clearly and made me feel comfortable.',
-      service: 'Dry Needling'
+      text: 'Absolutely amazing physio! I have seen Praveena repeatedly and she always offers the best quality service! She was able to diagnose my injury where other physios failed to. She is highly knowledgable and qualified. She ensured I got the best treatment suited to what I needed. Best to mention the team are always welcoming and attentive! Always lovely having a chat with Sarah on the front desk!',
+      service: 'Physiotherapy / Expert Diagnosis'
     },
     {
-      name: 'Amanda P.',
+      name: 'Jegathees Krisha',
       rating: 5,
-      text: 'The gait analysis was incredibly detailed and helped identify issues with my running form. The custom orthotics have made a huge difference!',
-      service: 'Gait Analysis'
-    }
+      text: 'I had a great experience with physiotherapist Praveena. She is highly qualified, holds a Masters in Advanced Physiotherapy and her professionalism is truly proven. Using advanced foot scan technology and Fitz orthotic insoles, she worked on my feet and my twins feet. The entire process was smooth, informative and effective. I am very happy with the results and would highly recommend her to anyone looking for expert physiotherapy treatment.',
+      service: 'Foot Scan and Gait Analysis'
+    },
+    {
+      name: 'CHRIS FIDLER',
+      rating: 5,
+      text: 'If you have any muscle or joint problems, this is definitely the place to go. I had a treatment today and felt immediate improvement. The staff are knowledgeable and keen to provide appropriate exercises between sessions. I highly recommend this practice.',
+      service: 'Sports Massage / Immediate Relief'// or Muscle or Joint Pain
+    },
+    {
+      name: 'Susanna Jarolim',
+      rating: 5,
+      text: 'Praveena was amazing.Before I came here, I had foot pain, plantar fasciitis, pain in my knee, arthritis and an old elbow injury that never went away over time. All three areas are very good. Sarah, the receptionist was very careful to send me receipts for my insurance.I highly recommend "Body First UK".Thank you for taking such good care of me😊',    
+      service: 'Complex Pain Conditions'
+    },
+   
+   
+    {
+      name: "Susan O'Connell",
+      rating: 5,
+      text: 'Praveena runs a wonderful comprehensive clinic, with an amazing range of physio treatments. She has treated me using deep massage therapy for lymphatic drainage following heart surgery. . This has also included compression therapy. She is a highly qualified person with a masters in advanced physio and I highly recommend her.',
+      service: 'Post-Surgical Lymphatic Care'
+    },
+    // {
+    //   name: 'Malak',
+    //   rating: 5,
+    //   text: 'Our entire family has been seeing Praveena and she is the best. From sports injuries to everyday aches and pains - she has looked after us with everything and always provides the highest level of care. Her knowledge and skill are second to none and she is as wonderful with children as she is with adults.The shockwave therapy sessions in particular have been a game changer - truly the best service I have experienced anywhere. Every appointment feels professional, effective and tailored to our needs.We are so lucky to have found her. We would highly recommend her to anyone looking for a physiotherapist who truly cares and delivers exceptional results every time!',
+    //   service: 'Shockwave Therapy'
+    // },
+    {
+      name: 'Sylvia Walker',
+      rating: 5,
+      text: 'Praveena is an excellent physiotherapist and a kind person. I recently had plantar fasciitis treated by her. She saw me as soon as I started having symptoms and after two follow-up appointments, it cleared up quickly. This is a condition that is often long-term. She has a variety of treatments available, including shockwave therapy and ultrasound. Thank you very much, Praveena.',
+      service: 'Plantar Fasciitis / Quick Results'
+    },
+
   ],
 
   about: {
-    mission: 'At BodyFirst, we believe that everyone deserves to move freely and live without pain. Our mission is to provide exceptional physiotherapy and wellness services that empower our patients to achieve their health and fitness goals.',
+    mission: 'At Body First UK, we believe that everyone deserves to move freely and live without pain. Our mission is to provide exceptional physiotherapy and wellness services that empower our patients to achieve their health and fitness goals.',
     philosophy: 'We take a holistic, evidence-based approach to treatment, combining the latest research with hands-on expertise. Every patient receives a comprehensive assessment and a personalised treatment plan tailored to their specific needs and goals.',
     values: [
       'Excellence in clinical practice',
