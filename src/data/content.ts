@@ -160,81 +160,81 @@ export const siteContent = {
     { service: 'Gait Analysis', duration: '45 min', price: '£70' }
   ],
 
-insurance: {
-  accepted: [
+  insurance: {
+    accepted: [
+      {
+        name: 'AXA',
+        logo: '/images/insurance/axa.jpg',
+      },
+      {
+        name: 'AVIVA',
+        logo: '/images/insurance/aviva.jpg',
+      },
+      {
+        name: 'BUPA',
+        logo: '/images/insurance/bupa.png',
+      },
+      {
+        name: 'Simply Health',
+        logo: '/images/insurance/simply.jpg',
+      },
+      {
+        name: 'Vitality',
+        logo: '/images/insurance/vitality.jpg',
+      },
+      {
+        name: 'WPA',
+        logo: '/images/insurance/wpa.jpg',
+      },
+    ],
+    note: 'We work with all major private health insurance providers. Many of our services are covered under standard physiotherapy benefits. Please check with your insurer for specific coverage details and pre-authorisation requirements.',
+  },
+
+
+  team: [
     {
-      name: 'AXA',
-      logo: '/images/insurance/axa.jpg',
+      name: "Praveena Thiruvasager",
+      role: "BSc in Physiotherapy • MSc in Advanced Physiotherapy • MPhil in Shockwave Therapy and Sports Medicine and Exercise Sciences • MCSP • HCPC registered",
+      qualifications: "MSc Advanced Physiotherapy",
+      description:
+        "Senior physiotherapist with extensive experience in sports and musculoskeletal rehabilitation. Focuses on evidence-based care, complex rehab, and advanced modalities including shockwave therapy.",
+      image: "/images/Aboutus/praveena.png",
     },
     {
-      name: 'AVIVA',
-      logo: '/images/insurance/aviva.jpg',
+      name: "Ivaylo Todorov",
+      role: "Senior Physiotherapist",
+      qualifications: "CSP • Chartered Senior Physiotherapist • Chiropractic Training",
+      description:
+        "Highly experienced physiotherapist with a strong NHS background. Interests include neuro rehabilitation, respiratory care, and spine-related management using a comprehensive patient-centred approach.",
+      image: "/images/Aboutus/IvayloTodorov.jpeg",
     },
     {
-      name: 'BUPA',
-      logo: '/images/insurance/bupa.png',
+      name: "Rachael Watkeys",
+      role: "Myotherapist • Sports Massage Therapist",
+      qualifications:
+        "BAppSci (Human Movement) • AdDip (Myotherapy) • PGCE • ITEC",
+      description:
+        "Experienced myotherapist with a strong foundation in human movement and soft tissue therapy. Specialises in myofascial release, trigger point techniques, dry needling, and sports-focused recovery.",
+      image: "/images/Aboutus/Rachael.jpeg",
     },
     {
-      name: 'Simply Health',
-      logo: '/images/insurance/simply.jpg',
+      name: "Alisha Abdala",
+      role: "Sports Massage Therapist",
+      qualifications: "BSc (Hons) Sport Health and Exercise",
+      description:
+        "Ex British gymnast and qualified sports massage therapist with a special interest in the thoracic and lumbar spine. Also certified in cupping therapy, lymphatic drainage, and sports injury rehabilitation. Focuses on releasing tension and correcting movement imbalances caused by repetitive activity or injury.",
+      image: "/images/Aboutus/neww.jpeg",
     },
     {
-      name: 'Vitality',
-      logo: '/images/insurance/vitality.jpg',
+      name: "Mihai Apostol",
+      role: "Sports Massage Therapist",
+      qualifications: "BSc (Hons) Osteopathic Medicine (to complete 2026)",
+      description:
+        "Experienced sports massage therapist with over a decade of work in improving human movement. Currently studying osteopathy at the British School of Osteopathic Medicine, with a strong interest in biomechanics, posture, and restoring optimal movement patterns. Supports patients with postural strain, asymmetrical patterns, and sedentary lifestyle-related issues.",
+      image: "/images/Aboutus/newone.jpeg",
     },
-    {
-      name: 'WPA',
-      logo: '/images/insurance/wpa.jpg',
-    },
+
   ],
-  note: 'We work with all major private health insurance providers. Many of our services are covered under standard physiotherapy benefits. Please check with your insurer for specific coverage details and pre-authorisation requirements.',
-},
-
-
- team: [
-  {
-    name: "Praveena Thiruvasager",
-    role: "BSc in Physiotherapy • MSc in Advanced Physiotherapy • MPhil in Shockwave Therapy and Sports Medicine and Exercise Sciences • MCSP • HCPC registered",
-    qualifications: "MSc Advanced Physiotherapy",
-    description:
-      "Senior physiotherapist with extensive experience in sports and musculoskeletal rehabilitation. Focuses on evidence-based care, complex rehab, and advanced modalities including shockwave therapy.",
-    image: "/images/Aboutus/praveena.png",
-  },
-  {
-    name: "Ivaylo Todorov",
-    role: "Senior Physiotherapist",
-    qualifications: "CSP • Chartered Senior Physiotherapist • Chiropractic Training",
-    description:
-      "Highly experienced physiotherapist with a strong NHS background. Interests include neuro rehabilitation, respiratory care, and spine-related management using a comprehensive patient-centred approach.",
-    image: "/images/Aboutus/IvayloTodorov.jpeg",
-  },
-  {
-    name: "Rachael Watkeys",
-    role: "Myotherapist • Sports Massage Therapist",
-    qualifications:
-      "BAppSci (Human Movement) • AdDip (Myotherapy) • PGCE • ITEC",
-    description:
-      "Experienced myotherapist with a strong foundation in human movement and soft tissue therapy. Specialises in myofascial release, trigger point techniques, dry needling, and sports-focused recovery.",
-    image: "/images/Aboutus/Rachael.jpeg",
-  },
-   {
-  name: "Alisha Abdala",
-  role: "Sports Massage Therapist",
-  qualifications: "BSc (Hons) Sport Health and Exercise",
-  description:
-    "Ex British gymnast and qualified sports massage therapist with a special interest in the thoracic and lumbar spine. Also certified in cupping therapy, lymphatic drainage, and sports injury rehabilitation. Focuses on releasing tension and correcting movement imbalances caused by repetitive activity or injury.",
-  image: "/images/Aboutus/neww.jpeg",
-},
-{
-  name: "Mihai Apostol",
-  role: "Sports Massage Therapist",
-  qualifications: "BSc (Hons) Osteopathic Medicine (to complete 2026)",
-  description:
-    "Experienced sports massage therapist with over a decade of work in improving human movement. Currently studying osteopathy at the British School of Osteopathic Medicine, with a strong interest in biomechanics, posture, and restoring optimal movement patterns. Supports patients with postural strain, asymmetrical patterns, and sedentary lifestyle-related issues.",
-  image: "/images/Aboutus/newone.jpeg",
-},
-
-],
 
   testimonials: [
     {
@@ -270,11 +270,11 @@ insurance: {
     {
       name: 'Susanna Jarolim',
       rating: 5,
-      text: 'Praveena was amazing.Before I came here, I had foot pain, plantar fasciitis, pain in my knee, arthritis and an old elbow injury that never went away over time. All three areas are very good. Sarah, the receptionist was very careful to send me receipts for my insurance.I highly recommend "Body First UK".Thank you for taking such good care of me😊',    
+      text: 'Praveena was amazing.Before I came here, I had foot pain, plantar fasciitis, pain in my knee, arthritis and an old elbow injury that never went away over time. All three areas are very good. Sarah, the receptionist was very careful to send me receipts for my insurance.I highly recommend "Body First UK".Thank you for taking such good care of me😊',
       service: 'Complex Pain Conditions'
     },
-   
-   
+
+
     {
       name: "Susan O'Connell",
       rating: 5,
@@ -309,8 +309,8 @@ insurance: {
   },
 
   accreditations: [
-    { name: 'CSP', fullName: 'Chartered Society of Physiotherapy', logo: '/images/accreditations/csp.png' },
-    { name: 'HCPC', fullName: 'Health and Care Professions Council', logo: '/images/accreditations/hcpc.png' },
-    { name: 'Physio First', fullName: 'Recognised Physiotherapy Practice', logo: '/images/accreditations/physio-first.png' }
+    { name: 'CSP', fullName: 'Chartered Society of Physiotherapy', logo: '/images/insurance/csp.png' },
+    { name: 'HCPC', fullName: 'Health and Care Professions Council', logo: '/images/insurance/hcpc.jpeg' },
+    { name: 'Physio First', fullName: 'Recognised Physiotherapy Practice', logo: '/images/insurance/physioFirst.jpg' }
   ]
 };

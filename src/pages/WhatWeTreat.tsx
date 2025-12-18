@@ -1,6 +1,7 @@
 // src/pages/WhatWeTreat.tsx
 
 import { Link } from 'react-router-dom';
+import ScrollAnimation from '../components/ScrollAnimation';
 import Card from '../components/Card';
 import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
 import SEO from '../components/SEO';
@@ -63,8 +64,6 @@ const WhatWeTreat = () => {
                       />
                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
-                    {/* Overlay for text readability */}
-
                   </>
                 )}
                 {category.slug === 'neck-pain' && (
@@ -78,8 +77,6 @@ const WhatWeTreat = () => {
                       />
                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
-                    {/* Overlay for text readability */}
-
                   </>
                 )}
                 {category.slug === 'shoulder-pain' && (
@@ -90,12 +87,9 @@ const WhatWeTreat = () => {
                         src="/images/Condition We Treat/shoulder.png"
                         alt="Shoulder"
                         className="w-full h-full object-cover"
-
                       />
                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
-                    {/* Overlay for text readability */}
-
                   </>
                 )}
                 {category.slug === 'elbow-pain' && (
@@ -109,8 +103,6 @@ const WhatWeTreat = () => {
                       />
                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
-                    {/* Overlay for text readability */}
-
                   </>
                 )}
                 {category.slug === 'back-spine-pain' && (
@@ -124,8 +116,6 @@ const WhatWeTreat = () => {
                       />
                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
-                    {/* Overlay for text readability */}
-
                   </>
                 )}
                 {category.slug === 'hip-groin-pain' && (
@@ -139,8 +129,6 @@ const WhatWeTreat = () => {
                       />
                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
-                    {/* Overlay for text readability */}
-
                   </>
                 )}
                 {category.slug === 'foot-ankle-pain' && (
@@ -154,8 +142,6 @@ const WhatWeTreat = () => {
                       />
                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
-                    {/* Overlay for text readability */}
-
                   </>
                 )}
                 {category.slug === 'hand-wrist-pain' && (
@@ -169,8 +155,6 @@ const WhatWeTreat = () => {
                       />
                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
-                    {/* Overlay for text readability */}
-
                   </>
                 )}
                 {category.slug === 'knee-pain' && (
@@ -184,8 +168,6 @@ const WhatWeTreat = () => {
                       />
                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
-                    {/* Overlay for text readability */}
-
                   </>
                 )}
                 {category.slug === 'sports-injuries' && (
@@ -199,7 +181,6 @@ const WhatWeTreat = () => {
                       />
                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
-
                   </>
                 )}
                 {category.slug === 'post-surgery-rehab' && (
@@ -213,8 +194,6 @@ const WhatWeTreat = () => {
                       />
                       <div className="absolute inset-0 -z-0 bg-white/80" />
                     </div>
-                    {/* Overlay for text readability */}
-
                   </>
                 )}
                 <div className="relative z-10">
@@ -277,7 +256,7 @@ const WhatWeTreat = () => {
             </HeadingScrollAnimation>
 
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-xl shadow-md">
+              <ScrollAnimation className="card p-6 rounded-xl shadow-md">
                 <div className="flex items-start">
                   <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
                     1
@@ -292,9 +271,9 @@ const WhatWeTreat = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </ScrollAnimation>
 
-              <div className="bg-white p-6 rounded-xl shadow-md">
+              <ScrollAnimation className="card p-6 rounded-xl shadow-md">
                 <div className="flex items-start">
                   <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
                     2
@@ -309,9 +288,9 @@ const WhatWeTreat = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </ScrollAnimation>
 
-              <div className="bg-white p-6 rounded-xl shadow-md">
+              <ScrollAnimation className="card p-6 rounded-xl shadow-md">
                 <div className="flex items-start">
                   <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
                     3
@@ -326,9 +305,9 @@ const WhatWeTreat = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </ScrollAnimation>
 
-              <div className="bg-white p-6 rounded-xl shadow-md">
+              <ScrollAnimation className="card p-6 rounded-xl shadow-md">
                 <div className="flex items-start">
                   <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
                     4
@@ -343,7 +322,7 @@ const WhatWeTreat = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </ScrollAnimation>
             </div>
 
           </div>
@@ -359,7 +338,7 @@ const WhatWeTreat = () => {
             </HeadingScrollAnimation>
 
             <div className="space-y-6">
-              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
+              <ScrollAnimation className="card p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   How quickly will I see results?
                 </h3>
@@ -367,9 +346,9 @@ const WhatWeTreat = () => {
                   Many patients experience improvement within 2–3 sessions, but timelines vary.
                   We'll give you a realistic plan during your initial assessment.
                 </p>
-              </div>
+              </ScrollAnimation>
 
-              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
+              <ScrollAnimation className="card p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   Do I need a referral from my GP?
                 </h3>
@@ -377,9 +356,9 @@ const WhatWeTreat = () => {
                   No referral is needed for private physiotherapy. If using insurance,
                   check your provider's requirements.
                 </p>
-              </div>
+              </ScrollAnimation>
 
-              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
+              <ScrollAnimation className="card p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   What should I wear?
                 </h3>
@@ -387,9 +366,9 @@ const WhatWeTreat = () => {
                   Comfortable, loose clothing that allows access to the area being treated.
                   Shorts for lower limb; vest/t-shirt for upper body.
                 </p>
-              </div>
+              </ScrollAnimation>
 
-              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
+              <ScrollAnimation className="card p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   Will treatment be painful?
                 </h3>
@@ -397,7 +376,7 @@ const WhatWeTreat = () => {
                   Some techniques may cause brief discomfort, but we always work within your
                   comfort levels and explain everything beforehand.
                 </p>
-              </div>
+              </ScrollAnimation>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ScrollAnimation from "../components/ScrollAnimation";
 import HeadingScrollAnimation from "../components/HeadingScrollAnimation";
 import SEO from "../components/SEO";
 import { siteContent } from "../data/content";
@@ -58,14 +59,14 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-teal-50 rounded-xl p-8">
+            <ScrollAnimation className="bg-teal-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-bold mb-4 text-center text-gray-900">
                 Our Philosophy
               </h3>
               <p className="text-gray-700 leading-relaxed text-center">
                 {siteContent.about.philosophy}
               </p>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -84,13 +85,13 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {siteContent.about.values.map((value, index) => (
-              <div
+              <ScrollAnimation
                 key={index}
-                className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow"
+                className="card p-6 text-center"
               >
                 <div className="text-4xl mb-3 text-teal-600">✓</div>
                 <p className="font-semibold text-gray-900">{value}</p>
-              </div>
+              </ScrollAnimation>
             ))}
           </div>
         </div>
@@ -110,9 +111,9 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {siteContent.team.map((member, index) => (
-              <div
+              <ScrollAnimation
                 key={index}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                className="card overflow-hidden"
               >
                 <div className="aspect-square bg-gradient-to-br from-teal-50 to-teal-100">
                   <img
@@ -139,7 +140,7 @@ const About = () => {
                   </p>
                   <p className="text-gray-700 text-sm">{member.description}</p>
                 </div>
-              </div>
+              </ScrollAnimation>
             ))}
           </div>
         </div>
@@ -160,20 +161,26 @@ const About = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {siteContent.accreditations.map((acc, index) => (
-              <div
+              <ScrollAnimation
                 key={index}
-                className="bg-white rounded-xl shadow-lg p-8 text-center"
+                className="card p-8 text-center"
               >
-                <div className="text-5xl mb-4 text-teal-600">🏅</div>
+                <div className="h-24 mb-4 flex items-center justify-center">
+                  <img
+                    src={acc.logo}
+                    alt={acc.name}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   {acc.name}
                 </h3>
                 <p className="text-gray-600">{acc.fullName}</p>
-              </div>
+              </ScrollAnimation>
             ))}
           </div>
 
-          <div className="mt-12 max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
+          <ScrollAnimation className="mt-12 max-w-3xl mx-auto card p-8">
             <h3 className="text-xl font-bold mb-4 text-center text-gray-900">
               What This Means for You
             </h3>
@@ -206,7 +213,7 @@ const About = () => {
                 </span>
               </li>
             </ul>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
 
@@ -219,7 +226,7 @@ const About = () => {
             </HeadingScrollAnimation>
 
             <div className="space-y-6">
-              <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg">
+              <ScrollAnimation className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
                 <div className="text-3xl">🎓</div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -231,9 +238,9 @@ const About = () => {
                     management.
                   </p>
                 </div>
-              </div>
+              </ScrollAnimation>
 
-              <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg">
+              <ScrollAnimation className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
                 <div className="text-3xl">🤝</div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -244,9 +251,9 @@ const About = () => {
                     and tailor treatment to your specific goals and lifestyle.
                   </p>
                 </div>
-              </div>
+              </ScrollAnimation>
 
-              <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg">
+              <ScrollAnimation className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
                 <div className="text-3xl">📊</div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -257,9 +264,9 @@ const About = () => {
                     you receive the most effective treatment available.
                   </p>
                 </div>
-              </div>
+              </ScrollAnimation>
 
-              <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg">
+              <ScrollAnimation className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
                 <div className="text-3xl">⏱️</div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-gray-900">
@@ -270,7 +277,7 @@ const About = () => {
                     thorough assessment and treatment without rushing.
                   </p>
                 </div>
-              </div>
+              </ScrollAnimation>
             </div>
           </div>
         </div>

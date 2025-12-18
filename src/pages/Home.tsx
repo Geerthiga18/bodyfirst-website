@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ScrollAnimation from '../components/ScrollAnimation';
 import Hero from '../components/Hero';
 import Card from '../components/Card';
 import InsuranceMarquee from '../components/InsuranceMarquee';
@@ -201,9 +202,9 @@ const Home = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {siteContent.team.map((member, index) => (
-              <div
+              <ScrollAnimation
                 key={index}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                className="card overflow-hidden"
               >
                 <div className="aspect-square bg-gradient-to-br from-teal-50 to-teal-100">
                   <img
@@ -230,7 +231,7 @@ const Home = () => {
                   </p>
                   <p className="text-gray-700 text-sm">{member.description}</p>
                 </div>
-              </div>
+              </ScrollAnimation>
             ))}
           </div>
 
@@ -245,8 +246,43 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Professional Standards */}
+      <section className="section">
+        <div className="container">
+          <div className="text-center mb-12">
+            <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-4 text-gray-900" variant="blur-up">
+              Professional Standards
+            </HeadingScrollAnimation>
+            <p className="text-lg text-gray-600">
+              All our physiotherapists are fully qualified and registered with professional bodies
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {siteContent.accreditations.map((acc, index) => (
+              <ScrollAnimation
+                key={index}
+                className="card p-8 text-center"
+              >
+                <div className="h-24 mb-4 flex items-center justify-center">
+                  <img
+                    src={acc.logo}
+                    alt={acc.name}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  {acc.name}
+                </h3>
+                <p className="text-gray-600">{acc.fullName}</p>
+              </ScrollAnimation>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <div className="section-header">
             <HeadingScrollAnimation as="h2" className="section-title text-gray-900" variant="slide-in-right">
@@ -255,53 +291,62 @@ const Home = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center">
+            <ScrollAnimation className="card p-6 text-center" variant="fade-up">
               <div className="text-5xl mb-4">🏆</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Expert Team</h3>
               <p className="text-gray-600">
                 HCPC and CSP registered physiotherapists with years of experience
               </p>
-            </div>
+            </ScrollAnimation>
 
-            <div className="text-center">
+            <ScrollAnimation className="card p-6 text-center" variant="fade-up">
               <div className="text-5xl mb-4">🎯</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Personalised Care</h3>
               <p className="text-gray-600">
                 Tailored treatment plans designed specifically for your needs
               </p>
-            </div>
+            </ScrollAnimation>
 
-            <div className="text-center">
+            <ScrollAnimation className="card p-6 text-center" variant="fade-up">
               <div className="text-5xl mb-4">⚡</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Advanced Techniques</h3>
               <p className="text-gray-600">
                 Latest evidence-based treatments and cutting-edge equipment
               </p>
-            </div>
+            </ScrollAnimation>
 
-            <div className="text-center">
+            <ScrollAnimation className="card p-6 text-center" variant="fade-up">
               <div className="text-5xl mb-4">📍</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Central Location</h3>
               <p className="text-gray-600">
                 Convenient London location with excellent transport links
               </p>
-            </div>
+            </ScrollAnimation>
 
-            <div className="text-center">
+            <ScrollAnimation className="card p-6 text-center" variant="fade-up">
               <div className="text-5xl mb-4">🕐</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Flexible Hours</h3>
               <p className="text-gray-600">
                 Extended opening hours including evenings and Sundays
               </p>
-            </div>
+            </ScrollAnimation>
 
-            <div className="text-center">
+            <ScrollAnimation className="card p-6 text-center" variant="fade-up">
               <div className="text-5xl mb-4">💷</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Transparent Pricing</h3>
               <p className="text-gray-600">
                 No hidden fees. Clear pricing with insurance accepted
               </p>
-            </div>
+            </ScrollAnimation>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              to="/why-us"
+              className="inline-flex items-center justify-center rounded-lg bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 font-semibold transition"
+            >
+              View more
+            </Link>
           </div>
         </div>
       </section>

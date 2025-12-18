@@ -6,7 +6,7 @@
   * {
     @apply border-border;
   }
-  
+
   body {
     @apply bg-transparent text-gray-900 font-sans antialiased;
   }
@@ -54,7 +54,11 @@
   }
 
   .card {
-    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+    @apply bg-white rounded-xl shadow-lg transition-all duration-300 ease-out;
+  }
+
+  .card:hover {
+    @apply -translate-y-2 shadow-2xl;
   }
 
   .input {
@@ -64,7 +68,7 @@
   .textarea {
     @apply input resize-none;
   }
-  
+
 }
 
 /* Marquee / infinite horizontal scroll for partner logos */
@@ -72,6 +76,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .marquee-track {
   display: flex;
   gap: 2rem;
@@ -79,20 +84,27 @@
   will-change: transform;
   animation: marquee-linear 20s linear infinite;
 }
+
 .marquee-item {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .marquee:hover .marquee-track,
 .marquee:focus-within .marquee-track {
   animation-play-state: paused;
 }
 
 @keyframes marquee-linear {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @layer utilities {

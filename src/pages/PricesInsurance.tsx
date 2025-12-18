@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ScrollAnimation from "../components/ScrollAnimation";
 import PriceTable from "../components/PriceTable";
 import InsuranceMarquee from "../components/InsuranceMarquee";
 import HeadingScrollAnimation from "../components/HeadingScrollAnimation";
@@ -62,9 +63,9 @@ const PricesInsurance = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-6 overflow-hidden">
+            <ScrollAnimation variant="fade-up" className="card p-6 overflow-hidden">
               <PriceTable />
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -83,15 +84,15 @@ const PricesInsurance = () => {
             </div>
 
             {/* Insurance Logos */}
-            <div className="bg-teal-50 rounded-xl p-8 mb-8">
+            <ScrollAnimation variant="fade-up" className="bg-teal-50 rounded-xl p-8 mb-8">
               <div>
                 {/* marquee component shows logos in continuous loop */}
                 <InsuranceMarquee items={siteContent.insurance.accepted} duration={20} />
               </div>
-            </div>
+            </ScrollAnimation>
 
             {/* Insurance Info */}
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <ScrollAnimation variant="fade-up" className="card p-8">
               <h3 className="text-2xl font-bold mb-4 text-gray-900">
                 Using Your Insurance
               </h3>
@@ -158,7 +159,7 @@ const PricesInsurance = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -172,7 +173,7 @@ const PricesInsurance = () => {
             </HeadingScrollAnimation>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-xl shadow-lg p-6 text-center">
+              <ScrollAnimation variant="fade-up" className="card p-6 text-center">
                 <div className="text-4xl mb-4">💳</div>
                 <h3 className="font-bold text-lg mb-2 text-gray-900">
                   Card Payments
@@ -180,15 +181,15 @@ const PricesInsurance = () => {
                 <p className="text-gray-600">
                   All major credit and debit cards accepted
                 </p>
-              </div>
+              </ScrollAnimation>
 
-              <div className="bg-white rounded-xl shadow-lg p-6 text-center">
+              <ScrollAnimation variant="fade-up" className="card p-6 text-center">
                 <div className="text-4xl mb-4">💷</div>
                 <h3 className="font-bold text-lg mb-2 text-gray-900">Cash</h3>
                 <p className="text-gray-600">We do accept Cash payments</p>
-              </div>
+              </ScrollAnimation>
 
-              <div className="bg-white rounded-xl shadow-lg p-6 text-center">
+              <ScrollAnimation variant="fade-up" className="card p-6 text-center">
                 <div className="text-4xl mb-4">🏥</div>
                 <h3 className="font-bold text-lg mb-2 text-gray-900">
                   Insurance
@@ -196,10 +197,10 @@ const PricesInsurance = () => {
                 <p className="text-gray-600">
                   Direct billing available for many insurers
                 </p>
-              </div>
+              </ScrollAnimation>
             </div>
 
-            <div className="mt-12 bg-white rounded-xl shadow-lg p-8">
+            <ScrollAnimation variant="fade-up" className="card p-8 mt-12">
               <h3 className="text-xl font-bold mb-4 text-center text-gray-900">
                 Cancellation Policy
               </h3>
@@ -208,7 +209,7 @@ const PricesInsurance = () => {
                 rescheduling. Appointments cancelled with less than 24
                 hours&apos; notice may be subject to the full appointment fee.
               </p>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>

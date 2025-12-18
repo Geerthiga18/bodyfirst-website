@@ -1,12 +1,14 @@
 import type { ReactNode } from 'react';
+import ScrollAnimation from './ScrollAnimation';
 
 interface CardProps {
   title?: string;
   icon?: ReactNode;
   children: ReactNode;
-  className?: string;
-  hover?: boolean;
+  className?: string; // Additional classes
+  hover?: boolean; // Whether to enable hover effects
   titleClassName?: string;
+  delay?: number; // Animation delay
 }
 
 const Card = ({
@@ -16,9 +18,22 @@ const Card = ({
   className = '',
   hover = true,
   titleClassName,
+  delay = 0,
 }: CardProps) => {
+  // Combine the 'card' class (defined in globals.css) with custom classes.
+  // The 'card' class provides the bg-white, shadow, and basic rounded styling.
+  // We add 'hover:...' classes dynamically if hover is true.
+
+  const hoverClasses = hover
+    ? 'hover:-translate-y-2 hover:shadow-2xl'
+    : '';
+
   return (
-    <div className={`card p-6 ${hover ? 'hover:scale-105 transform transition-transform' : ''} ${className}`}>
+    <ScrollAnimation
+      variant="fade-up"
+      delay={delay}
+      className={`card p-6 ${hoverClasses} ${className}`}
+    >
       {(icon || title) && (
         <div className="mb-4">
           {icon && <div className="text-4xl mb-3">{icon}</div>}
@@ -30,7 +45,7 @@ const Card = ({
         </div>
       )}
       {children}
-    </div>
+    </ScrollAnimation>
   );
 };
 

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ScrollAnimation from '../components/ScrollAnimation';
 import Card from '../components/Card';
 import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
 import SEO from '../components/SEO';
@@ -40,9 +41,10 @@ const Services = () => {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-8">
             {servicesData.map((service) => (
-              <div
+              <ScrollAnimation
+                variant="fade-up"
                 key={service.slug}
-                className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow"
+                className="card p-8"
               >
                 <div className="flex items-start">
                   {/* Optional icon placeholder */}
@@ -90,7 +92,7 @@ const Services = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </ScrollAnimation>
             ))}
           </div>
         </div>
@@ -157,7 +159,7 @@ const Services = () => {
       {/* Benefits */}
       <section className="section">
         <div className="container">
-          <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8">
+          <ScrollAnimation className="max-w-4xl mx-auto card p-8">
             <HeadingScrollAnimation as="h2" className="text-3xl font-bold text-center mb-12 text-gray-900" variant="slide-in-left">
               Benefits of Our Treatments
             </HeadingScrollAnimation>
@@ -180,7 +182,7 @@ const Services = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
 

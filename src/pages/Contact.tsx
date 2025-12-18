@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import ScrollAnimation from '../components/ScrollAnimation';
 import { useLocation } from 'react-router-dom';
 import ContactForm from '../components/ContactForm';
 import Map from '../components/Map';
@@ -60,7 +61,7 @@ const Contact = () => {
         <div className="container">
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {/* Phone */}
-            <div className="text-center p-6 bg-teal-50 rounded-xl">
+            <ScrollAnimation variant="fade-up" className="text-center p-6 bg-teal-50 rounded-xl hover:-translate-y-1 transition-transform cursor-default">
               <div className="text-5xl mb-4">📞</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Call Us</h3>
               <a
@@ -70,10 +71,10 @@ const Contact = () => {
                 {siteContent.company.phone}
               </a>
               <p className="text-gray-600 mt-2">Mon-Fri: 9am-8pm</p>
-            </div>
+            </ScrollAnimation>
 
             {/* WhatsApp */}
-            <div className="text-center p-6 bg-teal-50 rounded-xl">
+            <ScrollAnimation variant="fade-up" className="text-center p-6 bg-teal-50 rounded-xl hover:-translate-y-1 transition-transform cursor-default">
               <div className="mx-auto mb-4">
                 <img
                   src="/images/icons/whatsapp.svg"
@@ -92,10 +93,10 @@ const Contact = () => {
                 Message Us
               </a>
               <p className="text-gray-600 mt-2">Quick replies guaranteed</p>
-            </div>
+            </ScrollAnimation>
 
             {/* Email */}
-            <div className="text-center p-6 bg-teal-50 rounded-xl">
+            <ScrollAnimation variant="fade-up" className="text-center p-6 bg-teal-50 rounded-xl hover:-translate-y-1 transition-transform cursor-default">
               <div className="text-5xl mb-4">✉️</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Email Us</h3>
               <a
@@ -105,11 +106,11 @@ const Contact = () => {
                 {siteContent.company.email}
               </a>
               <p className="text-gray-600 mt-2">We reply within 24 hours</p>
-            </div>
+            </ScrollAnimation>
           </div>
 
           {/* Opening Hours */}
-          <div className="max-w-2xl mx-auto bg-gray-50 rounded-xl p-8">
+          <ScrollAnimation className="max-w-2xl mx-auto bg-gray-50 rounded-xl p-8 hover:shadow-md transition-shadow">
             <HeadingScrollAnimation as="h2" className="text-2xl font-bold text-center mb-6 text-gray-900" variant="fade-up">
               Opening Hours
             </HeadingScrollAnimation>
@@ -127,7 +128,7 @@ const Contact = () => {
                 <span className="text-gray-700">11am – 8pm</span>
               </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
 
@@ -136,14 +137,14 @@ const Contact = () => {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
+            <ScrollAnimation className="card p-6">
               <ContactForm />
-            </div>
+            </ScrollAnimation>
 
             {/* Map & Address */}
-            <div className="bg-white rounded-xl shadow-lg p-1 h-full">
+            <ScrollAnimation className="card p-1 h-full">
               <Map />
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -157,7 +158,7 @@ const Contact = () => {
             </HeadingScrollAnimation>
 
             <div className="space-y-6">
-              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
+              <ScrollAnimation className="card p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   How do I book an appointment?
                 </h3>
@@ -166,9 +167,9 @@ const Contact = () => {
                   message, emailing us, or filling out the contact form above. We&apos;ll confirm
                   your appointment within a few hours during business days.
                 </p>
-              </div>
+              </ScrollAnimation>
 
-              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
+              <ScrollAnimation className="card p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   Do you offer same-day appointments?
                 </h3>
@@ -176,9 +177,9 @@ const Contact = () => {
                   Yes, we often have same-day availability. Please call or WhatsApp us to check
                   current availability for urgent appointments.
                 </p>
-              </div>
+              </ScrollAnimation>
 
-              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
+              <ScrollAnimation className="card p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   Where can I park?
                 </h3>
@@ -186,18 +187,18 @@ const Contact = () => {
                   [Add specific parking information for your location here, including nearby car
                   parks, street parking availability, and any parking validation you offer]
                 </p>
-              </div>
+              </ScrollAnimation>
 
-              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
+              <ScrollAnimation className="card p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   Is the clinic wheelchair accessible?
                 </h3>
                 <p className="text-gray-600">
                   [Add information about accessibility features at your location]
                 </p>
-              </div>
+              </ScrollAnimation>
 
-              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
+              <ScrollAnimation className="card p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   What should I bring to my first appointment?
                 </h3>
@@ -206,9 +207,9 @@ const Contact = () => {
                   applicable, and wear comfortable clothing that allows access to the area being
                   treated.
                 </p>
-              </div>
+              </ScrollAnimation>
 
-              <div className="bg-white rounded-lg shadow-sm p-6 border-l-4 border-teal-600">
+              <ScrollAnimation className="card p-6 border-l-4 border-teal-600">
                 <h3 className="text-xl font-bold mb-2 text-gray-900">
                   Can I reschedule my appointment?
                 </h3>
@@ -216,7 +217,7 @@ const Contact = () => {
                   Yes, you can reschedule at any time with at least 24 hours&apos; notice. Please
                   contact us as soon as possible if you need to change your appointment time.
                 </p>
-              </div>
+              </ScrollAnimation>
             </div>
           </div>
         </div>
