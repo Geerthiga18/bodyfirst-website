@@ -15,6 +15,7 @@ import ServiceDetailPage from './pages/ServiceDetailPage';
 import About from './pages/About';
 import PricesInsurance from './pages/PricesInsurance';
 import Contact from './pages/Contact';
+import WhyUs from './pages/WhyUs';
 import BookPage from './components/BookPage'; 
 
 import './styles/globals.css';
@@ -40,6 +41,7 @@ function App() {
 
             {/* Static pages */}
             <Route path="/about" element={<About />} />
+            <Route path="/why-us" element={<WhyUs />} />
             <Route path="/prices" element={<PricesInsurance />} />
             <Route path="/contact" element={<Contact />} />
 
