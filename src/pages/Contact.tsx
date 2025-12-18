@@ -36,13 +36,15 @@ const Contact = () => {
         {/* Overlay */}
         <div className="absolute inset-0 -z-10 bg-black/50" />
         {/* Content */}
-        <div className="container text-center relative z-0">
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Get in Touch
-          </h1>
-          <p className="text-xl text-white max-w-3xl mx-auto">
-            Book your appointment or contact us for any questions about our services
-          </p>
+        <div className="container relative z-0">
+          <div className="max-w-3xl text-white text-left">
+            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              Get in Touch
+            </h1>
+            <p className="text-xl text-white max-w-3xl">
+              Book your appointment or contact us for any questions about our services
+            </p>
+          </div>
         </div>
       </section>
 

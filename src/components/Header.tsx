@@ -24,7 +24,7 @@ const Header = () => {
     { name: 'About Us', path: '/about' },
     { name: 'Why Us', path: '/why-us' },
     { name: 'Prices & Insurance', path: '/prices' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Contact Us', path: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -189,7 +189,7 @@ const Header = () => {
                   : 'text-gray-700 hover:text-teal-600'
               }`}
             >
-              Contact
+              Contact Us
             </Link>
 
             {/* Book Now → external */}
