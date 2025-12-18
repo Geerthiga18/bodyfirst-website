@@ -154,7 +154,7 @@ export const siteContent = {
     { service: '30 min Sports Massage', duration: '30 min', price: '£50' },
     { service: '45 min Sports Massage', duration: '45 min', price: '£60' },
     { service: '60 min Sports Massage', duration: '60 min', price: '£70' },
-    { service: 'Lymphatic Drainage', duration: '30 min', price: '£7s0' },
+    { service: 'Lymphatic Drainage', duration: '30 min', price: '£70' },
     { service: 'Lymphatic Drainage', duration: '45 min', price: '£80' },
     { service: 'Shockwave Therapy', duration: '1 session', price: '£80' },
     { service: 'Gait Analysis', duration: '45 min', price: '£70' }

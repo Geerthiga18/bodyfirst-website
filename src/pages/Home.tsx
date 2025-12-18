@@ -54,7 +54,12 @@ const Home = () => {
               </Card>
             </Link>
 
-            <Link to="/contact#book" className="group h-full">
+            <a
+              href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group h-full"
+            >
               <Card icon="📅" title="Book Now" hover className="h-full">
                 <p className="text-gray-600">
                   Easy online booking. Same-day appointments often available
@@ -63,7 +68,7 @@ const Home = () => {
                   Book appointment →
                 </span>
               </Card>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
