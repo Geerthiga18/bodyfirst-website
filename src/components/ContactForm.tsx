@@ -12,10 +12,33 @@ const ContactForm = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setFormData({ name: '', email: '', phone: '', message: '' });
-    setTimeout(() => setSubmitted(false), 5000);
+    // Build mailto link to send email via user's mail client to info@bodyfirst.uk
+    try {
+      const to = 'info@bodyfirst.uk';
+      const subject = encodeURIComponent(`Website enquiry from ${formData.name || 'Website visitor'}`);
+      const bodyLines = [
+        `Name: ${formData.name}`,
+        `Email: ${formData.email}`,
+        `Phone: ${formData.phone}`,
+        '',
+        `Message:\n${formData.message}`,
+      ];
+      const body = encodeURIComponent(bodyLines.join('\n'));
+      const mailto = `mailto:${to}?subject=${subject}&body=${body}`;
+
+      // open mail client in new window/tab where supported
+      window.location.href = mailto;
+
+      setSubmitted(true);
+      setFormData({ name: '', email: '', phone: '', message: '' });
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (err) {
+      console.error('Failed to open mail client', err);
+      // fallback to showing submitted message
+      setSubmitted(true);
+      setFormData({ name: '', email: '', phone: '', message: '' });
+      setTimeout(() => setSubmitted(false), 5000);
+    }
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

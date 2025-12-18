@@ -67,7 +67,14 @@ const Contact = () => {
 
             {/* WhatsApp */}
             <div className="text-center p-6 bg-teal-50 rounded-xl">
-              <div className="text-5xl mb-4">💬</div>
+              <div className="mx-auto mb-4">
+                <img
+                  src="/images/icons/whatsapp.svg"
+                  alt="WhatsApp"
+                  className="w-12 h-12 mx-auto"
+                  loading="lazy"
+                />
+              </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">WhatsApp</h3>
               <a
                 href={`https://wa.me/${siteContent.company.whatsapp}`}
