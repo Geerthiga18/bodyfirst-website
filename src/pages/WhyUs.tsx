@@ -12,28 +12,29 @@ const WhyUs = () => {
         title={seoConfig.whyUs.title}
         description={seoConfig.whyUs.description}
       />
-      {/* Simple hero (matches About / Prices pages) */}
-      <section className="relative overflow-hidden bg-teal-900 py-12 lg:py-16">
+      {/* Header (Standardized Hero) */}
+      <section className="relative min-h-[50vh] flex items-center overflow-hidden bg-teal-900 py-12 lg:py-16">
         <div className="absolute inset-0">
-          {/* Optional hero image — replace path if you have a specific image */}
           <img
             src="/images/Aboutus/hero.png"
             alt="Why choose Body First UK"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transform scale-105"
             loading="lazy"
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).style.display = 'none';
             }}
           />
 
-          <div className="absolute inset-0 bg-black/35 bg-gradient-to-r from-teal-900/80 via-teal-900/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-teal-900 via-teal-900/40 to-transparent" />
         </div>
 
-        <div className="container relative">
-          <div className="max-w-3xl text-white text-left">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Why Choose Body First UK</h1>
-            <p className="text-xl text-teal-50">
-              We provide high-quality, evidence-based physiotherapy with compassionate, personalised care focused on helping you recover and get back to what matters.
+        <div className="container relative z-10">
+          <div className="max-w-4xl text-white">
+            <h1 className="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">
+              Why Choose <span className="text-teal-400">Body First UK</span>
+            </h1>
+            <p className="text-xl lg:text-2xl text-teal-50 font-light max-w-2xl leading-relaxed">
+              We provide high-quality, evidence-based physiotherapy with compassionate, personalised care.
             </p>
           </div>
         </div>

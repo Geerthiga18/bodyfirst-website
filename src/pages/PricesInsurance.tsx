@@ -17,33 +17,31 @@ const PricesInsurance = () => {
         title={seoConfig.prices.title}
         description={seoConfig.prices.description}
       />
-      {/* Header (Hero image like WhatWeTreat) */}
-      <section className="relative overflow-hidden bg-teal-900 py-12 lg:py-16">
+      {/* Header (Standardized Hero) */}
+      <section className="relative min-h-[50vh] flex items-center overflow-hidden bg-teal-900 py-12 lg:py-16">
         {/* Background */}
         <div className="absolute inset-0">
           <img
             src={pricesHeroImage}
             alt="Pricing and insurance at Body First UK"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transform scale-105"
             loading="lazy"
             onError={(e) => {
-              // If image path is wrong, hide the image (fallback color remains)
               (e.currentTarget as HTMLImageElement).style.display = "none";
             }}
           />
-          {/* Overlay gradient for readability (same vibe as WhatWeTreat) */}
-          <div className="absolute inset-0 bg-black/35 bg-gradient-to-r from-teal-900/80 via-teal-900/70 to-transparent" />
+          {/* Overlay gradient */}
+          <div className="absolute inset-0 bg-gradient-to-r from-teal-900 via-teal-900/40 to-transparent" />
         </div>
 
         {/* Content */}
-        <div className="container relative">
-          <div className="max-w-3xl text-white text-left">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Pricing & Insurance
+        <div className="container relative z-10">
+          <div className="max-w-4xl text-white">
+            <h1 className="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">
+              Pricing & <span className="text-teal-400">Insurance</span>
             </h1>
-            <p className="text-xl text-teal-50">
-              Transparent pricing with no hidden fees. We accept all major health
-              insurance providers
+            <p className="text-xl lg:text-2xl text-teal-50 font-light max-w-2xl leading-relaxed">
+              Transparent pricing with no hidden fees. We work with all major private health insurance providers.
             </p>
           </div>
         </div>

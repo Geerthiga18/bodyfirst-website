@@ -31,26 +31,26 @@ const Contact = () => {
         title={seoConfig.contact.title}
         description={seoConfig.contact.description}
       />
-      {/* Header */}
-      <section className="relative py-12 lg:py-16 overflow-hidden">
+      {/* Header (Standardized Hero) */}
+      <section className="relative min-h-[50vh] flex items-center overflow-hidden bg-teal-900 py-12 lg:py-16">
         {/* Background Image */}
-        <div className="absolute inset-0 -z-20">
+        <div className="absolute inset-0">
           <img
             src="/images/Contact/contact_hero.png"
             alt="Body First UK Contact"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transform scale-105"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-teal-900 via-teal-900/40 to-transparent" />
         </div>
-        {/* Overlay */}
-        <div className="absolute inset-0 -z-10 bg-black/50" />
+
         {/* Content */}
-        <div className="container relative z-0">
-          <div className="max-w-3xl text-white text-left">
-            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Get in Touch
+        <div className="container relative z-10">
+          <div className="max-w-4xl text-white">
+            <h1 className="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">
+              Get in <span className="text-teal-400">Touch</span>
             </h1>
-            <p className="text-xl text-white max-w-3xl">
-              Book your appointment or contact us for any questions about our services
+            <p className="text-xl lg:text-2xl text-teal-50 font-light max-w-2xl leading-relaxed">
+              Book your appointment or contact us for any questions about our services.
             </p>
           </div>
         </div>

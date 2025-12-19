@@ -13,8 +13,8 @@ const Services = () => {
         title={seoConfig.services.title}
         description={seoConfig.services.description}
       />
-      {/* Header */}
-      <section className="relative min-h-[40vh] flex items-center overflow-hidden bg-teal-900 py-12 lg:py-16">
+      {/* Header (Standardized Hero) */}
+      <section className="relative min-h-[50vh] flex items-center overflow-hidden bg-teal-900 py-12 lg:py-16">
         <div className="absolute inset-0">
           <img
             src="/images/Condition We Treat/whatwetreat.png"
