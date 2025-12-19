@@ -17,7 +17,7 @@ const WhyUs = () => {
         <div className="absolute inset-0">
           {/* Optional hero image — replace path if you have a specific image */}
           <img
-            src="/images/Aboutus/hero.png"
+            src="/images/Aboutus/herowhy.png"
             alt="Why choose Body First UK"
             className="w-full h-full object-cover"
             loading="lazy"
