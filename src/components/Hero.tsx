@@ -55,7 +55,7 @@ const Hero = ({
 
         {/* Content */}
         <div className="relative max-w-6xl mx-auto px-6 md:px-10 lg:px-12 py-10 md:py-14 lg:py-16">
-          <div className="max-w-3xl mx-auto text-center md:text-left text-teal-50">
+          <div className="max-w-3xl text-left text-teal-50">
             {subtitle && (
               <p className="mb-3 text-base md:text-lg font-semibold text-teal-400">
                 {subtitle}
