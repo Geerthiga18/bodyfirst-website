@@ -29,9 +29,9 @@ const WhyUs = () => {
           <div className="absolute inset-0 bg-black/35 bg-gradient-to-r from-teal-900/80 via-teal-900/70 to-transparent" />
         </div>
 
-        <div className="container relative">
+          <div className="container relative">
           <div className="max-w-3xl text-white text-left">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Why Choose Body First UK</h1>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Why Choose <span className="whitespace-nowrap">Body First UK</span></h1>
             <p className="text-xl text-teal-50">
               We provide high-quality, evidence-based physiotherapy with compassionate, personalised care focused on helping you recover and get back to what matters.
             </p>
