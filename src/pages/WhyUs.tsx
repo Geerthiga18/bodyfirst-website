@@ -140,18 +140,20 @@ const WhyUs = () => {
           </div>
 
           <div className="mt-12 text-center">
-            <a
-              href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-lg bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 text-lg font-semibold transition"
-            >
-              Book Your Appointment
-            </a>
+            <div className="mx-auto max-w-lg flex flex-col sm:flex-row items-stretch gap-3 justify-center">
+              <a
+                href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-full sm:w-auto items-center justify-center rounded-lg bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 text-lg font-semibold transition"
+              >
+                Book Your Appointment
+              </a>
 
-            <Link to="/contact" className="inline-flex items-center justify-center ml-4 rounded-lg border border-teal-600 text-teal-600 px-6 py-3 text-lg font-semibold transition">
-              Contact Us
-            </Link>
+              <Link to="/contact" className="inline-flex w-full sm:w-auto items-center justify-center rounded-lg border border-teal-600 text-teal-600 px-6 py-3 text-lg font-semibold transition">
+                Contact Us
+              </Link>
+            </div>
           </div>
         </div>
       </section>
