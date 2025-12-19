@@ -25,7 +25,7 @@ const Hero = ({
   backgroundImage,
 }: HeroProps) => {
   return (
-    <section className="pb-10">
+    <section>
       {/* Full-width hero wrapper */}
       <div className="relative w-full overflow-hidden min-h-[calc(100vh-5rem)] flex items-center">
         {/* Background media */}
@@ -54,7 +54,7 @@ const Hero = ({
         <div className="absolute inset-0 -z-10 bg-black/70" />
 
         {/* Content */}
-        <div className="relative max-w-6xl mx-auto px-6 md:px-10 lg:px-12 py-10 md:py-14 lg:py-16">
+        <div className="relative max-w-6xl mx-auto px-6 md:px-10 lg:px-12 py-12 md:py-14 lg:py-16">
           <div className="max-w-3xl text-left text-teal-50">
             {subtitle && (
               <p className="mb-3 text-base md:text-lg font-semibold text-teal-400">

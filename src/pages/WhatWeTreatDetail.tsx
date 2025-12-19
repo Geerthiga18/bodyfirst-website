@@ -35,7 +35,7 @@ const WhatWeTreatDetail = () => {
         )}
 
         {/* Content */}
-        <div className="relative z-10 container py-10 lg:py-14">
+        <div className="relative z-10 container py-12 lg:py-16">
           <nav className="mb-4" aria-label="Breadcrumb">
             <Link
               to="/what-we-treat"
@@ -71,7 +71,7 @@ const WhatWeTreatDetail = () => {
       </section>
 
       {/* Sections */}
-      <main className="container py-10 lg:py-14 space-y-8">
+      <main className="container py-12 lg:py-16 space-y-8">
         {detailContent.sections.map((section, index) => (
           <section
             key={index}

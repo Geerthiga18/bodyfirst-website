@@ -18,7 +18,7 @@ const PricesInsurance = () => {
         description={seoConfig.prices.description}
       />
       {/* Header (Hero image like WhatWeTreat) */}
-      <section className="relative overflow-hidden bg-teal-900 py-16 lg:py-24">
+      <section className="relative overflow-hidden bg-teal-900 py-12 lg:py-16">
         {/* Background */}
         <div className="absolute inset-0">
           <img

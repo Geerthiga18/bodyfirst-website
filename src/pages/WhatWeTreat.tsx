@@ -16,7 +16,7 @@ const WhatWeTreat = () => {
         description={seoConfig.whatWeTreat.description}
       />
       {/* Header */}
-      <section className="relative overflow-hidden bg-teal-900 py-16 lg:py-24">
+      <section className="relative overflow-hidden bg-teal-900 py-12 lg:py-16">
         <div className="absolute inset-0">
           <img
             src="/images/Condition We Treat/whatwetreat.png"
