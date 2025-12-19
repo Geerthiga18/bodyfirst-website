@@ -258,9 +258,9 @@ const WhatWeTreat = () => {
             <div className="space-y-6">
               <ScrollAnimation className="card p-6 rounded-xl shadow-md">
                 <div className="flex items-start">
-                  <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
-                    1
-                  </div>
+                    <div className="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 md:w-11 md:h-11 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-sm sm:text-base md:text-lg font-bold">
+                      1
+                    </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2 text-gray-900">
                       Comprehensive Assessment
@@ -275,7 +275,7 @@ const WhatWeTreat = () => {
 
               <ScrollAnimation className="card p-6 rounded-xl shadow-md">
                 <div className="flex items-start">
-                  <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
+                  <div className="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 md:w-11 md:h-11 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-sm sm:text-base md:text-lg font-bold">
                     2
                   </div>
                   <div>
@@ -292,7 +292,7 @@ const WhatWeTreat = () => {
 
               <ScrollAnimation className="card p-6 rounded-xl shadow-md">
                 <div className="flex items-start">
-                  <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
+                  <div className="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 md:w-11 md:h-11 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-sm sm:text-base md:text-lg font-bold">
                     3
                   </div>
                   <div>
@@ -309,7 +309,7 @@ const WhatWeTreat = () => {
 
               <ScrollAnimation className="card p-6 rounded-xl shadow-md">
                 <div className="flex items-start">
-                  <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
+                  <div className="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 md:w-11 md:h-11 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-sm sm:text-base md:text-lg font-bold">
                     4
                   </div>
                   <div>
