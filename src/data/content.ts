@@ -89,12 +89,13 @@ export const siteContent = {
       icon: '🦵'
     },
     {
-      id: 'cryotherapy',
-      name: 'Cryotherapy',
-      shortDesc: 'Cold therapy to reduce inflammation and accelerate recovery.',
-      description: 'Localised cryotherapy uses controlled cold temperatures to reduce inflammation, manage pain, and speed up the healing process. Ideal for acute injuries and chronic inflammatory conditions.',
-      icon: '❄️'
-    }
+      id: "cryoair-therapy",
+      name: "Cryoair Therapy",
+      shortDesc: "Cold therapy to reduce inflammation and accelerate recovery.",
+      description:
+        "Localised Cryoair therapy uses controlled cold temperatures to reduce inflammation, manage pain, and speed up the healing process. Ideal for acute injuries and chronic inflammatory conditions.",
+      icon: "❄️",
+    },
   ],
 
   conditions: [
@@ -157,7 +158,8 @@ export const siteContent = {
     { service: 'Lymphatic Drainage', duration: '30 min', price: '£70', category: 'Lymphatic Drainage' },
     { service: 'Lymphatic Drainage', duration: '45 min', price: '£80', category: 'Lymphatic Drainage' },
     { service: 'Shockwave Therapy', duration: '1 session', price: '£80', category: 'Other Services' },
-    { service: 'Gait Analysis', duration: '45 min', price: '£70', category: 'Other Services' }
+    { service: 'Gait Analysis', duration: '45 min', price: '£70', category: 'Other Services' },
+    { service: 'Cryoair Therapy', duration: '1 session', price: '£60', category: 'Other Services' } // Assuming a price or just updating the name if it existed elsewhere
   ],
 
   insurance: {

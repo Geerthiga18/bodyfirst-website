@@ -12,7 +12,7 @@ export interface Service {
   shortDescription: string;
   heroDescription: string;
   heroImage?: string;
-  heroAlt?: string; 
+  heroAlt?: string;
   sections: ServiceSection[];
 }
 
@@ -606,14 +606,14 @@ export const servicesData: Service[] = [
   },
 
   {
-    slug: "cryotherapy",
-    name: "Cryotherapy",
+    slug: "cryoair-therapy",
+    name: "Cryoair Therapy",
     shortDescription:
       "Targeted cold therapy to reduce pain, inflammation, and accelerate healing.",
     heroDescription:
-      "Localized cryotherapy uses controlled cold application to manage pain, reduce inflammation, and support tissue recovery following injury or intense activity.",
-    heroImage: "/images/services/Cryotherapy.jpg",
-    heroAlt: "Cryotherapy cold treatment",
+      "Localized Cryoair therapy uses controlled cold application to manage pain, reduce inflammation, and support tissue recovery following injury or intense activity.",
+    heroImage: "/images/services/cryoair.jpg",
+    heroAlt: "Cryoair cold treatment",
     sections: [
       {
         title: "What is Cryotherapy?",

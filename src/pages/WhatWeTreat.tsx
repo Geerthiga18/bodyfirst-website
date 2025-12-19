@@ -16,232 +16,87 @@ const WhatWeTreat = () => {
         description={seoConfig.whatWeTreat.description}
       />
       {/* Header */}
-      <section className="relative overflow-hidden bg-teal-900 py-12 lg:py-16">
+      <section className="relative min-h-[40vh] flex items-center overflow-hidden bg-teal-900 py-12 lg:py-16">
         <div className="absolute inset-0">
           <img
             src="/images/Condition We Treat/whatwetreat.png"
             alt="People receiving physiotherapy treatment"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transform scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-teal-900/80 via-teal-900/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-teal-900 via-teal-900/40 to-transparent" />
         </div>
-        <div className="container relative">
+        <div className="container relative z-10">
           <div className="max-w-3xl text-white">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Conditions We Treat
+            <h1 className="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">
+              Conditions We <span className="text-teal-400">Treat</span>
             </h1>
-            <p className="text-xl text-teal-50">
-              Expert physiotherapy treatment for a wide range of musculoskeletal conditions,
-              sports injuries, and chronic pain.
+            <p className="text-xl lg:text-2xl text-teal-50 font-light max-w-2xl leading-relaxed">
+              Expert physiotherapy for musculoskeletal conditions,
+              sports injuries, and chronic pain management.
             </p>
           </div>
         </div>
       </section>
 
       {/* Conditions Grid from treatmentCategories */}
-      <section className="section">
+      <section className="py-20 bg-slate-50/50">
         <div className="container">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {treatmentCategories.map((category) => (
-              <Card
-                key={category.slug}
-                title={category.title}
-                titleClassName="text-dark-red"
-                className={
-                  category.slug === 'head-jaw-pain' || category.slug === 'neck-pain' || category.slug === 'shoulder-pain' || category.slug === 'back-spine-pain' || category.slug === 'elbow-pain' || category.slug === 'hand-wrist-pain' || category.slug === 'knee-pain' || category.slug === 'hip-groin-pain' || category.slug === 'foot-ankle-pain' || category.slug === 'sports-injuries' || category.slug === 'post-surgery-rehab'
-                    ? 'relative overflow-hidden bg-cover bg-center'
-                    : ''
-                }
-              >
-                {category.slug === 'head-jaw-pain' && (
-                  <>
-                    {/* Background Image */}
-                    <div className="absolute inset-0 -z-10">
-                      <img
-                        src="/images/Condition We Treat/head_jaw.png"
-                        alt="Head & Jaw"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 -z-0 bg-white/80" />
-                    </div>
-                  </>
-                )}
-                {category.slug === 'neck-pain' && (
-                  <>
-                    {/* Background Image */}
-                    <div className="absolute inset-0 -z-10">
-                      <img
-                        src="/images/Condition We Treat/neck.png"
-                        alt="Neck"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 -z-0 bg-white/80" />
-                    </div>
-                  </>
-                )}
-                {category.slug === 'shoulder-pain' && (
-                  <>
-                    {/* Background Image */}
-                    <div className="absolute inset-0 -z-10">
-                      <img
-                        src="/images/Condition We Treat/shoulder.png"
-                        alt="Shoulder"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 -z-0 bg-white/80" />
-                    </div>
-                  </>
-                )}
-                {category.slug === 'elbow-pain' && (
-                  <>
-                    {/* Background Image */}
-                    <div className="absolute inset-0 -z-10">
-                      <img
-                        src="/images/Condition We Treat/elbow.png"
-                        alt="Elbow"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 -z-0 bg-white/80" />
-                    </div>
-                  </>
-                )}
-                {category.slug === 'back-spine-pain' && (
-                  <>
-                    {/* Background Image */}
-                    <div className="absolute inset-0 -z-10">
-                      <img
-                        src="/images/Condition We Treat/back_spine.png"
-                        alt="Back & Spine"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 -z-0 bg-white/80" />
-                    </div>
-                  </>
-                )}
-                {category.slug === 'hip-groin-pain' && (
-                  <>
-                    {/* Background Image */}
-                    <div className="absolute inset-0 -z-10">
-                      <img
-                        src="/images/Condition We Treat/hip_groin.png"
-                        alt="Hip & Groin"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 -z-0 bg-white/80" />
-                    </div>
-                  </>
-                )}
-                {category.slug === 'foot-ankle-pain' && (
-                  <>
-                    {/* Background Image */}
-                    <div className="absolute inset-0 -z-10">
-                      <img
-                        src="/images/Condition We Treat/foot_ankle.png"
-                        alt="Foot & Ankle"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 -z-0 bg-white/80" />
-                    </div>
-                  </>
-                )}
-                {category.slug === 'hand-wrist-pain' && (
-                  <>
-                    {/* Background Image */}
-                    <div className="absolute inset-0 -z-10">
-                      <img
-                        src="/images/Condition We Treat/hand_wrist.png"
-                        alt="Hand Wrist"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 -z-0 bg-white/80" />
-                    </div>
-                  </>
-                )}
-                {category.slug === 'knee-pain' && (
-                  <>
-                    {/* Background Image */}
-                    <div className="absolute inset-0 -z-10">
-                      <img
-                        src="/images/Condition We Treat/knee.webp"
-                        alt="Knee"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 -z-0 bg-white/80" />
-                    </div>
-                  </>
-                )}
-                {category.slug === 'sports-injuries' && (
-                  <>
-                    {/* Background Image */}
-                    <div className="absolute inset-0 -z-10">
-                      <img
-                        src="/images/Condition We Treat/sports_injuries.png"
-                        alt="Sports Injuries"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 -z-0 bg-white/80" />
-                    </div>
-                  </>
-                )}
-                {category.slug === 'post-surgery-rehab' && (
-                  <>
-                    {/* Background Image */}
-                    <div className="absolute inset-0 -z-10">
-                      <img
-                        src="/images/Condition We Treat/post_surgery.png"
-                        alt="Post Surgery"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 -z-0 bg-white/80" />
-                    </div>
-                  </>
-                )}
-                <div className="relative z-10">
-                  {/* Short description */}
-                  <p className="text-gray-600 mb-3 text-sm">
-                    {category.shortDescription}
-                  </p>
+              <div key={category.slug} className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col h-full">
+                {/* Background Image Container */}
+                <div className="h-48 relative overflow-hidden">
+                  <img
+                    src={category.heroImage || '/images/logo.jpg'}
+                    alt={category.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-white to-transparent" />
+                </div>
 
-                  {/* Show some conditions */}
-                  <ul className="space-y-1 text-sm">
-                    {category.conditions.slice(0, 6).map((condition, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="text-teal-600 mr-2 mt-[2px]">•</span>
-                        <span className="text-gray-900">
-                          {condition.name}
-                        </span>
+                <div className="p-8 flex-1 flex flex-col pt-0 -mt-8 relative z-10">
+                  <div className="mb-6">
+                    <div className="w-14 h-14 bg-white rounded-2xl shadow-xl flex items-center justify-center text-3xl mb-4 border border-slate-50">
+                      {category.icon}
+                    </div>
+                    <h3 className="text-2xl font-extrabold text-slate-900 group-hover:text-teal-600 transition-colors mb-3">
+                      {category.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm mb-4 line-clamp-2 leading-relaxed">
+                      {category.shortDescription}
+                    </p>
+                  </div>
+
+                  <ul className="space-y-2 mb-8 flex-1">
+                    {category.conditions.slice(0, 4).map((condition, index) => (
+                      <li key={index} className="flex items-center gap-3 text-sm text-slate-600">
+                        <span className="w-1.5 h-1.5 rounded-full bg-teal-500 flex-shrink-0"></span>
+                        {condition.name}
                       </li>
                     ))}
-
-                    {category.conditions.length > 6 && (
-                      <li className="text-xs text-gray-500 italic mt-1">
-                        + {category.conditions.length - 6} more conditions
-                      </li>
-                    )}
                   </ul>
 
-                  {/* Learn more link → slug page */}
                   <Link
                     to={`/what-we-treat/${category.slug}`}
-                    className="mt-4 inline-flex items-center text-teal-600 font-semibold hover:text-teal-700 hover:underline"
+                    className="w-full inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-teal-600 hover:text-white text-slate-900 px-6 py-3 rounded-xl font-bold transition-all group/btn"
                   >
-                    Learn more
+                    View Details
                     <svg
-                      className="w-4 h-4 ml-1"
+                      className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1"
                       fill="none"
-                      viewBox="0 0 24 24"
                       stroke="currentColor"
+                      viewBox="0 0 24 24"
                     >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
+                        strokeWidth={2.5}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
                       />
                     </svg>
                   </Link>
                 </div>
-              </Card>
+              </div>
             ))}
           </div>
         </div>

@@ -14,74 +14,76 @@ const Services = () => {
         description={seoConfig.services.description}
       />
       {/* Header */}
-      <section className="relative overflow-hidden bg-teal-900 py-12 lg:py-16">
+      <section className="relative min-h-[40vh] flex items-center overflow-hidden bg-teal-900 py-12 lg:py-16">
         <div className="absolute inset-0">
           <img
             src="/images/Condition We Treat/whatwetreat.png"
             alt="Physiotherapy treatment session"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transform scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-teal-900/80 via-teal-900/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-teal-900 via-teal-900/40 to-transparent" />
         </div>
-        <div className="container relative">
+        <div className="container relative z-10">
           <div className="max-w-3xl text-white">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Our Services
+            <h1 className="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">
+              Our <span className="text-teal-400">Services</span>
             </h1>
-            <p className="text-xl text-teal-50">
-              Comprehensive physiotherapy and wellness treatments using the latest
-              evidence-based techniques and equipment
+            <p className="text-xl lg:text-2xl text-teal-50 font-light max-w-2xl leading-relaxed">
+              Experience peak physical performance through our comprehensive suite of
+              evidence-based wellness and recovery treatments.
             </p>
           </div>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="section">
+      <section className="py-20 bg-slate-50/50">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-10">
             {servicesData.map((service) => (
               <ScrollAnimation
                 variant="fade-up"
                 key={service.slug}
-                className="card p-6 md:p-8 group overflow-hidden"
+                className="bg-white rounded-3xl p-6 md:p-8 group overflow-hidden border border-slate-100 shadow-lg hover:shadow-2xl transition-all duration-500"
               >
                 <div className="flex flex-col md:flex-row gap-8">
                   {/* Service Image */}
-                  <div className="w-full md:w-48 lg:w-56 h-48 flex-shrink-0 overflow-hidden rounded-xl border border-gray-100 shadow-sm">
+                  <div className="w-full md:w-56 h-56 flex-shrink-0 overflow-hidden rounded-2xl shadow-inner bg-slate-100">
                     <img
                       src={service.heroImage || '/images/logo.jpg'}
                       alt={service.name}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                   </div>
 
-                  <div className="flex-1 flex flex-col">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors">
-                      {service.name}
-                    </h3>
+                  <div className="flex-1 flex flex-col justify-between py-2">
+                    <div>
+                      <h3 className="text-3xl font-extrabold text-slate-900 mb-3 group-hover:text-teal-600 transition-colors leading-tight">
+                        {service.name}
+                      </h3>
 
-                    <p className="text-gray-600 mb-6 line-clamp-2">
-                      {service.shortDescription}
-                    </p>
+                      <p className="text-slate-600 mb-6 line-clamp-3 leading-relaxed">
+                        {service.shortDescription}
+                      </p>
 
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-semibold uppercase tracking-wider">
-                        Evidence-Based
-                      </span>
-                      <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-semibold uppercase tracking-wider">
-                        Professional Care
-                      </span>
+                      <div className="flex flex-wrap gap-2 mb-8">
+                        <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-[10px] font-black uppercase tracking-widest border border-teal-100">
+                          Expertise
+                        </span>
+                        <span className="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-[10px] font-black uppercase tracking-widest border border-emerald-100">
+                          Results-Driven
+                        </span>
+                      </div>
                     </div>
 
                     <div className="mt-auto">
                       <Link
                         to={`/services/${service.slug}`}
-                        className="inline-flex items-center text-teal-600 font-bold hover:text-teal-700 group/link"
+                        className="inline-flex items-center gap-3 bg-slate-900 text-white px-6 py-3 rounded-full font-bold hover:bg-teal-600 transition-all group/btn shadow-lg"
                       >
-                        Learn more
+                        Explore Treatment
                         <svg
-                          className="w-5 h-5 ml-2 transition-transform duration-300 group-hover/link:translate-x-1"
+                          className="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -89,7 +91,7 @@ const Services = () => {
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            strokeWidth={2}
+                            strokeWidth={2.5}
                             d="M17 8l4 4m0 0l-4 4m4-4H3"
                           />
                         </svg>
