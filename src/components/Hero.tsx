@@ -55,7 +55,7 @@ const Hero = ({
 
         {/* Content */}
         <div className="relative max-w-6xl mx-auto px-6 md:px-10 lg:px-12 py-10 md:py-14 lg:py-16">
-          <div className="max-w-3xl text-left text-teal-50">
+          <div className="max-w-3xl mx-auto text-center md:text-left text-teal-50">
             {subtitle && (
               <p className="mb-3 text-base md:text-lg font-semibold text-teal-400">
                 {subtitle}
@@ -85,13 +85,13 @@ const Hero = ({
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="mb-0 flex flex-col sm:flex-row gap-4">
               {ctaPrimary && (
                 <a
                   href={BOOKING_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-7 py-2 rounded-lg bg-teal-600 hover:bg-teal-700 text-white font-semibold text-base md:text-lg transition"
+                  className="inline-flex w-full sm:w-auto items-center justify-center px-6 sm:px-7 py-3 rounded-lg bg-teal-600 hover:bg-teal-700 text-white font-semibold text-base md:text-lg transition"
                 >
                   {ctaPrimary}
                 </a>
@@ -100,7 +100,7 @@ const Hero = ({
               {ctaSecondary && (
                 <Link
                   to={ctaSecondaryLink}
-                  className="inline-flex items-center justify-center px-7 py-3 rounded-lg border border-white/40 bg-white/25 hover:bg-white/15 text-white font-semibold text-base md:text-lg transition"
+                  className="inline-flex w-full sm:w-auto items-center justify-center px-6 sm:px-7 py-3 rounded-lg border border-white/40 bg-white/25 hover:bg-white/15 text-white font-semibold text-base md:text-lg transition"
                 >
                   {ctaSecondary}
                 </Link>

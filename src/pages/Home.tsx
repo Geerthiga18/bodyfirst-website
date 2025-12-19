@@ -181,7 +181,7 @@ const Home = () => {
 
 
           <div className="mt-12 text-center">
-            <Link to="/prices" className="inline-flex items-center justify-center rounded-lg bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 font-semibold transition">
+            <Link to="/prices"                 className="inline-flex items-center justify-center rounded-lg bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 text-lg font-semibold transition">
               Learn About Insurance Coverage
             </Link>
           </div>
@@ -238,7 +238,7 @@ const Home = () => {
           <div className="mt-12 text-center">
             <Link
               to="/about#team"
-              className="inline-flex items-center justify-center rounded-lg bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 font-semibold transition"
+                className="inline-flex items-center justify-center rounded-lg bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 text-lg font-semibold transition"
             >
               View more
             </Link>
@@ -343,7 +343,7 @@ const Home = () => {
           <div className="text-center mt-12">
             <Link
               to="/why-us"
-              className="inline-flex items-center justify-center rounded-lg bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 font-semibold transition"
+                className="inline-flex items-center justify-center rounded-lg bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 text-lg font-semibold transition"
             >
               View more
             </Link>
@@ -361,13 +361,13 @@ const Home = () => {
             Book your appointment today and take the first step towards better health
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {/* Goes directly to the booking form on Contact page */}
             <a
               href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn bg-white text-teal-700 hover:bg-gray-100 text-lg px-8"
+              className="btn w-full sm:w-auto bg-white text-teal-700 hover:bg-gray-100 text-lg px-6 py-3 rounded-lg"
             >
               Book Now
             </a>
@@ -376,7 +376,7 @@ const Home = () => {
             {/* Goes to Contact page (top) */}
             <Link
               to="/contact"
-              className="btn bg-teal-700 hover:bg-teal-800 text-lg px-8"
+              className="btn w-full sm:w-auto bg-teal-700 hover:bg-teal-800 text-white text-lg px-6 py-3 rounded-lg"
             >
               Contact Us
             </Link>
