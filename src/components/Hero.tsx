@@ -85,26 +85,26 @@ const Hero = ({
             </div>
 
             {/* CTAs */}
-            <div className="mb-0 flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               {ctaPrimary && (
-                <a
-                  href={BOOKING_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex w-full sm:w-auto items-center justify-center px-6 sm:px-7 py-3 rounded-lg bg-teal-600 hover:bg-teal-700 text-white font-semibold text-base md:text-lg transition"
-                >
-                  {ctaPrimary}
-                </a>
-              )}
+                  <a
+                    href={BOOKING_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-teal-600 hover:bg-teal-700 text-white font-semibold text-base sm:text-lg md:text-xl transition"
+                  >
+                    {ctaPrimary}
+                  </a>
+                )}
 
               {ctaSecondary && (
-                <Link
-                  to={ctaSecondaryLink}
-                  className="inline-flex w-full sm:w-auto items-center justify-center px-6 sm:px-7 py-3 rounded-lg border border-white/40 bg-white/25 hover:bg-white/15 text-white font-semibold text-base md:text-lg transition"
-                >
-                  {ctaSecondary}
-                </Link>
-              )}
+                  <Link
+                    to={ctaSecondaryLink}
+                    className="inline-flex items-center justify-center px-8 py-3 rounded-lg border border-white/40 bg-white/25 hover:bg-white/15 text-white font-semibold text-base sm:text-lg md:text-xl transition"
+                  >
+                    {ctaSecondary}
+                  </Link>
+                )}
             </div>
           </div>
         </div>

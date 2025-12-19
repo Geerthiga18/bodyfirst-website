@@ -183,7 +183,7 @@ const Header = () => {
             {/* Contact */}
             <Link
               to="/contact"
-              className={`text-sm font-medium transition-colors ${
+              className={`text-base font-medium transition-colors ${
                 isActive('/contact')
                   ? 'text-teal-600'
                   : 'text-gray-700 hover:text-teal-600'
@@ -197,7 +197,7 @@ const Header = () => {
               href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-4 inline-flex items-center justify-center px-8 py-2.5 rounded-full bg-teal-600 hover:bg-teal-700 text-white text-sm font-semibold shadow-md transition-all duration-200"
+              className="ml-4 inline-flex items-center justify-center px-6 py-2 rounded-md bg-teal-600 hover:bg-teal-700 text-white text-base font-semibold shadow-md transition-all duration-200"
             >
               Book an Appointment
             </a>
