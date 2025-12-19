@@ -5,6 +5,7 @@ import Card from '../components/Card';
 import { ScrollBackground } from '../components/ScrollBackground';
 import AnimatedH2 from '../components/AnimatedH2';
 import AnimatedListItem from '../components/AnimatedListItem';
+import AnimatedCard from '../components/AnimatedCard';
 import treatmentCategories from '../data/whatWeTreatData';
 
 const WhatWeTreat = () => {
@@ -274,7 +275,7 @@ const WhatWeTreat = () => {
             </AnimatedH2>
 
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-xl shadow-md">
+              <AnimatedCard className="p-6" hover={false}>
                 <AnimatedListItem>
                   <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
                     1
@@ -289,9 +290,9 @@ const WhatWeTreat = () => {
                     </p>
                   </div>
                 </AnimatedListItem>
-              </div>
+              </AnimatedCard>
 
-              <div className="bg-white p-6 rounded-xl shadow-md">
+              <AnimatedCard className="p-6" hover={false}>
                 <AnimatedListItem>
                   <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
                     2
@@ -306,9 +307,9 @@ const WhatWeTreat = () => {
                     </p>
                   </div>
                 </AnimatedListItem>
-              </div>
+              </AnimatedCard>
 
-              <div className="bg-white p-6 rounded-xl shadow-md">
+              <AnimatedCard className="p-6" hover={false}>
                 <AnimatedListItem>
                   <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
                     3
@@ -323,9 +324,9 @@ const WhatWeTreat = () => {
                     </p>
                   </div>
                 </AnimatedListItem>
-              </div>
+              </AnimatedCard>
 
-              <div className="bg-white p-6 rounded-xl shadow-md">
+              <AnimatedCard className="p-6" hover={false}>
                 <AnimatedListItem>
                   <div className="w-9 h-9 mr-4 rounded-full bg-teal-600 text-white flex items-center justify-center text-lg font-bold">
                     4
@@ -340,7 +341,7 @@ const WhatWeTreat = () => {
                     </p>
                   </div>
                 </AnimatedListItem>
-              </div>
+              </AnimatedCard>
             </div>
 
           </div>
@@ -356,45 +357,25 @@ const WhatWeTreat = () => {
             </AnimatedH2>
 
             <div className="space-y-6">
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">
-                  How quickly will I see results?
-                </h3>
-                <p className="text-gray-600">
-                  Many patients experience improvement within 2–3 sessions, but timelines vary.
-                  We'll give you a realistic plan during your initial assessment.
-                </p>
-              </div>
+              <AnimatedCard className="p-6 border-l-4 border-teal-600" hover={false}>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">How quickly will I see results?</h3>
+                <p className="text-gray-600">Many patients experience improvement within 2–3 sessions, but timelines vary. We'll give you a realistic plan during your initial assessment.</p>
+              </AnimatedCard>
 
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">
-                  Do I need a referral from my GP?
-                </h3>
-                <p className="text-gray-600">
-                  No referral is needed for private physiotherapy. If using insurance,
-                  check your provider's requirements.
-                </p>
-              </div>
+              <AnimatedCard className="p-6 border-l-4 border-teal-600" hover={false}>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Do I need a referral from my GP?</h3>
+                <p className="text-gray-600">No referral is needed for private physiotherapy. If using insurance, check your provider's requirements.</p>
+              </AnimatedCard>
 
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">
-                  What should I wear?
-                </h3>
-                <p className="text-gray-600">
-                  Comfortable, loose clothing that allows access to the area being treated.
-                  Shorts for lower limb; vest/t-shirt for upper body.
-                </p>
-              </div>
+              <AnimatedCard className="p-6 border-l-4 border-teal-600" hover={false}>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">What should I wear?</h3>
+                <p className="text-gray-600">Comfortable, loose clothing that allows access to the area being treated. Shorts for lower limb; vest/t-shirt for upper body.</p>
+              </AnimatedCard>
 
-              <div className="border-l-4 border-teal-600 pl-6 py-4">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">
-                  Will treatment be painful?
-                </h3>
-                <p className="text-gray-600">
-                  Some techniques may cause brief discomfort, but we always work within your
-                  comfort levels and explain everything beforehand.
-                </p>
-              </div>
+              <AnimatedCard className="p-6 border-l-4 border-teal-600" hover={false}>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">Will treatment be painful?</h3>
+                <p className="text-gray-600">Some techniques may cause brief discomfort, but we always work within your comfort levels and explain everything beforehand.</p>
+              </AnimatedCard>
             </div>
           </div>
         </div>
