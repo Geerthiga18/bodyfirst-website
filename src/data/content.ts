@@ -149,15 +149,15 @@ export const siteContent = {
   ],
 
   prices: [
-    { service: 'Initial Appointment', duration: '45 min', price: '£75' },
-    { service: '30 min Physiotherapy', duration: '30 min', price: '£65' },
-    { service: '30 min Sports Massage', duration: '30 min', price: '£50' },
-    { service: '45 min Sports Massage', duration: '45 min', price: '£60' },
-    { service: '60 min Sports Massage', duration: '60 min', price: '£70' },
-    { service: 'Lymphatic Drainage', duration: '30 min', price: '£70' },
-    { service: 'Lymphatic Drainage', duration: '45 min', price: '£80' },
-    { service: 'Shockwave Therapy', duration: '1 session', price: '£80' },
-    { service: 'Gait Analysis', duration: '45 min', price: '£70' }
+    { service: 'Initial Appointment', duration: '45 min', price: '£75', category: 'Physiotherapy' },
+    { service: '30 min Physiotherapy', duration: '30 min', price: '£65', category: 'Physiotherapy' },
+    { service: '30 min Sports Massage', duration: '30 min', price: '£50', category: 'Sports Massage' },
+    { service: '45 min Sports Massage', duration: '45 min', price: '£60', category: 'Sports Massage' },
+    { service: '60 min Sports Massage', duration: '60 min', price: '£70', category: 'Sports Massage' },
+    { service: 'Lymphatic Drainage', duration: '30 min', price: '£70', category: 'Lymphatic Drainage' },
+    { service: 'Lymphatic Drainage', duration: '45 min', price: '£80', category: 'Lymphatic Drainage' },
+    { service: 'Shockwave Therapy', duration: '1 session', price: '£80', category: 'Other Services' },
+    { service: 'Gait Analysis', duration: '45 min', price: '£70', category: 'Other Services' }
   ],
 
   insurance: {

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import ScrollAnimation from "../components/ScrollAnimation";
-import PriceTable from "../components/PriceTable";
+import PricingCards from "../components/PricingCards";
 import InsuranceMarquee from "../components/InsuranceMarquee";
 import HeadingScrollAnimation from "../components/HeadingScrollAnimation";
 import SEO from "../components/SEO";
@@ -63,9 +63,26 @@ const PricesInsurance = () => {
               </p>
             </div>
 
-            <ScrollAnimation variant="fade-up" className="card p-6 overflow-hidden">
-              <PriceTable />
-            </ScrollAnimation>
+            <div className="mt-8">
+              <PricingCards />
+            </div>
+
+            <div className="mt-16 p-8 bg-teal-50 rounded-2xl border border-teal-100 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="max-w-2xl">
+                <p className="text-gray-700 leading-relaxed font-medium">
+                  <strong className="text-teal-800">Note:</strong> All prices are for self-paying patients. Initial appointments
+                  include a comprehensive assessment and treatment plan tailored to your specific needs.
+                </p>
+              </div>
+              <a
+                href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn bg-teal-600 hover:bg-teal-700 text-white font-bold px-8 py-3 whitespace-nowrap shadow-lg shadow-teal-600/20 transition-all hover:-translate-y-0.5"
+              >
+                Book Now
+              </a>
+            </div>
           </div>
         </div>
       </section>
