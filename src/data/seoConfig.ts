@@ -16,7 +16,7 @@ export const seoConfig = {
         description: 'Expert treatment for back pain, sports injuries, knee pain, shoulder issues, chronic conditions & more. HCPC registered physiotherapists in Hampton, London.',
     },
     prices: {
-        title: 'Prices & Insurance | Body First UK Physiotherapy',
+        title: 'Pricing & Insurance | Body First UK Physiotherapy',
         description: 'Transparent physiotherapy pricing from £65. We accept all major insurance providers including BUPA, AXA, Aviva. Book online or call today.',
     },
     contact: {

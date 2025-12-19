@@ -175,6 +175,10 @@ export const siteContent = {
         logo: '/images/insurance/bupa.png',
       },
       {
+        name: 'HEALIX',
+        logo: '/images/insurance/healix.png',
+      },
+      {
         name: 'Simply Health',
         logo: '/images/insurance/simply.jpg',
       },

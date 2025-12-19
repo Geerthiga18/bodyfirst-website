@@ -12,21 +12,21 @@ const Contact = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.hash === '#book') {
-      const el = document.getElementById('book');
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const el = document.getElementById(id);
       if (el) {
         setTimeout(() => {
           el.scrollIntoView({ behavior: 'smooth' });
         }, 100);
       }
     } else {
-      // Coming to /contact without #book → go to top
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [location]);
 
   return (
-    <div className="pt-20">
+    <div>
       <SEO
         title={seoConfig.contact.title}
         description={seoConfig.contact.description}
@@ -142,9 +142,11 @@ const Contact = () => {
             </ScrollAnimation>
 
             {/* Map & Address */}
-            <ScrollAnimation className="card p-1 h-full">
-              <Map />
-            </ScrollAnimation>
+            <div id="map" className="h-full">
+              <ScrollAnimation className="card p-1 h-full">
+                <Map />
+              </ScrollAnimation>
+            </div>
           </div>
         </div>
       </section>

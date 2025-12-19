@@ -12,7 +12,7 @@ const PricesInsurance = () => {
   const pricesHeroImage = "/images/insurance/hero.png";
 
   return (
-    <div className="pt-20">
+    <div>
       <SEO
         title={seoConfig.prices.title}
         description={seoConfig.prices.description}
@@ -23,7 +23,7 @@ const PricesInsurance = () => {
         <div className="absolute inset-0">
           <img
             src={pricesHeroImage}
-            alt="Prices and insurance at Body First UK"
+            alt="Pricing and insurance at Body First UK"
             className="w-full h-full object-cover"
             loading="lazy"
             onError={(e) => {
@@ -39,7 +39,7 @@ const PricesInsurance = () => {
         <div className="container relative">
           <div className="max-w-3xl text-white text-left">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Prices & Insurance
+              Pricing & Insurance
             </h1>
             <p className="text-xl text-teal-50">
               Transparent pricing with no hidden fees. We accept all major health

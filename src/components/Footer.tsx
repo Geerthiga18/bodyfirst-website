@@ -29,7 +29,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white">
       {/* CTA Banner */}
       <div className="bg-primary-600">
-        
+
       </div>
 
       {/* Main Footer */}
@@ -42,7 +42,7 @@ const Footer = () => {
             <div className="space-y-2 text-gray-400">
               <p>{siteContent.company.address.street}</p>
               <p>{siteContent.company.address.city}</p>
-            <p>{siteContent.company.address.place}</p>
+              <p>{siteContent.company.address.place}</p>
             </div>
           </div>
 
@@ -67,7 +67,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/prices" className="text-gray-400 hover:text-white transition-colors">
-                  Prices & Insurance
+                  Pricing & Insurance
                 </Link>
               </li>
             </ul>
@@ -122,12 +122,12 @@ const Footer = () => {
                 </div>
               ))}
             </div>
-            
+
             {/* Social Media */}
             <div className="mt-6">
               <h4 className="font-semibold mb-3">Follow Us</h4>
               <div className="flex space-x-4">
-                
+
                 <a
                   href={siteContent.company.social.facebook}
                   target="_blank"

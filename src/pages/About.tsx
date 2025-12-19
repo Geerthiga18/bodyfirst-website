@@ -10,7 +10,7 @@ const About = () => {
   const aboutHeroImage = "/images/Aboutus/hero.png";
 
   return (
-    <div className="pt-20">
+    <div>
       <SEO
         title={seoConfig.about.title}
         description={seoConfig.about.description}

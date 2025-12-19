@@ -7,7 +7,7 @@ import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
 
 const WhyUs = () => {
   return (
-    <div className="pt-20">
+    <div>
       <SEO
         title={seoConfig.whyUs.title}
         description={seoConfig.whyUs.description}
@@ -87,7 +87,7 @@ const WhyUs = () => {
               <div className="text-5xl mb-4">💷</div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Transparent Pricing</h3>
               <p className="text-gray-600">
-                Clear, upfront pricing with no hidden fees. We accept major insurance providers — check our Prices &amp; Insurance page for details.
+                Clear, upfront pricing with no hidden fees. We accept major insurance providers — check our Pricing &amp; Insurance page for details.
               </p>
             </ScrollAnimation>
           </div>

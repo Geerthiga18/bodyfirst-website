@@ -9,7 +9,7 @@ import { siteContent } from '../data/content';
 
 const Home = () => {
   return (
-    <div className="pt-20">
+    <div>
       <SEO />
       {/* Hero Section (your existing Hero; will look teal if Option A is applied) */}
       <Hero
@@ -48,7 +48,7 @@ const Home = () => {
             </Link>
 
             <Link to="/prices" className="group h-full">
-              <Card icon="💷" title="Prices & Insurance" hover className="h-full">
+              <Card icon="💷" title="Pricing & Insurance" hover className="h-full">
                 <p className="text-gray-600">
                   Transparent pricing from £65. We accept all major insurance providers
                 </p>

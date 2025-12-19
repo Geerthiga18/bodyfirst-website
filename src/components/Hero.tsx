@@ -25,7 +25,7 @@ const Hero = ({
   backgroundImage,
 }: HeroProps) => {
   return (
-    <section className="pt-1 pb-10">
+    <section className="pb-10">
       {/* Full-width hero wrapper */}
       <div className="relative w-full overflow-hidden min-h-[calc(100vh-5rem)] flex items-center">
         {/* Background media */}

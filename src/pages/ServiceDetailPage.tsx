@@ -12,7 +12,7 @@ const ServiceDetailPage = () => {
   }
 
   return (
-    <div className="pt-20 min-h-screen">
+    <div className="min-h-screen">
       {/* Hero (same pattern as WhatWeTreatDetail) */}
       <section className="relative text-white overflow-hidden min-h-[380px] sm:min-h-[420px] lg:min-h-[420px]">
         {/* Background */}

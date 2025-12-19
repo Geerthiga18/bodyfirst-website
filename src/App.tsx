@@ -28,7 +28,7 @@ function App() {
         <AntigravityCanvas />
         <Header />
 
-        <main className="flex-grow">
+        <main className="flex-grow pt-[6.5rem] lg:pt-[7.5rem]">
           <Routes>
             {/* Home */}
             <Route path="/" element={<Home />} />

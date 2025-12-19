@@ -10,7 +10,7 @@ import { seoConfig } from '../data/seoConfig';
 
 const WhatWeTreat = () => {
   return (
-    <div className="pt-20">
+    <div>
       <SEO
         title={seoConfig.whatWeTreat.title}
         description={seoConfig.whatWeTreat.description}
