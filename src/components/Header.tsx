@@ -144,7 +144,7 @@ const Header = () => {
                 : 'text-teal-50 hover:bg-white/10 hover:text-white'
                 }`}
             >
-              About
+              About Us
             </Link>
 
             {/* Why Us */}
@@ -166,7 +166,7 @@ const Header = () => {
                 : 'text-teal-50 hover:bg-white/10 hover:text-white'
                 }`}
             >
-              Prices & Insurance
+              Pricing & Insurance
             </Link>
 
             {/* Contact */}
@@ -177,7 +177,7 @@ const Header = () => {
                 : 'text-teal-50 hover:bg-white/10 hover:text-white'
                 }`}
             >
-              Contact
+              Contact Us
             </Link>
           </div>
 

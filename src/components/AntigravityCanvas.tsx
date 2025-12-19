@@ -56,7 +56,7 @@ const AntigravityCanvas = () => {
       }
 
       // Lower-density bubbles (shades of green)
-      const bubbleCount = Math.floor(area / 15000);
+      const bubbleCount = Math.floor(area / 25000);
       for (let i = 0; i < bubbleCount; i++) {
         particles.push({
           x: Math.random() * canvas.width,
