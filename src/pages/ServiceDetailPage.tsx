@@ -111,18 +111,18 @@ const ServiceDetailPage = () => {
             Take the first step towards recovery. Secure your appointment online
             or get in touch with our team.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-row flex-wrap gap-3 justify-center items-center">
             <a
               href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-teal-700 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-100 transition"
+              className="inline-block bg-white text-teal-700 px-5 py-3 rounded-lg font-semibold text-base sm:text-lg hover:bg-gray-100 transition"
             >
               Book Now
             </a>
             <Link
               to="/contact"
-              className="inline-block bg-teal-700/70 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-teal-800 transition border border-white/30"
+              className="inline-block bg-teal-700/70 text-white px-5 py-3 rounded-lg font-semibold text-base sm:text-lg hover:bg-teal-800 transition border border-white/30"
             >
               Contact Us
             </Link>
