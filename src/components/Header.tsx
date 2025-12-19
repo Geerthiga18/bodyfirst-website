@@ -31,11 +31,10 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'bg-white shadow-lg py-3'
           : 'bg-white/95 backdrop-blur-sm py-4'
-      }`}
+        }`}
     >
       <nav className="container">
         <div className="flex items-center justify-between">
@@ -44,9 +43,8 @@ const Header = () => {
             <img
               src="/images/logo.jpg"
               alt={siteContent.company.name}
-              className={`w-auto object-contain transition-all duration-300 ${
-                isScrolled ? 'h-10' : 'h-14'
-              }`}
+              className={`w-auto object-contain transition-all duration-300 ${isScrolled ? 'h-12' : 'h-16'
+                }`}
             />
           </Link>
 
@@ -56,11 +54,10 @@ const Header = () => {
             <div className="relative group">
               <Link
                 to="/what-we-treat"
-                className={`flex items-center gap-2 text-sm font-medium transition-colors ${
-                  isActive('/what-we-treat')
+                className={`flex items-center gap-2 text-sm font-medium transition-colors ${isActive('/what-we-treat')
                     ? 'text-teal-600'
                     : 'text-gray-700 hover:text-teal-600'
-                }`}
+                  }`}
               >
                 <span>What We Treat</span>
                 <span className="text-xs">▾</span>
@@ -102,11 +99,10 @@ const Header = () => {
             <div className="relative group">
               <Link
                 to="/services"
-                className={`flex items-center gap-2 text-sm font-medium transition-colors ${
-                  isActive('/services')
+                className={`flex items-center gap-2 text-sm font-medium transition-colors ${isActive('/services')
                     ? 'text-teal-600'
                     : 'text-gray-700 hover:text-teal-600'
-                }`}
+                  }`}
               >
                 <span>Services</span>
                 <span className="text-xs">▾</span>
@@ -147,11 +143,10 @@ const Header = () => {
             {/* About */}
             <Link
               to="/about"
-              className={`text-sm font-medium transition-colors ${
-                isActive('/about')
+              className={`text-sm font-medium transition-colors ${isActive('/about')
                   ? 'text-teal-600'
                   : 'text-gray-700 hover:text-teal-600'
-              }`}
+                }`}
             >
               About Us
             </Link>
@@ -159,11 +154,10 @@ const Header = () => {
             {/* Why Us */}
             <Link
               to="/why-us"
-              className={`text-sm font-medium transition-colors ${
-                isActive('/why-us')
+              className={`text-sm font-medium transition-colors ${isActive('/why-us')
                   ? 'text-teal-600'
                   : 'text-gray-700 hover:text-teal-600'
-              }`}
+                }`}
             >
               Why Us
             </Link>
@@ -171,11 +165,10 @@ const Header = () => {
             {/* Prices */}
             <Link
               to="/prices"
-              className={`text-sm font-medium transition-colors ${
-                isActive('/prices')
+              className={`text-sm font-medium transition-colors ${isActive('/prices')
                   ? 'text-teal-600'
                   : 'text-gray-700 hover:text-teal-600'
-              }`}
+                }`}
             >
               Prices &amp; Insurance
             </Link>
@@ -183,11 +176,10 @@ const Header = () => {
             {/* Contact */}
             <Link
               to="/contact"
-              className={`text-sm font-medium transition-colors ${
-                isActive('/contact')
+              className={`text-sm font-medium transition-colors ${isActive('/contact')
                   ? 'text-teal-600'
                   : 'text-gray-700 hover:text-teal-600'
-              }`}
+                }`}
             >
               Contact Us
             </Link>
@@ -235,11 +227,10 @@ const Header = () => {
                 key={item.path}
                 to={item.path}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`block py-2 text-base font-medium transition-colors ${
-                  isActive(item.path)
+                className={`block py-2 text-base font-medium transition-colors ${isActive(item.path)
                     ? 'text-teal-600'
                     : 'text-gray-700 hover:text-teal-600'
-                }`}
+                  }`}
               >
                 {item.name}
               </Link>

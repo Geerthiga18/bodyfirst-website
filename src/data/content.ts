@@ -194,8 +194,8 @@ export const siteContent = {
   team: [
     {
       name: "Praveena Thiruvasager",
-      role: "BSc in Physiotherapy • MSc in Advanced Physiotherapy • MPhil in Shockwave Therapy and Sports Medicine and Exercise Sciences • MCSP • HCPC registered",
-      qualifications: "MSc Advanced Physiotherapy",
+      role: "Senior Physiotherapist",
+      qualifications: "BSc in Physiotherapy • MSc in Advanced Physiotherapy • MPhil in Shockwave Therapy and Sports Medicine and Exercise Sciences • CSP • Chartered Senior Physiotherapist• HCPC registered",
       description:
         "Senior physiotherapist with extensive experience in sports and musculoskeletal rehabilitation. Focuses on evidence-based care, complex rehab, and advanced modalities including shockwave therapy.",
       image: "/images/Aboutus/praveena.png",
@@ -301,7 +301,7 @@ export const siteContent = {
     philosophy: 'We take a holistic, evidence-based approach to treatment, combining the latest research with hands-on expertise. Every patient receives a comprehensive assessment and a personalised treatment plan tailored to their specific needs and goals.',
     values: [
       'Excellence in clinical practice',
-      'Patient-centred care',
+      'Patient-centered care',
       'Continuous professional development',
       'Evidence-based treatment',
       'Compassionate service'
