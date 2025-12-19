@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import Header from './components/Header';
+import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
 import AntigravityCanvas from './components/AntigravityCanvas';
 
@@ -27,6 +28,7 @@ function App() {
       <div className="min-h-screen flex flex-col relative" style={{ zIndex: 1 }}>
         <AntigravityCanvas />
         <Header />
+        <ScrollToTop />
 
         <main className="flex-grow">
           <Routes>
