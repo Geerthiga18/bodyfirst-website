@@ -44,52 +44,57 @@ const Services = () => {
               <ScrollAnimation
                 variant="fade-up"
                 key={service.slug}
-                className="card p-8"
+                className="card p-6 md:p-8 group overflow-hidden"
               >
-                <div className="flex items-start">
-                  {/* Optional icon placeholder */}
-                  <div className="text-5xl mr-6">
-                    <span>💠</span>
+                <div className="flex flex-col md:flex-row gap-8">
+                  {/* Service Image */}
+                  <div className="w-full md:w-48 lg:w-56 h-48 flex-shrink-0 overflow-hidden rounded-xl border border-gray-100 shadow-sm">
+                    <img
+                      src={service.heroImage || '/images/logo.jpg'}
+                      alt={service.name}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
                   </div>
 
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  <div className="flex-1 flex flex-col">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-teal-600 transition-colors">
                       {service.name}
                     </h3>
 
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 mb-6 line-clamp-2">
                       {service.shortDescription}
                     </p>
 
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-sm font-medium">
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-semibold uppercase tracking-wider">
                         Evidence-Based
                       </span>
-                      <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-sm font-medium">
+                      <span className="px-3 py-1 bg-teal-50 text-teal-700 rounded-full text-xs font-semibold uppercase tracking-wider">
                         Professional Care
                       </span>
                     </div>
 
-                    {/* Only Learn more */}
-                    <Link
-                      to={`/services/${service.slug}`}
-                      className="inline-flex items-center text-teal-600 font-semibold hover:underline"
-                    >
-                      Learn more
-                      <svg
-                        className="w-5 h-5 ml-1"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                    <div className="mt-auto">
+                      <Link
+                        to={`/services/${service.slug}`}
+                        className="inline-flex items-center text-teal-600 font-bold hover:text-teal-700 group/link"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        />
-                      </svg>
-                    </Link>
+                        Learn more
+                        <svg
+                          className="w-5 h-5 ml-2 transition-transform duration-300 group-hover/link:translate-x-1"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </ScrollAnimation>
@@ -111,42 +116,42 @@ const Services = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card icon="🔍" title="Detailed Assessment">
+            <Card image="/images/features/assessment.png" title="Detailed Assessment">
               <p className="text-gray-600">
                 Comprehensive evaluation of your condition, movement patterns, and goals
                 to create a personalised treatment plan.
               </p>
             </Card>
 
-            <Card icon="👐" title="Hands-On Treatment">
+            <Card image="/images/features/treatment.png" title="Hands-On Treatment">
               <p className="text-gray-600">
                 Expert manual therapy techniques to reduce pain, improve mobility, and
                 accelerate healing.
               </p>
             </Card>
 
-            <Card icon="🏋️" title="Exercise Rehabilitation">
+            <Card image="/images/features/rehab.png" title="Exercise Rehabilitation">
               <p className="text-gray-600">
                 Tailored exercise programmes to strengthen, stabilise, and prevent
                 future injuries.
               </p>
             </Card>
 
-            <Card icon="📚" title="Education & Advice">
+            <Card image="/images/features/education.png" title="Education & Advice">
               <p className="text-gray-600">
                 Clear explanations about your condition and practical advice for
                 self-management and prevention.
               </p>
             </Card>
 
-            <Card icon="⚡" title="Advanced Techniques">
+            <Card image="/images/features/advanced.png" title="Advanced Techniques">
               <p className="text-gray-600">
                 Access to specialised treatments like dry needling, shockwave therapy,
                 and cupping when appropriate.
               </p>
             </Card>
 
-            <Card icon="📈" title="Progress Tracking">
+            <Card image="/images/features/assessment.png" title="Progress Tracking">
               <p className="text-gray-600">
                 Regular reassessments to monitor your progress and adjust treatment as
                 needed for optimal outcomes.
@@ -174,7 +179,21 @@ const Services = () => {
                 { title: 'Better Quality of Life', text: 'Return to activities you love.' },
               ].map((item) => (
                 <div key={item.title} className="flex items-start space-x-3">
-                  <span className="text-2xl text-teal-600">✓</span>
+                  <span className="text-teal-600 flex-shrink-0 mt-1">
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
                   <div>
                     <h3 className="font-bold text-lg mb-1">{item.title}</h3>
                     <p className="text-gray-600">{item.text}</p>

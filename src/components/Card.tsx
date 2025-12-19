@@ -4,6 +4,7 @@ import ScrollAnimation from './ScrollAnimation';
 interface CardProps {
   title?: string;
   icon?: ReactNode;
+  image?: string; // New prop for image source
   children: ReactNode;
   className?: string; // Additional classes
   hover?: boolean; // Whether to enable hover effects
@@ -14,6 +15,7 @@ interface CardProps {
 const Card = ({
   title,
   icon,
+  image,
   children,
   className = '',
   hover = true,
@@ -34,9 +36,15 @@ const Card = ({
       delay={delay}
       className={`card p-6 ${hoverClasses} ${className}`}
     >
-      {(icon || title) && (
+      {(icon || image || title) && (
         <div className="mb-4">
-          {icon && <div className="text-4xl mb-3">{icon}</div>}
+          {image ? (
+            <div className="w-16 h-16 mb-4 overflow-hidden rounded-lg">
+              <img src={image} alt={title || 'icon'} className="w-full h-full object-cover" />
+            </div>
+          ) : icon ? (
+            <div className="text-4xl mb-3">{icon}</div>
+          ) : null}
           {title && (
             <h3 className={`text-xl font-bold ${titleClassName ?? 'text-gray-900'}`}>
               {title}
