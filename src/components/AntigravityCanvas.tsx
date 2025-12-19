@@ -9,7 +9,9 @@ interface Particle {
   vy: number;
   size: number;
   opacity: number;
-  type: 'grain' | 'streak';
+  type: 'grain' | 'bubble';
+  hue?: number;
+  lightness?: number;
 }
 
 const AntigravityCanvas = () => {
@@ -53,9 +55,9 @@ const AntigravityCanvas = () => {
         });
       }
 
-      // Lower-density streaks (light blue)
-      const streakCount = Math.floor(area / 8000);
-      for (let i = 0; i < streakCount; i++) {
+      // Lower-density bubbles (shades of green)
+      const bubbleCount = Math.floor(area / 15000);
+      for (let i = 0; i < bubbleCount; i++) {
         particles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
@@ -63,9 +65,11 @@ const AntigravityCanvas = () => {
           baseY: Math.random() * canvas.height,
           vx: (Math.random() - 0.5) * 0.4,
           vy: (Math.random() - 0.5) * 0.4,
-          size: Math.random() * 2 + 1.5,
-          opacity: Math.random() * 0.5 + 0.3,
-          type: 'streak',
+          size: Math.random() * 10 + 2, // Varied sizes (2px to 12px)
+          opacity: Math.random() * 0.3 + 0.1, // More transparent
+          type: 'bubble',
+          hue: Math.random() * 60 + 85, // 85-145 (Leafy greens to Emerald)
+          lightness: Math.random() * 25 + 20, // 20-45% (Darker range)
         });
       }
 
@@ -168,17 +172,32 @@ const AntigravityCanvas = () => {
           ctx.fillStyle = `rgba(50, 50, 50, ${particle.opacity})`;
           ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
         } else {
-          // Light blue streaks (elongated)
-          ctx.fillStyle = `rgba(100, 180, 200, ${particle.opacity})`;
-          ctx.ellipse(
-            particle.x,
-            particle.y,
-            particle.size * 1.5,
-            particle.size * 0.8,
-            Math.atan2(particle.vy, particle.vx),
+          // Glass-like green bubbles
+          const hue = particle.hue || 120;
+          const lightness = particle.lightness || 30;
+
+          // Bubble fill (very transparent)
+          ctx.beginPath();
+          ctx.fillStyle = `hsla(${hue}, 60%, ${lightness}%, 0.15)`;
+          ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+          ctx.fill();
+
+          // Bubble stroke (outline)
+          ctx.strokeStyle = `hsla(${hue}, 60%, ${lightness}%, 0.4)`;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+
+          // Bubble highlight (reflection)
+          ctx.beginPath();
+          ctx.fillStyle = `rgba(255, 255, 255, 0.2)`;
+          ctx.arc(
+            particle.x - particle.size * 0.3,
+            particle.y - particle.size * 0.3,
+            particle.size * 0.2,
             0,
             Math.PI * 2
           );
+          ctx.fill();
         }
 
         ctx.fill();
