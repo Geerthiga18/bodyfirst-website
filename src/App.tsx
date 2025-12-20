@@ -24,11 +24,11 @@ import './styles/globals.css';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col relative" style={{ zIndex: 1 }}>
+      <div className="min-h-screen flex flex-col relative">
         <AntigravityCanvas />
         <Header />
 
-        <main className="flex-grow pt-[6.5rem] lg:pt-[7.5rem]">
+        <main className="flex-grow pt-[6.5rem] lg:pt-[7.5rem] relative z-10">
           <Routes>
             {/* Home */}
             <Route path="/" element={<Home />} />

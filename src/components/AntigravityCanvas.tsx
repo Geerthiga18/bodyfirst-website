@@ -261,7 +261,7 @@ const AntigravityCanvas = () => {
         <canvas
             ref={canvasRef}
             className="fixed inset-0 pointer-events-none"
-            style={{ zIndex: -1, background: 'transparent' }}
+            style={{ zIndex: 5, background: 'transparent' }}
         />
     );
 };

@@ -29,7 +29,7 @@ const WhatWeTreat = () => {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-transparent">
       <SEO
         title={seoConfig.whatWeTreat.title}
         description={seoConfig.whatWeTreat.description}
@@ -58,7 +58,7 @@ const WhatWeTreat = () => {
       </section>
 
       {/* Conditions Grid - Modern Premium Cards */}
-      <section className="py-24 bg-slate-50/50">
+      <section className="py-24 bg-transparent">
         <div className="container px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {treatmentCategories.map((category, index) => (
@@ -130,7 +130,7 @@ const WhatWeTreat = () => {
       </section>
 
       {/* Elite Recovery Journey - High End Visuals */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white/60 backdrop-blur-sm">
         <div className="container px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-20">
@@ -188,7 +188,7 @@ const WhatWeTreat = () => {
       </section>
 
       {/* Standardized FAQ - Elastic Accordion */}
-      <section className="py-24 bg-slate-50/50">
+      <section className="py-24 bg-transparent">
         <div className="container px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">

@@ -7,7 +7,7 @@ import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
 
 const WhyUs = () => {
   return (
-    <div className="bg-slate-50/30">
+    <div className="bg-transparent">
       <SEO
         title={seoConfig.whyUs.title}
         description={seoConfig.whyUs.description}
@@ -41,7 +41,7 @@ const WhyUs = () => {
       </section>
 
       {/* Philosophy & Excellence - Alternating Sections */}
-      <section className="py-24 overflow-hidden">
+      <section className="py-24 overflow-hidden bg-transparent">
         <div className="container px-4">
           {/* Excellence in Clinical Care */}
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-24">
@@ -155,7 +155,7 @@ const WhyUs = () => {
       </section>
 
       {/* Professional Standards - Trust Building */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white/60 backdrop-blur-sm">
         <div className="container px-4">
           <div className="text-center mb-16">
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="blur-up">

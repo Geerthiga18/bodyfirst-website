@@ -11,7 +11,7 @@ const PricesInsurance = () => {
   const pricesHeroImage = "/images/insurance/hero.png";
 
   return (
-    <div className="bg-white">
+    <div className="bg-transparent">
       <SEO
         title={seoConfig.prices.title}
         description={seoConfig.prices.description}
@@ -45,7 +45,7 @@ const PricesInsurance = () => {
       </section>
 
       {/* Pricing Section - High End Board */}
-      <section className="py-24 bg-slate-50/50">
+      <section className="py-24 bg-transparent">
         <div className="container px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
@@ -84,7 +84,7 @@ const PricesInsurance = () => {
       </section>
 
       {/* Insurance Coverage - Cinematic Integration */}
-      <section className="py-24 bg-white overflow-hidden">
+      <section className="py-24 bg-white/60 backdrop-blur-sm overflow-hidden">
         <div className="container px-4">
           <div className="flex flex-col lg:flex-row gap-20 items-center">
             <div className="lg:w-1/2">
@@ -129,7 +129,7 @@ const PricesInsurance = () => {
       </section>
 
       {/* Payment & Cancellation - Modern Grid */}
-      <section className="py-24 bg-slate-50/50">
+      <section className="py-24 bg-transparent">
         <div className="container px-4 text-center">
           <HeadingScrollAnimation as="h2" className="text-3xl md:text-4xl font-black text-slate-900 mb-16" variant="blur-up">
             Payment & <span className="text-teal-600">Policies</span>

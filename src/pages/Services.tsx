@@ -8,7 +8,7 @@ import { seoConfig } from '../data/seoConfig';
 
 const Services = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-transparent">
       <SEO
         title={seoConfig.services.title}
         description={seoConfig.services.description}
@@ -38,7 +38,7 @@ const Services = () => {
       </section>
 
       {/* Services Grid - Premium Horizontal Cards */}
-      <section className="py-24 bg-slate-50/50">
+      <section className="py-24 bg-transparent">
         <div className="container px-4">
           <div className="grid grid-cols-1 gap-12 max-w-6xl mx-auto">
             {servicesData.map((service, index) => (
@@ -104,7 +104,7 @@ const Services = () => {
       </section>
 
       {/* What to Expect - Modern Visual Grid */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section className="py-24 bg-white/60 backdrop-blur-sm relative overflow-hidden">
         <div className="container px-4">
           <div className="text-center mb-20">
             <h2 className="text-teal-600 font-black uppercase tracking-[0.3em] text-sm mb-4">The Experience</h2>

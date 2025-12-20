@@ -50,7 +50,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-transparent">
       <SEO
         title={seoConfig.contact.title}
         description={seoConfig.contact.description}
@@ -81,7 +81,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Methods - Elite Cards */}
-      <section className="py-24 bg-slate-50/50">
+      <section className="py-24 bg-transparent">
         <div className="container px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-24">
             {[
@@ -150,7 +150,7 @@ const Contact = () => {
       </section>
 
       {/* Form & Map - Elite Integration */}
-      <section id="book" className="py-24 bg-white relative overflow-hidden">
+      <section id="book" className="py-24 bg-white/60 backdrop-blur-sm relative overflow-hidden">
         <div className="container px-4">
           <div className="flex flex-col lg:flex-row gap-16 items-stretch">
             {/* Contact Form */}
@@ -180,7 +180,7 @@ const Contact = () => {
       </section>
 
       {/* FAQ - Standardized Modern Accordion */}
-      <section className="py-24 bg-slate-50/50">
+      <section className="py-24 bg-transparent">
         <div className="container px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">

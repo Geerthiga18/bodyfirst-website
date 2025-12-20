@@ -9,7 +9,7 @@ const About = () => {
   const aboutHeroImage = "/images/Aboutus/hero.png";
 
   return (
-    <div className="bg-slate-50/30">
+    <div className="bg-transparent">
       <SEO
         title={seoConfig.about.title}
         description={seoConfig.about.description}
@@ -42,7 +42,7 @@ const About = () => {
       </section>
 
       {/* Our Story & Philosophy - Alternating Sections */}
-      <section className="py-24 overflow-hidden">
+      <section className="py-24 overflow-hidden bg-transparent">
         <div className="container px-4">
           {/* Mission / What We Do */}
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-24">
@@ -134,7 +134,7 @@ const About = () => {
       </section>
 
       {/* Team Section - Refined & Modern */}
-      <section id="team" className="py-24 bg-white">
+      <section id="team" className="py-24 bg-white/60 backdrop-blur-sm">
         <div className="container px-4">
           <div className="text-center mb-20">
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="scale">
@@ -190,7 +190,7 @@ const About = () => {
       </section>
 
       {/* Professional Standards - Trust Building */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-transparent">
         <div className="container px-4">
           <div className="text-center mb-16">
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="blur-up">
@@ -252,7 +252,7 @@ const About = () => {
       </section>
 
       {/* Why Choose Us - Modern Grid */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white/60 backdrop-blur-sm">
         <div className="container px-4">
           <div className="text-center mb-20">
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="slide-in-right">

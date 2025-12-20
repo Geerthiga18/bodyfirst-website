@@ -22,11 +22,11 @@ const Home = () => {
       />
 
       {/* Quick Overview Cards - Separated Section */}
-      <section className="relative z-10 py-16 bg-white">
+      <section className="relative z-10 py-16 bg-white/80 backdrop-blur-sm">
         <div className="container px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link to="/what-we-treat" className="group">
-              <div className="h-full p-8 rounded-3xl bg-slate-50 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+              <div className="h-full p-8 rounded-3xl bg-white/70 backdrop-blur-sm border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
                 <div className="w-14 h-14 mb-6 rounded-2xl bg-teal-50 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-500">🩺</div>
                 <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">What We Treat</h3>
                 <p className="text-slate-600 mb-6 leading-relaxed">
@@ -39,7 +39,7 @@ const Home = () => {
             </Link>
 
             <Link to="/services" className="group">
-              <div className="h-full p-8 rounded-3xl bg-slate-50 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+              <div className="h-full p-8 rounded-3xl bg-white/70 backdrop-blur-sm border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
                 <div className="w-14 h-14 mb-6 rounded-2xl bg-teal-50 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-500">⚕️</div>
                 <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">Our Services</h3>
                 <p className="text-slate-600 mb-6 leading-relaxed">
@@ -52,7 +52,7 @@ const Home = () => {
             </Link>
 
             <Link to="/prices" className="group">
-              <div className="h-full p-8 rounded-3xl bg-slate-50 border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+              <div className="h-full p-8 rounded-3xl bg-white/70 backdrop-blur-sm border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
                 <div className="w-14 h-14 mb-6 rounded-2xl bg-teal-50 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-500">💷</div>
                 <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">Pricing</h3>
                 <p className="text-slate-600 mb-6 leading-relaxed">
@@ -81,7 +81,7 @@ const Home = () => {
       </section>
 
       {/* Featured Services - Modernized Grid */}
-      <section className="py-24 bg-slate-50/50">
+      <section className="py-24 bg-transparent">
         <div className="container px-4 text-center lg:text-left">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16 gap-8 text-center lg:text-left">
             <div>
@@ -102,7 +102,7 @@ const Home = () => {
               <ScrollAnimation
                 key={service.slug}
                 variant="fade-up"
-                className="bg-white rounded-3xl p-6 group overflow-hidden border border-slate-100 shadow-md hover:shadow-2xl transition-all duration-500"
+                className="bg-white/70 backdrop-blur-sm rounded-3xl p-6 group overflow-hidden border border-slate-100 shadow-md hover:shadow-2xl transition-all duration-500"
               >
                 <div className="flex flex-col md:flex-row gap-6 text-left h-full">
                   {/* Service Image */}
@@ -163,7 +163,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials - Elegant Staggered Layout */}
-      <section className="py-24 bg-white overflow-hidden">
+      <section className="py-24 bg-white/60 backdrop-blur-sm overflow-hidden">
         <div className="container px-4">
           <div className="text-center mb-20">
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="slide-in-left">
@@ -179,7 +179,7 @@ const Home = () => {
               <ScrollAnimation
                 key={index}
                 variant="fade-up"
-                className={`p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all duration-500 ${index % 2 !== 0 ? 'lg:translate-y-8' : ''}`}
+                className={`p-8 rounded-3xl bg-white/70 backdrop-blur-sm border border-slate-100 hover:shadow-xl transition-all duration-500 ${index % 2 !== 0 ? 'lg:translate-y-8' : ''}`}
               >
                 <div className="flex gap-1 mb-6">
                   {[...Array(testimonial.rating)].map((_, i) => (
@@ -229,7 +229,7 @@ const Home = () => {
       </section>
 
       {/* Insurance Partners - Integrated View */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-transparent">
         <div className="container px-4">
           <div className="flex flex-col lg:flex-row items-center justify-between mb-16 gap-8 text-center lg:text-left">
             <div className="max-w-xl">
@@ -245,16 +245,16 @@ const Home = () => {
             </Link>
           </div>
 
-          <div className="p-12 rounded-[3rem] bg-white border border-slate-100 shadow-sm relative overflow-hidden group">
-            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
-            <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+          <div className="p-12 rounded-[3rem] bg-white/70 backdrop-blur-sm border border-slate-100 shadow-sm relative overflow-hidden group">
+            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white/70 to-transparent z-10 pointer-events-none" />
+            <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white/70 to-transparent z-10 pointer-events-none" />
             <InsuranceMarquee items={siteContent.insurance.accepted} duration={25} />
           </div>
         </div>
       </section>
 
       {/* Team Section - Premium Layout */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white/60 backdrop-blur-sm">
         <div className="container px-4">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-20 gap-8">
             <div className="text-center lg:text-left">
@@ -309,7 +309,7 @@ const Home = () => {
       </section>
 
       {/* Professional Standards - Refined Icons */}
-      <section className="py-24 bg-slate-50/30">
+      <section className="py-24 bg-transparent">
         <div className="container px-4">
           <div className="text-center mb-16">
             <HeadingScrollAnimation as="h2" className="text-3xl font-black text-slate-900 mb-4" variant="blur-up">
@@ -324,7 +324,7 @@ const Home = () => {
             {siteContent.accreditations.map((acc, index) => (
               <ScrollAnimation
                 key={index}
-                className="group p-10 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-500 text-center"
+                className="group p-10 rounded-[2.5rem] bg-white/70 backdrop-blur-sm border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-500 text-center"
               >
                 <div className="h-20 mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                   <img
@@ -342,7 +342,7 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us - High Impact Grid */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section className="py-24 bg-white/60 backdrop-blur-sm relative overflow-hidden">
         {/* Abstract background shape */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-teal-50 rounded-full blur-[120px] opacity-50 -z-10" />
 
@@ -365,7 +365,7 @@ const Home = () => {
               { i: "🕐", title: "Flexible Hours", color: "bg-teal-50 text-teal-600", desc: "Extended opening hours including evenings and Sundays to fit your busy life." },
               { icon: "💷", title: "Transparent Pricing", color: "bg-emerald-50 text-emerald-600", desc: "No hidden fees. Affordable professional care with major insurance accepted." }
             ].map((item, index) => (
-              <ScrollAnimation key={index} className="group p-10 rounded-[2.5rem] bg-white border border-slate-100 hover:border-teal-100 hover:shadow-[0_20px_50px_rgba(20,184,166,0.08)] transition-all duration-500" variant="fade-up">
+              <ScrollAnimation key={index} className="group p-10 rounded-[2.5rem] bg-white/70 backdrop-blur-sm border border-slate-100 hover:border-teal-100 hover:shadow-[0_20px_50px_rgba(20,184,166,0.08)] transition-all duration-500" variant="fade-up">
                 <div className={`w-16 h-16 rounded-2xl ${item.color} flex items-center justify-center text-3xl mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>{item.icon || (item as any).i}</div>
                 <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">{item.title}</h3>
                 <p className="text-slate-600 leading-relaxed font-medium">{item.desc}</p>
