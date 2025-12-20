@@ -56,7 +56,7 @@ const WhyUs = () => {
                 <div className="grid sm:grid-cols-2 gap-4 pt-4">
                   {[
                     "HCPC & CSP Registered",
-                    "Advanced MSc Education",
+                    "Advanced Education",
                     "Elite Sports Experience",
                     "Evidence-Based Methods"
                   ].map((item, i) => (
@@ -73,7 +73,7 @@ const WhyUs = () => {
                 <div className="absolute -inset-4 bg-teal-500/10 rounded-[2.5rem] blur-2xl group-hover:bg-teal-500/20 transition-all duration-700" />
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/3]">
                   <img
-                    src="/images/WhyUs/excellence.png"
+                    src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=2069&auto=format&fit=crop"
                     alt="Clinical Excellence"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     onError={(e) => (e.currentTarget.src = "/images/Aboutus/hero.png")}
@@ -90,7 +90,7 @@ const WhyUs = () => {
                 <div className="absolute -inset-4 bg-emerald-500/10 rounded-[2.5rem] blur-2xl group-hover:bg-emerald-500/20 transition-all duration-700" />
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/3]">
                   <img
-                    src="/images/WhyUs/patient-care.png"
+                    src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop"
                     alt="Patient Centred Care"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     onError={(e) => (e.currentTarget.src = "/images/Aboutus/hero.png")}

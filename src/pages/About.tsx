@@ -51,7 +51,7 @@ const About = () => {
                 <div className="absolute -inset-4 bg-teal-500/10 rounded-[2rem] blur-2xl group-hover:bg-teal-500/20 transition-all duration-700" />
                 <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/3]">
                   <img
-                    src="/images/Aboutus/mission.png"
+                    src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop"
                     alt="Our Mission"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     onError={(e) => (e.currentTarget.src = "/images/logo.jpg")}
@@ -90,7 +90,7 @@ const About = () => {
                 <div className="absolute -inset-4 bg-emerald-500/10 rounded-[2rem] blur-2xl group-hover:bg-emerald-500/20 transition-all duration-700" />
                 <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/3]">
                   <img
-                    src="/images/Aboutus/philosophy.png"
+                    src="https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?q=80&w=2069&auto=format&fit=crop"
                     alt="Our Philosophy"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     onError={(e) => (e.currentTarget.src = "/images/logo.jpg")}
