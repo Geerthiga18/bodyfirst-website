@@ -183,7 +183,7 @@ const WhatWeTreatDetail = () => {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {section.bullets?.map((bullet, i) => (
-                      <div key={i} className="group bg-white/5 hover:bg-white/10 border border-white/10 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2">
+                      <div key={i} className="group bg-slate-800 border border-slate-600 p-6 rounded-2xl transition-all duration-300 shadow-sm hover:border-teal-500 hover:shadow-2xl hover:scale-105 hover:-translate-y-4">
                         <div className="w-12 h-12 bg-teal-500/20 rounded-xl flex items-center justify-center mb-6 text-teal-400 group-hover:bg-teal-400 group-hover:text-white transition-colors">
                           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />

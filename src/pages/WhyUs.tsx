@@ -4,6 +4,7 @@ import SEO from '../components/SEO';
 import { seoConfig } from '../data/seoConfig';
 import { siteContent } from '../data/content';
 import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
+import AntigravityCanvas from '../components/AntigravityCanvas';
 
 const WhyUs = () => {
   return (
@@ -122,6 +123,7 @@ const WhyUs = () => {
 
       {/* Key Benefits Grid - High Impact */}
       <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <AntigravityCanvas position="absolute" />
         <div className="container px-4">
           <div className="text-center mb-20">
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black mb-6" variant="fade-up">
@@ -141,7 +143,7 @@ const WhyUs = () => {
               <ScrollAnimation
                 key={i}
                 delay={i * 100}
-                className="group p-10 rounded-[2rem] bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-500"
+                className="group p-10 rounded-[2rem] bg-slate-800 border border-slate-600 shadow-sm hover:border-teal-500 hover:shadow-2xl hover:scale-105 hover:-translate-y-4 transition-all duration-300"
               >
                 <div className="text-5xl mb-6 group-hover:scale-110 transition-transform inline-block">
                   {item.icon}
@@ -197,6 +199,7 @@ const WhyUs = () => {
           <img src="/images/Aboutus/hero.png" alt="Recovery" className="w-full h-full object-cover grayscale" />
           <div className="absolute inset-0 bg-gradient-to-r from-teal-900 via-teal-900/80 to-teal-800/40" />
         </div>
+        <AntigravityCanvas position="absolute" />
         <div className="container relative z-10 text-center px-4">
           <HeadingScrollAnimation as="h2" className="text-4xl lg:text-6xl font-black text-white mb-8" variant="scale">
             Experience the <span className="text-teal-400">Difference</span>

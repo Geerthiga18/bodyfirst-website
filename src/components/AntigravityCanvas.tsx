@@ -14,7 +14,12 @@ interface Particle {
     lightness?: number;
 }
 
-const AntigravityCanvas = () => {
+interface AntigravityCanvasProps {
+    position?: 'fixed' | 'absolute';
+    className?: string;
+}
+
+const AntigravityCanvas = ({ position = 'fixed', className = '' }: AntigravityCanvasProps) => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const particlesRef = useRef<Particle[]>([]);
     const mouseRef = useRef({ x: -1000, y: -1000, prevX: -1000, prevY: -1000 });
@@ -34,15 +39,35 @@ const AntigravityCanvas = () => {
             // Select elements that should repel particles
             const elements = document.querySelectorAll('.card, h1, h2, .glass-card, .avoid-particles');
             elements.forEach(el => {
-                areas.push(el.getBoundingClientRect());
+                const rect = el.getBoundingClientRect();
+                // If we are in absolute mode, we need to map the avoid rects to the canvas coordinate space
+                if (position === 'absolute' && canvas.parentElement) {
+                    const canvasRect = canvas.getBoundingClientRect();
+                    areas.push({
+                        ...rect,
+                        left: rect.left - canvasRect.left,
+                        right: rect.right - canvasRect.left,
+                        top: rect.top - canvasRect.top,
+                        bottom: rect.bottom - canvasRect.top,
+                        x: rect.x - canvasRect.left,
+                        y: rect.y - canvasRect.top,
+                    } as DOMRect);
+                } else {
+                    areas.push(rect);
+                }
             });
             avoidAreasRef.current = areas;
         };
 
         // Set canvas size
         const resizeCanvas = () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+            if (position === 'absolute' && canvas.parentElement) {
+                canvas.width = canvas.parentElement.offsetWidth;
+                canvas.height = canvas.parentElement.offsetHeight;
+            } else {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
             updateAvoidAreas();
             initParticles();
         };
@@ -93,8 +118,15 @@ const AntigravityCanvas = () => {
         const handleMouseMove = (e: MouseEvent) => {
             mouseRef.current.prevX = mouseRef.current.x;
             mouseRef.current.prevY = mouseRef.current.y;
-            mouseRef.current.x = e.clientX;
-            mouseRef.current.y = e.clientY;
+
+            if (position === 'absolute') {
+                const rect = canvas.getBoundingClientRect();
+                mouseRef.current.x = e.clientX - rect.left;
+                mouseRef.current.y = e.clientY - rect.top;
+            } else {
+                mouseRef.current.x = e.clientX;
+                mouseRef.current.y = e.clientY;
+            }
         };
 
         // Mouse leave handler
@@ -121,7 +153,7 @@ const AntigravityCanvas = () => {
                 const distance = Math.sqrt(dx * dx + dy * dy);
                 const interactionRadius = 200;
 
-                if (distance < interactionRadius && mouse.x > 0) {
+                if (distance < interactionRadius && mouse.x > -500) { // Check if mouse is active (rough check)
                     const force = (1 - distance / interactionRadius) * 4;
                     const angle = Math.atan2(dy, dx);
 
@@ -153,8 +185,9 @@ const AntigravityCanvas = () => {
                             particle.y > rect.top && particle.y < rect.bottom;
 
                         const repelForce = isInside ? 0.5 : 0.1;
-                        particle.vx += (rdx / rect.width) * repelForce;
-                        particle.vy += (rdy / rect.height) * repelForce;
+                        // Avoid division by zero
+                        if (rect.width > 0) particle.vx += (rdx / rect.width) * repelForce;
+                        if (rect.height > 0) particle.vy += (rdy / rect.height) * repelForce;
                     }
                 });
 
@@ -255,13 +288,13 @@ const AntigravityCanvas = () => {
                 cancelAnimationFrame(animationFrameRef.current);
             }
         };
-    }, []);
+    }, [position]);
 
     return (
         <canvas
             ref={canvasRef}
-            className="fixed inset-0 pointer-events-none"
-            style={{ zIndex: 5, background: 'transparent' }}
+            className={`pointer-events-none ${position === 'absolute' ? 'absolute inset-0' : 'fixed inset-0'} ${className}`}
+            style={{ zIndex: position === 'absolute' ? 0 : -1, background: 'transparent' }}
         />
     );
 };

@@ -33,7 +33,7 @@ const PricingCards = () => {
                             <Card
                                 key={index}
                                 delay={index * 0.05}
-                                className="flex flex-col justify-between h-full p-8 bg-white border border-slate-100 hover:border-teal-200 hover:shadow-[0_20px_50px_rgba(20,184,166,0.08)] transition-all duration-500 rounded-[2rem] group"
+                                className="flex flex-col justify-between h-full p-8 bg-white border border-slate-200 shadow-sm hover:border-teal-500 hover:shadow-2xl hover:scale-105 hover:-translate-y-4 transition-all duration-300 rounded-[2rem] group"
                             >
                                 <div>
                                     <div className="flex justify-between items-start mb-6">

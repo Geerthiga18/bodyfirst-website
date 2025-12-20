@@ -6,6 +6,7 @@ import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
 import SEO from '../components/SEO';
 import { siteContent } from '../data/content';
 import { servicesData } from '../data/servicesData';
+import AntigravityCanvas from '../components/AntigravityCanvas';
 
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
         <div className="container px-4 relative z-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link to="/what-we-treat" className="group">
-              <div className="h-full p-8 rounded-3xl bg-white/70 backdrop-blur-sm border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+              <div className="h-full p-8 rounded-3xl bg-white border border-slate-200 shadow-sm hover:border-teal-500 hover:shadow-2xl hover:scale-105 hover:-translate-y-4 transition-all duration-300">
                 <div className="w-14 h-14 mb-6 rounded-2xl bg-teal-50 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-500">🩺</div>
                 <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">What We Treat</h3>
                 <p className="text-slate-600 mb-6 leading-relaxed">
@@ -39,7 +40,7 @@ const Home = () => {
             </Link>
 
             <Link to="/services" className="group">
-              <div className="h-full p-8 rounded-3xl bg-white/70 backdrop-blur-sm border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+              <div className="h-full p-8 rounded-3xl bg-white border border-slate-200 shadow-sm hover:border-teal-500 hover:shadow-2xl hover:scale-105 hover:-translate-y-4 transition-all duration-300">
                 <div className="w-14 h-14 mb-6 rounded-2xl bg-teal-50 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-500">⚕️</div>
                 <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">Our Services</h3>
                 <p className="text-slate-600 mb-6 leading-relaxed">
@@ -52,7 +53,7 @@ const Home = () => {
             </Link>
 
             <Link to="/prices" className="group">
-              <div className="h-full p-8 rounded-3xl bg-white/70 backdrop-blur-sm border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+              <div className="h-full p-8 rounded-3xl bg-white border border-slate-200 shadow-sm hover:border-teal-500 hover:shadow-2xl hover:scale-105 hover:-translate-y-4 transition-all duration-300">
                 <div className="w-14 h-14 mb-6 rounded-2xl bg-teal-50 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-500">💷</div>
                 <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">Pricing</h3>
                 <p className="text-slate-600 mb-6 leading-relaxed">
@@ -102,7 +103,7 @@ const Home = () => {
               <ScrollAnimation
                 key={service.slug}
                 variant="fade-up"
-                className="bg-white/70 backdrop-blur-sm rounded-3xl p-6 group overflow-hidden border border-slate-100 shadow-md hover:shadow-2xl transition-all duration-500"
+                className="bg-white rounded-3xl p-6 group overflow-hidden border border-slate-200 shadow-md hover:border-teal-500 hover:shadow-2xl hover:scale-105 hover:-translate-y-4 transition-all duration-300"
               >
                 <div className="flex flex-col md:flex-row gap-6 text-left h-full">
                   {/* Service Image */}
@@ -179,7 +180,7 @@ const Home = () => {
               <ScrollAnimation
                 key={index}
                 variant="fade-up"
-                className={`p-8 rounded-3xl bg-white/70 backdrop-blur-sm border border-slate-100 hover:shadow-xl transition-all duration-500 ${index % 2 !== 0 ? 'lg:translate-y-8' : ''}`}
+                className={`p-8 rounded-3xl bg-white border border-slate-200 hover:border-teal-500 hover:shadow-2xl hover:scale-105 hover:-translate-y-4 transition-all duration-300 ${index % 2 !== 0 ? 'lg:translate-y-8' : ''}`}
               >
                 <div className="flex gap-1 mb-6">
                   {[...Array(testimonial.rating)].map((_, i) => (
@@ -245,7 +246,7 @@ const Home = () => {
             </Link>
           </div>
 
-          <div className="p-12 rounded-[3rem] bg-white/70 backdrop-blur-sm border border-slate-100 shadow-sm relative overflow-hidden group">
+          <div className="p-12 rounded-[3rem] bg-white border border-slate-100 shadow-sm relative overflow-hidden group">
             <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white/70 to-transparent z-10 pointer-events-none" />
             <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white/70 to-transparent z-10 pointer-events-none" />
             <InsuranceMarquee items={siteContent.insurance.accepted} duration={25} />
@@ -324,7 +325,7 @@ const Home = () => {
             {siteContent.accreditations.map((acc, index) => (
               <ScrollAnimation
                 key={index}
-                className="group p-10 rounded-[2.5rem] bg-white/70 backdrop-blur-sm border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-500 text-center"
+                className="group p-10 rounded-[2.5rem] bg-white border border-slate-200 shadow-sm hover:border-teal-500 hover:shadow-2xl hover:scale-105 hover:-translate-y-4 transition-all duration-300 text-center"
               >
                 <div className="h-20 mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                   <img
@@ -365,7 +366,7 @@ const Home = () => {
               { i: "🕐", title: "Flexible Hours", color: "bg-teal-50 text-teal-600", desc: "Extended opening hours including evenings and Sundays to fit your busy life." },
               { icon: "💷", title: "Transparent Pricing", color: "bg-emerald-50 text-emerald-600", desc: "No hidden fees. Affordable professional care with major insurance accepted." }
             ].map((item, index) => (
-              <ScrollAnimation key={index} className="group p-10 rounded-[2.5rem] bg-white/70 backdrop-blur-sm border border-slate-100 hover:border-teal-100 hover:shadow-[0_20px_50px_rgba(20,184,166,0.08)] transition-all duration-500" variant="fade-up">
+              <ScrollAnimation key={index} className="group p-10 rounded-[2.5rem] bg-white border border-slate-200 shadow-sm hover:border-teal-500 hover:shadow-2xl hover:scale-105 hover:-translate-y-4 transition-all duration-300" variant="fade-up">
                 <div className={`w-16 h-16 rounded-2xl ${item.color} flex items-center justify-center text-3xl mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>{item.icon || (item as any).i}</div>
                 <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">{item.title}</h3>
                 <p className="text-slate-600 leading-relaxed font-medium">{item.desc}</p>
@@ -387,6 +388,7 @@ const Home = () => {
       {/* Final CTA - Ultra Premium */}
       <section className="py-32 relative overflow-hidden">
         <div className="absolute inset-0 bg-slate-900" />
+        <AntigravityCanvas position="absolute" />
         {/* Animated accent gradient */}
         <div className="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] bg-teal-600 rounded-full blur-[150px] opacity-20 animate-pulse" />
 

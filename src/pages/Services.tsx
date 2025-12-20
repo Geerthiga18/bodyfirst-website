@@ -5,6 +5,7 @@ import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
 import SEO from '../components/SEO';
 import { servicesData } from '../data/servicesData';
 import { seoConfig } from '../data/seoConfig';
+import AntigravityCanvas from '../components/AntigravityCanvas';
 
 const Services = () => {
   return (
@@ -46,7 +47,7 @@ const Services = () => {
                 variant="fade-up"
                 key={service.slug}
                 delay={index * 100}
-                className="group relative bg-white rounded-[2.5rem] overflow-hidden border border-slate-100 shadow-xl shadow-slate-200/50 hover:shadow-2xl transition-all duration-700"
+                className="bg-white rounded-3xl p-6 group overflow-hidden border border-slate-200 shadow-md hover:border-teal-500 hover:shadow-2xl hover:scale-105 hover:-translate-y-4 transition-all duration-300"
               >
                 <div className="flex flex-col lg:flex-row items-stretch">
                   {/* Service Image */}
@@ -166,7 +167,8 @@ const Services = () => {
       </section>
 
       {/* Benefits - Modern Integrated Layout */}
-      <section className="py-24 bg-slate-900 text-white overflow-hidden">
+      <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <AntigravityCanvas position="absolute" />
         <div className="container px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-20">
             <div className="lg:w-1/2">
@@ -216,6 +218,7 @@ const Services = () => {
           <img src="/images/Condition We Treat/whatwetreat.png" alt="Recovery" className="w-full h-full object-cover grayscale" />
           <div className="absolute inset-0 bg-gradient-to-r from-teal-900 via-teal-900/80 to-teal-800/40" />
         </div>
+        <AntigravityCanvas position="absolute" />
         <div className="container relative z-10 text-center px-4">
           <HeadingScrollAnimation as="h2" className="text-4xl lg:text-6xl font-black text-white mb-8" variant="scale">
             Your Recovery <span className="text-teal-400">Starts Here</span>

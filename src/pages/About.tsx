@@ -4,6 +4,7 @@ import HeadingScrollAnimation from "../components/HeadingScrollAnimation";
 import SEO from "../components/SEO";
 import { siteContent } from "../data/content";
 import { seoConfig } from "../data/seoConfig";
+import AntigravityCanvas from "../components/AntigravityCanvas";
 
 const About = () => {
   const aboutHeroImage = "/images/Aboutus/hero.png";
@@ -106,6 +107,7 @@ const About = () => {
       {/* Values Grid - High Impact Cards */}
       <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-slate-50/30 to-transparent opacity-10" />
+        <AntigravityCanvas position="absolute" />
         <div className="container px-4 relative z-10">
           <div className="text-center mb-20">
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black mb-6" variant="fade-up">
@@ -122,7 +124,7 @@ const About = () => {
                 key={index}
                 variant="fade-up"
                 delay={index * 100}
-                className="group p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-500"
+                className="group p-8 rounded-3xl bg-slate-800 border border-slate-600 shadow-sm hover:border-teal-500 hover:shadow-2xl hover:scale-105 hover:-translate-y-4 transition-all duration-300"
               >
                 <div className="w-12 h-12 rounded-2xl bg-teal-500/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">✨</div>
                 <h3 className="text-xl font-bold mb-3 text-white">Value {index + 1}</h3>
@@ -290,7 +292,7 @@ const About = () => {
               <ScrollAnimation
                 key={i}
                 delay={i * 100}
-                className="group p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-500 hover:-translate-y-1"
+                className="group p-10 rounded-[2.5rem] bg-white border border-slate-200 shadow-sm hover:border-teal-500 hover:shadow-2xl hover:scale-105 hover:-translate-y-4 transition-all duration-300 text-center"
               >
                 <div className={`w-14 h-14 rounded-2xl bg-${item.color}-50 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform`}>
                   {item.icon}
@@ -301,14 +303,15 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Final CTA - Cinematic Impact */}
-      <section className="relative py-32 overflow-hidden bg-slate-900">
+      < section className="relative py-32 overflow-hidden bg-slate-900" >
         <div className="absolute inset-0 opacity-40">
           <img src="/images/Aboutus/hero.png" alt="Recovery" className="w-full h-full object-cover grayscale" />
           <div className="absolute inset-0 bg-gradient-to-r from-teal-900 via-teal-900/80 to-teal-800/40" />
         </div>
+        <AntigravityCanvas position="absolute" />
         <div className="container relative z-10 text-center px-4">
           <HeadingScrollAnimation as="h2" className="text-4xl lg:text-6xl font-black text-white mb-8" variant="scale">
             Your Recovery <span className="text-teal-400">Starts Here</span>
@@ -334,8 +337,8 @@ const About = () => {
             </Link>
           </div>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 };
 

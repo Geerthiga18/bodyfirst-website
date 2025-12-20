@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { siteContent } from '../data/content';
+import AntigravityCanvas from './AntigravityCanvas';
 
 const Footer = () => {
   const formatPhone = (raw: string) => {
@@ -26,7 +27,8 @@ const Footer = () => {
   const phoneDigits = rawPhone.replace(/\D/g, '');
   const formattedPhone = formatPhone(rawPhone);
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 text-white relative overflow-hidden">
+      <AntigravityCanvas position="absolute" />
       {/* CTA Banner */}
       <div className="bg-primary-600">
 

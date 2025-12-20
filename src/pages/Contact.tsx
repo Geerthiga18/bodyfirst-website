@@ -8,6 +8,7 @@ import SEO from '../components/SEO';
 import Accordion from '../components/Accordion';
 import { siteContent } from '../data/content';
 import { seoConfig } from '../data/seoConfig';
+import AntigravityCanvas from '../components/AntigravityCanvas';
 
 const Contact = () => {
   const location = useLocation();
@@ -125,6 +126,7 @@ const Contact = () => {
           {/* Opening Hours - Premium Layout */}
           <div className="max-w-4xl mx-auto">
             <ScrollAnimation variant="fade-up" className="bg-slate-900 text-white rounded-[3rem] p-12 relative overflow-hidden group">
+              <AntigravityCanvas position="absolute" />
               <div className="absolute top-0 right-0 w-64 h-64 bg-teal-500/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:scale-125 transition-transform duration-1000" />
               <div className="relative z-10">
                 <div className="text-center mb-10">
@@ -203,6 +205,7 @@ const Contact = () => {
           <img src="/images/Contact/contact_hero.png" alt="Recovery" className="w-full h-full object-cover grayscale" />
           <div className="absolute inset-0 bg-gradient-to-r from-teal-900 via-teal-900/80 to-teal-800/40" />
         </div>
+        <AntigravityCanvas position="absolute" />
         <div className="container relative z-10 text-center px-4">
           <HeadingScrollAnimation as="h2" className="text-4xl lg:text-6xl font-black text-white mb-8" variant="scale">
             Ready to Take the <span className="text-teal-400">First Step?</span>
