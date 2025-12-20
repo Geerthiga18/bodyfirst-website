@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AntigravityCanvas from './components/AntigravityCanvas';
+import ScrollToTop from './components/ScrollToTop';
 
 import Home from './pages/Home';
 
@@ -24,6 +25,7 @@ import './styles/globals.css';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col relative">
         <AntigravityCanvas />
         <Header />
