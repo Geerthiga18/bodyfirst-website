@@ -22,8 +22,8 @@ const Home = () => {
       />
 
       {/* Quick Overview Cards - Separated Section */}
-      <section className="relative z-10 py-16 bg-white/80 backdrop-blur-sm">
-        <div className="container px-4">
+      <section className="py-16 bg-white/80 backdrop-blur-sm">
+        <div className="container px-4 relative z-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link to="/what-we-treat" className="group">
               <div className="h-full p-8 rounded-3xl bg-white/70 backdrop-blur-sm border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
@@ -82,7 +82,7 @@ const Home = () => {
 
       {/* Featured Services - Modernized Grid */}
       <section className="py-24 bg-transparent">
-        <div className="container px-4 text-center lg:text-left">
+        <div className="container px-4 text-center lg:text-left relative z-10">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16 gap-8 text-center lg:text-left">
             <div>
               <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="fade-up">
@@ -164,7 +164,7 @@ const Home = () => {
 
       {/* Testimonials - Elegant Staggered Layout */}
       <section className="py-24 bg-white/60 backdrop-blur-sm overflow-hidden">
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="text-center mb-20">
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="slide-in-left">
               Voices of <span className="text-teal-600">Recovery</span>
@@ -230,7 +230,7 @@ const Home = () => {
 
       {/* Insurance Partners - Integrated View */}
       <section className="py-24 bg-transparent">
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between mb-16 gap-8 text-center lg:text-left">
             <div className="max-w-xl">
               <HeadingScrollAnimation as="h2" className="text-4xl font-black text-slate-900 mb-4" variant="scale">
@@ -255,7 +255,7 @@ const Home = () => {
 
       {/* Team Section - Premium Layout */}
       <section className="py-24 bg-white/60 backdrop-blur-sm">
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-20 gap-8">
             <div className="text-center lg:text-left">
               <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="blur-up">
@@ -310,7 +310,7 @@ const Home = () => {
 
       {/* Professional Standards - Refined Icons */}
       <section className="py-24 bg-transparent">
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="text-center mb-16">
             <HeadingScrollAnimation as="h2" className="text-3xl font-black text-slate-900 mb-4" variant="blur-up">
               Professional <span className="text-teal-600">Standards</span>
@@ -346,7 +346,7 @@ const Home = () => {
         {/* Abstract background shape */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-teal-50 rounded-full blur-[120px] opacity-50 -z-10" />
 
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="text-center mb-20">
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="slide-in-right">
               Why <span className="text-teal-600">Body First</span> UK?

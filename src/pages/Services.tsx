@@ -39,7 +39,7 @@ const Services = () => {
 
       {/* Services Grid - Premium Horizontal Cards */}
       <section className="py-24 bg-transparent">
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="grid grid-cols-1 gap-12 max-w-6xl mx-auto">
             {servicesData.map((service, index) => (
               <ScrollAnimation
@@ -105,7 +105,7 @@ const Services = () => {
 
       {/* What to Expect - Modern Visual Grid */}
       <section className="py-24 bg-white/60 backdrop-blur-sm relative overflow-hidden">
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="text-center mb-20">
             <h2 className="text-teal-600 font-black uppercase tracking-[0.3em] text-sm mb-4">The Experience</h2>
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black mb-6 text-slate-900" variant="fade-up">
@@ -167,7 +167,7 @@ const Services = () => {
 
       {/* Benefits - Modern Integrated Layout */}
       <section className="py-24 bg-slate-900 text-white overflow-hidden">
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-20">
             <div className="lg:w-1/2">
               <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black mb-8" variant="slide-in-left">

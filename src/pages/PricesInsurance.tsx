@@ -46,7 +46,7 @@ const PricesInsurance = () => {
 
       {/* Pricing Section - High End Board */}
       <section className="py-24 bg-transparent">
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
               <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="fade-up">
@@ -85,7 +85,7 @@ const PricesInsurance = () => {
 
       {/* Insurance Coverage - Cinematic Integration */}
       <section className="py-24 bg-white/60 backdrop-blur-sm overflow-hidden">
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="flex flex-col lg:flex-row gap-20 items-center">
             <div className="lg:w-1/2">
               <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-8" variant="slide-in-left">
@@ -130,7 +130,7 @@ const PricesInsurance = () => {
 
       {/* Payment & Cancellation - Modern Grid */}
       <section className="py-24 bg-transparent">
-        <div className="container px-4 text-center">
+        <div className="container px-4 text-center relative z-10">
           <HeadingScrollAnimation as="h2" className="text-3xl md:text-4xl font-black text-slate-900 mb-16" variant="blur-up">
             Payment & <span className="text-teal-600">Policies</span>
           </HeadingScrollAnimation>

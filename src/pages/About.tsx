@@ -43,7 +43,7 @@ const About = () => {
 
       {/* Our Story & Philosophy - Alternating Sections */}
       <section className="py-24 overflow-hidden bg-transparent">
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           {/* Mission / What We Do */}
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-24">
             <ScrollAnimation variant="fade-up" className="lg:w-1/2 order-2 lg:order-1">
@@ -106,7 +106,7 @@ const About = () => {
       {/* Values Grid - High Impact Cards */}
       <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-slate-50/30 to-transparent opacity-10" />
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="text-center mb-20">
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black mb-6" variant="fade-up">
               The <span className="text-teal-400">Values</span> That Drive Us
@@ -135,7 +135,7 @@ const About = () => {
 
       {/* Team Section - Refined & Modern */}
       <section id="team" className="py-24 bg-white/60 backdrop-blur-sm">
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="text-center mb-20">
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="scale">
               Meet Our <span className="text-teal-600">Experts</span>
@@ -191,7 +191,7 @@ const About = () => {
 
       {/* Professional Standards - Trust Building */}
       <section className="py-24 bg-transparent">
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="text-center mb-16">
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="blur-up">
               World-Class <span className="text-teal-600">Standards</span>
@@ -253,7 +253,7 @@ const About = () => {
 
       {/* Why Choose Us - Modern Grid */}
       <section className="py-24 bg-white/60 backdrop-blur-sm">
-        <div className="container px-4">
+        <div className="container px-4 relative z-10">
           <div className="text-center mb-20">
             <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="slide-in-right">
               Why <span className="text-teal-600">Body First</span> UK
