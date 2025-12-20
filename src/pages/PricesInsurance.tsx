@@ -8,18 +8,17 @@ import { siteContent } from "../data/content";
 import { seoConfig } from "../data/seoConfig";
 
 const PricesInsurance = () => {
-  // Change this path to your actual hero image
   const pricesHeroImage = "/images/insurance/hero.png";
 
   return (
-    <div>
+    <div className="bg-white">
       <SEO
         title={seoConfig.prices.title}
         description={seoConfig.prices.description}
       />
+
       {/* Header (Standardized Hero) */}
       <section className="relative min-h-[50vh] flex items-center overflow-hidden bg-teal-900 py-12 lg:py-16">
-        {/* Background */}
         <div className="absolute inset-0">
           <img
             src={pricesHeroImage}
@@ -30,231 +29,166 @@ const PricesInsurance = () => {
               (e.currentTarget as HTMLImageElement).style.display = "none";
             }}
           />
-          {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-r from-teal-900 via-teal-900/40 to-transparent" />
         </div>
 
-        {/* Content */}
-        <div className="container relative z-10">
+        <div className="container relative z-10 px-4">
           <div className="max-w-4xl text-white">
             <h1 className="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">
               Pricing & <span className="text-teal-400">Insurance</span>
             </h1>
             <p className="text-xl lg:text-2xl text-teal-50 font-light max-w-2xl leading-relaxed">
-              Transparent pricing with no hidden fees. We work with all major private health insurance providers.
+              Premium care with transparent pricing. We are registered with all major health insurance providers for seamless claims.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Price Table */}
-      <section className="section">
-        <div className="container">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-4 text-gray-900" variant="fade-up">
-                Our Prices
+      {/* Pricing Section - High End Board */}
+      <section className="py-24 bg-slate-50/50">
+        <div className="container px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-20">
+              <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-6" variant="fade-up">
+                Treatment <span className="text-teal-600">Investment</span>
               </HeadingScrollAnimation>
-              <p className="text-lg text-gray-600">
-                Competitive rates for high-quality physiotherapy and wellness
-                services
+              <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                Affordable luxury care. Our rates reflect our expertise and the high-end technology used in every treatment.
               </p>
             </div>
 
-            <div className="mt-8">
-              <PricingCards />
-            </div>
+            <PricingCards />
 
-            <div className="mt-16 p-8 bg-teal-50 rounded-2xl border border-teal-100 flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="max-w-2xl">
-                <p className="text-gray-700 leading-relaxed font-medium">
-                  <strong className="text-teal-800">Note:</strong> All prices are for self-paying patients. Initial appointments
-                  include a comprehensive assessment and treatment plan tailored to your specific needs.
+            <ScrollAnimation variant="fade-up" className="mt-20 p-10 rounded-[2.5rem] bg-white border border-slate-100 shadow-xl shadow-slate-200/50 flex flex-col lg:flex-row items-center justify-between gap-10">
+              <div className="lg:max-w-2xl">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-teal-100 text-teal-700 text-xs font-black">!</span>
+                  <h3 className="text-xl font-bold text-slate-900">Self-Paying Patients</h3>
+                </div>
+                <p className="text-slate-600 text-lg leading-relaxed">
+                  Prices listed are for self-paying individuals. All initial appointments include a comprehensive 45-minute clinical assessment and a personalized recovery roadmap.
                 </p>
               </div>
               <a
                 href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn bg-teal-600 hover:bg-teal-700 text-white font-bold px-8 py-3 whitespace-nowrap shadow-lg shadow-teal-600/20 transition-all hover:-translate-y-0.5"
+                className="group relative inline-flex items-center justify-center px-10 py-5 bg-teal-500 text-white rounded-full font-black text-lg overflow-hidden transition-all hover:scale-105 hover:shadow-[0_10px_30px_rgba(20,184,166,0.3)] shrink-0"
               >
-                Book Now
+                Book Your Assessment
+                <span className="ml-3 group-hover:translate-x-1 transition-transform">→</span>
               </a>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
 
-      {/* Insurance */}
-      <section className="section">
-        <div className="container">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-10">
-              <HeadingScrollAnimation as="h2" className="text-3xl font-bold mb-4 text-gray-900" variant="slide-in-left">
-                Insurance Coverage
+      {/* Insurance Coverage - Cinematic Integration */}
+      <section className="py-24 bg-white overflow-hidden">
+        <div className="container px-4">
+          <div className="flex flex-col lg:flex-row gap-20 items-center">
+            <div className="lg:w-1/2">
+              <HeadingScrollAnimation as="h2" className="text-4xl md:text-5xl font-black text-slate-900 mb-8" variant="slide-in-left">
+                Major <span className="text-teal-600">Insurance</span> Accepted
               </HeadingScrollAnimation>
-              <p className="text-lg text-gray-600">
-                We work with all major private health insurance providers
+              <p className="text-xl text-slate-600 leading-relaxed mb-10">
+                We work directly with major health insurers to ensure your focus stays on recovery, not paperwork.
               </p>
+
+              <div className="space-y-6 mb-10">
+                {[
+                  { q: "Direct Billing", a: "We can submit claims directly to many insurers on your behalf." },
+                  { q: "Recognised Providers", a: "Fully registered with Bupa, AXA, Aviva, Vitality, and more." },
+                  { q: "Receipts Provided", a: "Digital receipts sent instantly for policy reimbursement." }
+                ].map((item, i) => (
+                  <ScrollAnimation key={i} variant="fade-up" delay={i * 100} className="flex gap-5">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-teal-50 flex items-center justify-center text-teal-600 font-bold">0{i + 1}</div>
+                    <div>
+                      <h4 className="text-lg font-bold text-slate-900 mb-1">{item.q}</h4>
+                      <p className="text-slate-500">{item.a}</p>
+                    </div>
+                  </ScrollAnimation>
+                ))}
+              </div>
             </div>
 
-            {/* Insurance Logos */}
-            <ScrollAnimation variant="fade-up" className="bg-teal-50 rounded-xl p-8 mb-8">
-              <div>
-                {/* marquee component shows logos in continuous loop */}
-                <InsuranceMarquee items={siteContent.insurance.accepted} duration={20} />
-              </div>
-            </ScrollAnimation>
-
-            {/* Insurance Info */}
-            <ScrollAnimation variant="fade-up" className="card p-8">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                Using Your Insurance
-              </h3>
-
-              <div className="space-y-6 text-gray-700">
-                <div>
-                  <h4 className="font-bold text-lg mb-2">
-                    Coverage Information
-                  </h4>
-                  <p>{siteContent.insurance.note}</p>
-                </div>
-
-                <div>
-                  <h4 className="font-bold text-lg mb-2">How It Works</h4>
-                  <ol className="space-y-3 list-decimal list-inside">
-                    <li>
-                      Check your policy details or contact your insurer to
-                      confirm physiotherapy coverage
-                    </li>
-                    <li>
-                      Obtain any necessary pre-authorisation or referral if
-                      required by your policy
-                    </li>
-                    <li>
-                      Book your appointment with us and provide your insurance
-                      details
-                    </li>
-                    <li>
-                      We can submit claims directly to many insurers or provide
-                      receipts for reimbursement
-                    </li>
-                  </ol>
-                </div>
-
-                <div>
-                  <h4 className="font-bold text-lg mb-2">
-                    What You&apos;ll Need
-                  </h4>
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <span className="text-teal-600 mr-2">•</span>
-                      <span>
-                        Your insurance policy number and membership details
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-teal-600 mr-2">•</span>
-                      <span>
-                        Pre-authorisation code (if required by your insurer)
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-teal-600 mr-2">•</span>
-                      <span>Photo ID for verification</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-teal-50 border-l-4 border-teal-600 p-4">
-                  <p>
-                    <strong>Note:</strong> If you&apos;re unsure about your
-                    coverage, we&apos;re happy to help. Contact us and we can
-                    check with your insurer on your behalf.
+            <div className="lg:w-1/2 w-full">
+              <div className="p-12 rounded-[3rem] bg-slate-50 border border-slate-100 shadow-inner relative group overflow-hidden">
+                <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none" />
+                <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none" />
+                <InsuranceMarquee items={siteContent.insurance.accepted} duration={25} />
+                <div className="mt-12 p-8 bg-white rounded-3xl border border-slate-100 shadow-sm relative z-20">
+                  <p className="text-slate-600 italic text-center font-medium">
+                    "{siteContent.insurance.note}"
                   </p>
                 </div>
               </div>
-            </ScrollAnimation>
-          </div>
-        </div>
-      </section>
-
-      {/* Payment Options */}
-      <section className="section">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <HeadingScrollAnimation as="h2" className="text-3xl font-bold text-center mb-12 text-gray-900" variant="blur-up">
-              Payment Options
-            </HeadingScrollAnimation>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              <ScrollAnimation variant="fade-up" className="card p-6 text-center">
-                <div className="text-4xl mb-4">💳</div>
-                <h3 className="font-bold text-lg mb-2 text-gray-900">
-                  Card Payments
-                </h3>
-                <p className="text-gray-600">
-                  All major credit and debit cards accepted
-                </p>
-              </ScrollAnimation>
-
-              <ScrollAnimation variant="fade-up" className="card p-6 text-center">
-                <div className="text-4xl mb-4">💷</div>
-                <h3 className="font-bold text-lg mb-2 text-gray-900">Cash</h3>
-                <p className="text-gray-600">We do accept Cash payments</p>
-              </ScrollAnimation>
-
-              <ScrollAnimation variant="fade-up" className="card p-6 text-center">
-                <div className="text-4xl mb-4">🏥</div>
-                <h3 className="font-bold text-lg mb-2 text-gray-900">
-                  Insurance
-                </h3>
-                <p className="text-gray-600">
-                  Direct billing available for many insurers
-                </p>
-              </ScrollAnimation>
             </div>
-
-            <ScrollAnimation variant="fade-up" className="card p-8 mt-12">
-              <h3 className="text-xl font-bold mb-4 text-center text-gray-900">
-                Cancellation Policy
-              </h3>
-              <p className="text-gray-700 text-center">
-                We require at least 24 hours&apos; notice for cancellations or
-                rescheduling. Appointments cancelled with less than 24
-                hours&apos; notice may be subject to the full appointment fee.
-              </p>
-            </ScrollAnimation>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section bg-gradient-to-r from-teal-600 to-teal-700 text-white">
-        <div className="container text-center">
-          <HeadingScrollAnimation as="h2" className="text-3xl lg:text-4xl font-bold mb-6" variant="scale">
-            Ready to Start Your Recovery Journey?
+      {/* Payment & Cancellation - Modern Grid */}
+      <section className="py-24 bg-slate-50/50">
+        <div className="container px-4 text-center">
+          <HeadingScrollAnimation as="h2" className="text-3xl md:text-4xl font-black text-slate-900 mb-16" variant="blur-up">
+            Payment & <span className="text-teal-600">Policies</span>
           </HeadingScrollAnimation>
-          <p className="text-xl mb-8 text-teal-100">
-            Book your appointment today and take the first step towards better
-            health
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+            {[
+              { icon: "💳", title: "Card Payments", desc: "All major credit and debit cards accepted, including contactless." },
+              { icon: "💷", title: "Cash Accepted", desc: "We provide digital receipts for all cash transactions." },
+              { icon: "🏥", title: "Insurance Billing", desc: "Available for Bupa, AXA, and other recognised providers." }
+            ].map((item, i) => (
+              <ScrollAnimation key={i} variant="fade-up" className="p-10 bg-white rounded-[2rem] border border-slate-100 hover:shadow-xl transition-all duration-500 text-center group">
+                <div className="text-4xl mb-6 group-hover:scale-110 transition-transform">{item.icon}</div>
+                <h3 className="text-xl font-bold mb-3 text-slate-900">{item.title}</h3>
+                <p className="text-slate-500 leading-relaxed text-sm">{item.desc}</p>
+              </ScrollAnimation>
+            ))}
+          </div>
+
+          <ScrollAnimation variant="fade-up" className="max-w-3xl mx-auto p-10 bg-slate-900 text-white rounded-[2.5rem] relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-teal-500/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700" />
+            <h3 className="text-2xl font-black mb-6 flex items-center justify-center gap-3">
+              <span className="text-teal-400 text-3xl">⏰</span> Cancellation Policy
+            </h3>
+            <p className="text-slate-400 text-lg leading-relaxed">
+              We value your time and ours. Appointments cancelled with less than <span className="text-white font-bold">24 hours' notice</span> may be subject to the full appointment fee. Please contact us as soon as possible if you need to reschedule.
+            </p>
+          </ScrollAnimation>
+        </div>
+      </section>
+
+      {/* Final CTA - Cinematic Impact */}
+      <section className="relative py-32 overflow-hidden bg-slate-900">
+        <div className="absolute inset-0 opacity-40">
+          <img src={pricesHeroImage} alt="Recovery" className="w-full h-full object-cover grayscale" />
+          <div className="absolute inset-0 bg-gradient-to-r from-teal-900 via-teal-900/80 to-teal-800/40" />
+        </div>
+        <div className="container relative z-10 text-center px-4">
+          <HeadingScrollAnimation as="h2" className="text-4xl lg:text-6xl font-black text-white mb-8" variant="scale">
+            Ready to Start <span className="text-teal-400">Feeling Better?</span>
+          </HeadingScrollAnimation>
+          <p className="text-xl mb-12 text-teal-50 max-w-2xl mx-auto font-light leading-relaxed">
+            Professional care is just a few clicks away. Secure your elite assessment today.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a
               href="https://app.theclinicportal.com/?Email=info@bodyfirst.clinic#login"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn bg-white text-teal-700 hover:bg-gray-100 text-lg px-8"
+              className="px-10 py-5 bg-teal-500 text-white rounded-full font-black text-xl hover:bg-teal-400 hover:scale-105 transition-all shadow-[0_0_30px_rgba(20,184,166,0.4)]"
             >
               Book Now
             </a>
-
             <Link
               to="/contact"
-              className="btn bg-teal-700 hover:bg-teal-800 text-lg px-8"
+              className="px-10 py-5 border-2 border-white/30 text-white rounded-full font-black text-xl hover:bg-white/10 transition-all backdrop-blur-sm"
             >
-              Contact Us
+              Contact Specialist
             </Link>
           </div>
         </div>

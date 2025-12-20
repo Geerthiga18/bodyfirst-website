@@ -1,13 +1,11 @@
 import { Link } from 'react-router-dom';
 import ScrollAnimation from '../components/ScrollAnimation';
 import Hero from '../components/Hero';
-import Card from '../components/Card';
 import InsuranceMarquee from '../components/InsuranceMarquee';
 import HeadingScrollAnimation from '../components/HeadingScrollAnimation';
 import SEO from '../components/SEO';
 import { siteContent } from '../data/content';
 import { servicesData } from '../data/servicesData';
-import type { Service } from '../data/servicesData';
 
 const Home = () => {
   return (
@@ -280,20 +278,23 @@ const Home = () => {
                 className="group relative"
                 variant="fade-up"
               >
-                <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden mb-8 relative">
+                <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden mb-8 relative shadow-xl">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                     loading="lazy"
                     onError={(e) => {
                       (e.currentTarget as HTMLImageElement).src = "/images/team/fallback.png";
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="absolute bottom-6 left-6 right-6 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0 text-white">
-                    <p className="text-xs uppercase tracking-widest font-bold mb-1">{member.qualifications}</p>
-                    <p className="text-sm font-medium leading-snug line-clamp-2">{member.description}</p>
+                  {/* Persistent Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
+
+                  {/* Persistent Description */}
+                  <div className="absolute bottom-6 left-6 right-6 transition-transform duration-500 group-hover:-translate-y-2">
+                    <p className="text-xs uppercase tracking-widest font-black text-teal-400 mb-2 drop-shadow-md">{member.qualifications}</p>
+                    <p className="text-sm font-medium leading-relaxed text-white drop-shadow-md">{member.description}</p>
                   </div>
                 </div>
 
