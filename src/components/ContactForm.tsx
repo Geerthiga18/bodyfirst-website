@@ -19,7 +19,7 @@ const ContactForm = () => {
 
         try {
             // Using FormSubmit.co AJAX endpoint to prevent redirect
-            const response = await fetch("https://formsubmit.co/ajax/dajevbass@gmail.com", {
+            const response = await fetch("https://formsubmit.co/ajax/support@bodyfirst.uk", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
